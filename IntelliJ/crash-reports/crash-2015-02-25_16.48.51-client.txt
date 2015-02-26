@@ -1,0 +1,134 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2/25/15 4:48 PM
+Description: Rendering item
+
+java.lang.NullPointerException: Rendering item
+	at net.minecraft.item.ItemStack.getMetadata(ItemStack.java:235)
+	at net.minecraft.client.renderer.ItemModelMesher.getMetadata(ItemModelMesher.java:70)
+	at net.minecraft.client.renderer.ItemModelMesher.getItemModel(ItemModelMesher.java:43)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:359)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:410)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147051_a(GuiContainerCreative.java:910)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:741)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:78)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:46)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:620)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:448)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1078)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1048)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:345)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:85)
+	at GradleStart.main(GradleStart.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.item.ItemStack.getMetadata(ItemStack.java:235)
+	at net.minecraft.client.renderer.ItemModelMesher.getMetadata(ItemModelMesher.java:70)
+	at net.minecraft.client.renderer.ItemModelMesher.getItemModel(ItemModelMesher.java:43)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:359)
+
+-- Item being rendered --
+Details:
+	Item Type: null
+	Item Aux: ~~ERROR~~ NullPointerException: null
+	Item NBT: null
+	Item Foil: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:410)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147051_a(GuiContainerCreative.java:910)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:741)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:78)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:46)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:620)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:448)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+	Mouse location: Scaled: (329, 19). Absolute: (1316, 924)
+	Screen size: Scaled: (480, 251). Absolute: (1920, 1003). Scale factor of 4
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player890'/69, l='MpServer', x=-720.50, y=64.00, z=966.50]]
+	Chunk stats: MultiplayerChunkCache: 552, 552
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: -715.00,4.00,972.00 - World: (-715,4,972), Chunk: (at 5,0,12 in -45,60; contains blocks -720,0,960 to -705,255,975), Region: (-2,1; contains chunks -64,32 to -33,63, blocks -1024,0,512 to -513,255,1023)
+	Level time: 146 game time, 146 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 1 total; [EntityPlayerSP['Player890'/69, l='MpServer', x=-720.50, y=64.00, z=966.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:350)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2488)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:367)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:85)
+	at GradleStart.main(GradleStart.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 765553424 bytes (730 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.10 FML v8.0.20.1295 Minecraft Forge 11.14.0.1295 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{8.0.20.1295} [Forge Mod Loader] (forgeSrc-1.8-11.14.0.1295-1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{11.14.0.1295} [Minecraft Forge] (forgeSrc-1.8-11.14.0.1295-1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	expTools{1.8-1.0} [AnZaNaMa's EXPTools Mod] (ExpTools) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.8
+	LWJGL: 2.9.1
+	OpenGL: GeForce GT 750M/PCIe/SSE2 GL version 4.5.0 NVIDIA 347.09, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)

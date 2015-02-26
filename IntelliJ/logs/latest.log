@@ -1,0 +1,51 @@
+[00:39:59] [Client thread/INFO]: Setting user: Player468
+[00:40:01] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:40:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AnZaNaMa's XP Tools
+[00:40:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:40:06] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[00:40:06] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:40:06] [Thread-7/INFO]: OpenAL initialized.
+[00:40:06] [Sound Library Loader/INFO]: Sound engine started
+[00:40:08] [Client thread/INFO]: Created: 512x512 textures-atlas
+[00:40:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AnZaNaMa's XP Tools
+[00:40:09] [Client thread/INFO]: SoundSystem shutting down...
+[00:40:09] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[00:40:09] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:40:09] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[00:40:09] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:40:09] [Thread-9/INFO]: OpenAL initialized.
+[00:40:10] [Sound Library Loader/INFO]: Sound engine started
+[00:40:11] [Client thread/INFO]: Created: 512x512 textures-atlas
+[00:40:22] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[00:40:22] [Server thread/INFO]: Generating keypair
+[00:40:22] [Server thread/INFO]: Preparing start region for level 0
+[00:40:23] [Server thread/INFO]: Changing view distance to 12, from 10
+[00:40:23] [Server thread/INFO]: Player468[local:E:eca1fa08] logged in with entity id 156 at (-726.2116372948879, 64.0, 972.1618100207716)
+[00:40:23] [Server thread/INFO]: Player468 joined the game
+[00:40:25] [Server thread/INFO]: Saving and pausing game...
+[00:40:25] [Server thread/INFO]: Saving chunks for level 'Testing'/Overworld
+[00:40:26] [Server thread/INFO]: Saving chunks for level 'Testing'/Nether
+[00:40:26] [Server thread/INFO]: Saving chunks for level 'Testing'/The End
+[00:40:31] [Server thread/INFO]: Saving and pausing game...
+[00:40:31] [Server thread/INFO]: Saving chunks for level 'Testing'/Overworld
+[00:40:31] [Server thread/INFO]: Saving chunks for level 'Testing'/Nether
+[00:40:31] [Server thread/INFO]: Saving chunks for level 'Testing'/The End
+[00:40:59] [Client thread/WARN]: Could not find uniform named LumaRamp in the specified shader program.
+[00:40:59] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[00:41:00] [Client thread/WARN]: Could not find uniform named OutSize in the specified shader program.
+[00:41:09] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[00:45:51] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-02-26_00.45.50.png
+[00:45:59] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-02-26_00.45.59.png
+[00:46:02] [Server thread/INFO]: Saving and pausing game...
+[00:46:02] [Server thread/INFO]: Saving chunks for level 'Testing'/Overworld
+[00:46:02] [Server thread/INFO]: Saving chunks for level 'Testing'/Nether
+[00:46:02] [Server thread/INFO]: Saving chunks for level 'Testing'/The End
+[00:46:03] [Server thread/INFO]: Stopping server
+[00:46:03] [Server thread/INFO]: Saving players
+[00:46:03] [Server thread/INFO]: Saving worlds
+[00:46:03] [Server thread/INFO]: Saving chunks for level 'Testing'/Overworld
+[00:46:03] [Server thread/INFO]: Saving chunks for level 'Testing'/Nether
+[00:46:03] [Server thread/INFO]: Saving chunks for level 'Testing'/The End
+[00:46:04] [Client thread/INFO]: Stopping!
+[00:46:04] [Client thread/INFO]: SoundSystem shutting down...
+[00:46:05] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

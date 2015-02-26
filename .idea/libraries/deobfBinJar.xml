@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="deobfBinJar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/tmp/deobfBinJar/excpeted.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/deobfBinJar/deobfed.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
