@@ -10,4 +10,5 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "com.AnZaNaMa.ExpTools.Proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "com.AnZaNaMa.ExpTools.Proxy.ServerProxy";
     public static final String GUI_FACTORY_CLASS = "com.AnZaNaMa.ExpTools.Client.GUI.GuiFactory";
+    public static String PLAYERNAME;
 }

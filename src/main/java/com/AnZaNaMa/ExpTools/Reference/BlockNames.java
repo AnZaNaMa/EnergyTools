@@ -5,4 +5,6 @@ package com.AnZaNaMa.ExpTools.Reference;
  */
 public class BlockNames {
     public static final String XPBLOCK = "xpblock";
+    public static final String XPORE = "xpore";
+    public static final String ENERGIZER = "energizer";
 }

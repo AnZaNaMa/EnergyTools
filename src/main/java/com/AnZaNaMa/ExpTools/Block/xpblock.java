@@ -13,7 +13,7 @@ public class xpblock extends Block {
 
     public xpblock(String unlocalizedName, Material material, float localHardness, float localResistance){
         super(material);
-        GameRegistry.registerBlock(this, BlockNames.XPBLOCK);
+        GameRegistry.registerBlock(this, unlocalizedName);
         this.setCreativeTab(ExpTools.creativeTab);
         this.setUnlocalizedName(unlocalizedName);
         this.setHardness(localHardness);

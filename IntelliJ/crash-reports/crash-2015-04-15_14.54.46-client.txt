@@ -1,0 +1,124 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 4/15/15 2:54 PM
+Description: Rendering item
+
+java.lang.NullPointerException: Rendering item
+	at net.minecraft.item.ItemStack.getMetadata(ItemStack.java:235)
+	at net.minecraft.client.renderer.ItemModelMesher.getMetadata(ItemModelMesher.java:70)
+	at net.minecraft.client.renderer.ItemModelMesher.getItemModel(ItemModelMesher.java:43)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:359)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:410)
+	at net.minecraft.client.gui.GuiIngame.renderHotbarItem(GuiIngame.java:1038)
+	at net.minecraft.client.gui.GuiIngame.renderTooltip(GuiIngame.java:364)
+	at net.minecraftforge.client.GuiIngameForge.renderTooltip(GuiIngameForge.java:306)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:130)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1056)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1048)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:345)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:85)
+	at GradleStart.main(GradleStart.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.item.ItemStack.getMetadata(ItemStack.java:235)
+	at net.minecraft.client.renderer.ItemModelMesher.getMetadata(ItemModelMesher.java:70)
+	at net.minecraft.client.renderer.ItemModelMesher.getItemModel(ItemModelMesher.java:43)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:359)
+
+-- Item being rendered --
+Details:
+	Item Type: null
+	Item Aux: ~~ERROR~~ NullPointerException: null
+	Item NBT: null
+	Item Foil: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:410)
+	at net.minecraft.client.gui.GuiIngame.renderHotbarItem(GuiIngame.java:1038)
+	at net.minecraft.client.gui.GuiIngame.renderTooltip(GuiIngame.java:364)
+	at net.minecraftforge.client.GuiIngameForge.renderTooltip(GuiIngameForge.java:306)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:130)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player750'/17, l='MpServer', x=-1017.39, y=4.00, z=-1245.52]]
+	Chunk stats: MultiplayerChunkCache: 621, 621
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: -1011.00,4.00,-1237.00 - World: (-1011,4,-1237), Chunk: (at 13,0,11 in -64,-78; contains blocks -1024,0,-1248 to -1009,255,-1233), Region: (-2,-3; contains chunks -64,-96 to -33,-65, blocks -1024,0,-1536 to -513,255,-1025)
+	Level time: 1651 game time, 2496 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 41 total; [EntityChicken['Chicken'/68891, l='MpServer', x=-969.50, y=4.02, z=-1295.50], EntityChicken['Chicken'/68894, l='MpServer', x=-975.47, y=4.02, z=-1308.34], EntityCow['Cow'/68895, l='MpServer', x=-943.06, y=4.02, z=-1203.94], EntityChicken['Chicken'/68892, l='MpServer', x=-970.50, y=4.02, z=-1297.50], EntityChicken['Chicken'/68893, l='MpServer', x=-972.50, y=4.02, z=-1296.50], EntitySheep['Sheep'/68883, l='MpServer', x=-1085.50, y=4.02, z=-1306.50], EntityPlayerSP['Player750'/17, l='MpServer', x=-1017.39, y=4.00, z=-1245.52], EntitySheep['Sheep'/68886, l='MpServer', x=-1074.25, y=4.00, z=-1306.63], EntitySheep['Sheep'/68884, l='MpServer', x=-1080.66, y=4.00, z=-1308.94], EntitySheep['Sheep'/68885, l='MpServer', x=-1081.50, y=4.02, z=-1305.50], EntityPig['Pig'/68875, l='MpServer', x=-967.50, y=4.02, z=-1225.50], EntityPig['Pig'/68878, l='MpServer', x=-972.50, y=4.02, z=-1224.50], EntityPig['Pig'/68877, l='MpServer', x=-970.50, y=4.02, z=-1225.50], EntityPig['Pig'/68876, l='MpServer', x=-971.50, y=4.02, z=-1227.50], EntityRabbit['Rabbit'/68831, l='MpServer', x=-942.88, y=4.00, z=-1227.25], EntityPig['Pig'/68825, l='MpServer', x=-947.50, y=4.02, z=-1233.84], EntityPig['Pig'/68824, l='MpServer', x=-947.50, y=4.02, z=-1232.22], EntityPig['Pig'/68826, l='MpServer', x=-951.50, y=4.02, z=-1235.50], EntityCow['Cow'/68838, l='MpServer', x=-952.84, y=4.02, z=-1265.19], EntityCow['Cow'/68839, l='MpServer', x=-955.94, y=4.00, z=-1266.22], EntityCow['Cow'/68836, l='MpServer', x=-960.88, y=4.02, z=-1273.16], EntityCow['Cow'/68837, l='MpServer', x=-955.72, y=4.00, z=-1267.47], EntityRabbit['Rabbit'/68846, l='MpServer', x=-1037.47, y=4.00, z=-1260.41], EntityRabbit['Rabbit'/68847, l='MpServer', x=-1033.81, y=4.00, z=-1249.44], EntityCow['Cow'/68845, l='MpServer', x=-1027.25, y=4.02, z=-1272.34], EntityHorse['Donkey'/68905, l='MpServer', x=-1099.88, y=4.00, z=-1313.88], EntityHorse['Horse'/68855, l='MpServer', x=-989.50, y=4.00, z=-1305.50], EntityHorse['Horse'/68854, l='MpServer', x=-991.50, y=4.00, z=-1303.06], EntityHorse['Donkey'/68907, l='MpServer', x=-1096.88, y=4.00, z=-1310.88], EntityHorse['Horse'/68853, l='MpServer', x=-996.50, y=4.00, z=-1305.50], EntityHorse['Donkey'/68906, l='MpServer', x=-1098.50, y=4.00, z=-1313.50], EntityItem['item.tile.log.oak'/269245, l='MpServer', x=-1017.45, y=7.75, z=-1245.80], EntityPig['Pig'/68908, l='MpServer', x=-1099.50, y=4.02, z=-1305.50], EntityRabbit['Rabbit'/68910, l='MpServer', x=-942.50, y=4.00, z=-1231.50], EntitySheep['Sheep'/68848, l='MpServer', x=-1035.19, y=4.02, z=-1264.19], EntityCow['Cow'/68896, l='MpServer', x=-948.50, y=4.02, z=-1195.50], EntityHorse['Horse'/68862, l='MpServer', x=-991.81, y=4.00, z=-1307.56], EntitySheep['Sheep'/68899, l='MpServer', x=-941.50, y=4.02, z=-1196.50], EntityCow['Cow'/68898, l='MpServer', x=-953.50, y=4.02, z=-1197.50], EntityHorse['Horse'/68858, l='MpServer', x=-993.31, y=4.00, z=-1305.94], EntityHorse['Horse'/68856, l='MpServer', x=-991.50, y=4.00, z=-1304.81]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:350)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2488)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:367)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:85)
+	at GradleStart.main(GradleStart.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 707650320 bytes (674 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.10 FML v8.0.20.1295 Minecraft Forge 11.14.0.1295 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{8.0.20.1295} [Forge Mod Loader] (forgeSrc-1.8-11.14.0.1295-1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{11.14.0.1295} [Minecraft Forge] (forgeSrc-1.8-11.14.0.1295-1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	exptools{1.8-1.0} [AnZaNaMa's XP Tools] (ExpTools) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.8
+	LWJGL: 2.9.1
+	OpenGL: GeForce GT 750M/PCIe/SSE2 GL version 4.5.0 NVIDIA 347.09, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
