@@ -11,4 +11,5 @@ public class ItemNames {
     public static final String XPHOE = "XPHoe";
     public static final String INFENERGYORB = "infenergyorb";
     public static final String ENERGYINGOT = "energyingot";
+    public static final String REDBULL = "redbull";
 }

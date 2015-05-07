@@ -39,9 +39,13 @@ public class ClientProxy extends CommonProxy {
 
         renderItem.getItemModelMesher().register(ItemExpTools.energyingot, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.ENERGYINGOT, "inventory"));
 
+        renderItem.getItemModelMesher().register(ItemExpTools.redbull, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.REDBULL, "inventory"));
+
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.energyore), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.XPORE, "inventory"));
 
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.energizer), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.ENERGIZER, "inventory"));
+
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.xpblock), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.XPBLOCK, "inventory"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEnergizer.class, new EnergyToolsTESR());
     }

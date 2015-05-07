@@ -2,152 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b33171-6ac6-42a7-99de-c6ede8cfcbc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-26-5.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-26-6.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-1.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-2.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-3.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-4.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-5.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-6.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-02-27-7.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-1.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-2.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-3.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-4.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-5.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-6.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-06-7.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-1.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-2.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-3.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-4.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-5.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-6.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-03-07-7.log.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/ItemNames.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Item/XPAxe.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Item/XPShovel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.jdt.core/invalidArchivesCache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ExpTools/assets/exptools/models/block/xpblock.tcn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/exptools/models/block/xpblock.tcn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Energy/Energy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyIngot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Player/EnergyPlayerConstructor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/EnergyToolsEventHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/ExperienceHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/InfiniteEnergyOrb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/KeyBinds.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIEnergy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/RedstoneHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/SmeltingHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergyTools.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/TileEntityReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/World/WorldGenEnergyOre.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPAxe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPShovel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/version.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/xpore.java" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\DIM-1\forcedchunks.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\DIM1\forcedchunks.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\forcedchunks.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.-1.1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.-2.0.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.-2.1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.-3.1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.0.-1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.0.0.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\New Worldashgerwa\region\r.0.1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\DIM-1\data\villages_nether.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\DIM1\data\villages_end.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\data\Mineshaft.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\data\Temple.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\data\Village.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\data\villages.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\level.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\level.dat_mcr" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\level.dat_old" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\2210beb6-4dc2-38a8-8f45-f0cb49bb6846.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\45c2c1e2-9dd4-3d62-8e53-82e2b4b32b4a.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\4bf8ac1c-047f-3d7f-9946-705bc571459f.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\905847c0-6737-32d8-85e6-3f64ecd32033.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\d75ffc85-72b0-3b94-be32-d104d89a3a6a.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\e5a660b6-9d51-36ee-858e-f73e02a3f36f.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\e7c5c79a-91ee-3db1-afe8-a6ff4d4f15fa.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\playerdata\ea1dedcc-65ad-3e4c-bece-937c54b0cb65.dat" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\region\r.-1.0.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\region\r.-1.1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\region\r.-2.1.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\region\r.0.0.mca" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\session.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\2210beb6-4dc2-38a8-8f45-f0cb49bb6846.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\45c2c1e2-9dd4-3d62-8e53-82e2b4b32b4a.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\4bf8ac1c-047f-3d7f-9946-705bc571459f.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\905847c0-6737-32d8-85e6-3f64ecd32033.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\d75ffc85-72b0-3b94-be32-d104d89a3a6a.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\e5a660b6-9d51-36ee-858e-f73e02a3f36f.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\e7c5c79a-91ee-3db1-afe8-a6ff4d4f15fa.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\IntelliJ\saves\Testing\stats\ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\out\production\ExpTools\assets\exptools\textures\items\XPIngot variant 1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\out\production\ExpTools\assets\exptools\textures\items\XPPickaxe.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\src\main\resources\assets\exptools\textures\items\XPIngot variant 1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\src\main\resources\assets\exptools\textures\items\XPPickaxe.png" afterPath="" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\eclipse\.metadata\.plugins\org.eclipse.core.resources\.root\0.tree" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Minecraft/1.tree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/BlockExpTools.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/BlockExpTools.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/BlockNames.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/BlockNames.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/MultiblockPosition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/RedBull.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-1.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-1.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-2.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-2.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-3.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-3.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-4.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-4.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-5.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-04-5.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/ExpTools.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/ExpTools.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/Energizer.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/Energizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Item/ItemExpTools.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Item/ItemExpTools.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/Reference.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/Reference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Render/Blocks/RenderBlockRegister.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Render/Blocks/RenderBlockRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Item/XPPick.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Item/XPPick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/xpblock.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/xpblock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/BlockExpTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/BlockExpTools.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/BlockNames.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/BlockNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/ItemNames.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Reference/ItemNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/data/Mineshaft.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/data/Mineshaft.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/level.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/level.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/level.dat_old" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/level.dat_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.-1.-1.mca" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.-1.-1.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.-1.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.0.-1.mca" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.0.-1.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.0.0.mca" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/region/r.0.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/session.lock" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/session.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/data/villages.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/DIM1/data/villages_end.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/DIM1/data/villages_end.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/DIM-1/data/villages_nether.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/Test World Number 1003/DIM-1/data/villages_nether.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExpTools.ipr" afterPath="$PROJECT_DIR$/ExpTools.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExpTools.iws" afterPath="$PROJECT_DIR$/ExpTools.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/Reference.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/Reference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Render/Blocks/RenderBlockRegister.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Render/Blocks/RenderBlockRegister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPPick.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPPick.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-3.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-latest.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-junk-earlystartup.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/latest.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/latest.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/options.txt" afterPath="$PROJECT_DIR$/IntelliJ/options.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/usernamecache.json" afterPath="$PROJECT_DIR$/IntelliJ/usernamecache.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/xpblock.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/xpblock.java" />
     </list>
     <ignored path="ExpTools.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -210,46 +102,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Energizer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
+      <file leaf-file-name="ClientProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1020">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <element signature="e#1571#1572#0" expanded="true" />
-                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="false" />
+                <element signature="e#1094#1095#0" expanded="false" />
+                <element signature="e#3008#3009#0" expanded="false" />
+                <element signature="e#3036#3037#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Energy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Energy/Energy.java">
+      <file leaf-file-name="ItemExpTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6813" max-vertical-offset="7582">
-              <caret line="420" column="68" selection-start-line="420" selection-start-column="68" selection-end-line="420" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reference.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/Reference.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="510">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModGUIEnergy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIEnergy.java">
+      <file leaf-file-name="ItemNames.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="1292">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnergySword.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="731">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,9 +152,35 @@
       <file leaf-file-name="TileEntityEnergizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1458671" vertical-offset="590" max-vertical-offset="1207">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-              <folding />
+            <state vertical-scroll-proportion="0.64343596" vertical-offset="461" max-vertical-offset="5676">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5088#5089#0" expanded="true" />
+                <element signature="e#5150#5151#0" expanded="true" />
+                <element signature="e#7877#7878#0" expanded="true" />
+                <element signature="e#7917#7918#0" expanded="true" />
+                <element signature="e#7963#7964#0" expanded="true" />
+                <element signature="e#8005#8006#0" expanded="true" />
+                <element signature="e#8044#8045#0" expanded="true" />
+                <element signature="e#8084#8085#0" expanded="true" />
+                <element signature="e#8121#8122#0" expanded="true" />
+                <element signature="e#8163#8164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Energizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1173">
+              <caret line="41" column="135" selection-start-line="41" selection-start-column="135" selection-end-line="41" selection-end-column="135" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2735#2736#0" expanded="true" />
+                <element signature="e#2763#2764#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -275,9 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/LogHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ServerProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/IProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/CreativeTabs/ModCreativeTabs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/ConfigHandler.java" />
@@ -299,9 +214,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/xpore.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/World/WorldGenEnergyOre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/KeyBinds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyIngot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/SmeltingHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/BlockExpTools.java" />
@@ -315,9 +228,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Player/EnergyToolsLoadPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/InfiniteEnergyOrb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Render/Blocks/RenderBlockRegister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Energy/Energy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Player/EnergyPlayerConstructor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/Reference.java" />
@@ -325,6 +235,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPAxe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPShovel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIEnergy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/RedBull.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/MultiblockPosition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" />
       </list>
     </option>
@@ -371,96 +289,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exptools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -616,6 +444,16 @@
               <option name="myItemId" value="ExpTools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com.AnZaNaMa.ExpTools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
@@ -635,7 +473,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Reference" />
+              <option name="myItemId" value="Utility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,18 +491,98 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity.TileEntity" />
+              <option name="myItemId" value="Block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -915,7 +833,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -930,8 +848,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32108107" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -941,6 +858,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -969,60 +887,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32749563" vertical-offset="0" max-vertical-offset="578">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/SmeltingHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32749563" vertical-offset="0" max-vertical-offset="571">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/ConfigHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74430823" vertical-offset="0" max-vertical-offset="646">
-          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/xpore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32380953" vertical-offset="0" max-vertical-offset="630">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/xpblock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4047619" vertical-offset="0" max-vertical-offset="630">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraftforge/fml/common/registry/GameRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33788395" vertical-offset="3069" max-vertical-offset="6256">
-          <caret line="264" column="23" selection-start-line="264" selection-start-column="23" selection-end-line="264" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/TileEntityReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
@@ -1042,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.038116593" vertical-offset="0" max-vertical-offset="892">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,7 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24775785" vertical-offset="0" max-vertical-offset="1462">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.514574" vertical-offset="0" max-vertical-offset="892">
           <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4777">
           <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,22 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/item/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61750406" vertical-offset="1217" max-vertical-offset="21777">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding>
-            <element signature="e#6228#6229#0" expanded="false" />
-            <element signature="e#6281#6282#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/entity/player/EntityPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44246355" vertical-offset="18172" max-vertical-offset="38437">
           <caret line="1222" column="79" selection-start-line="1222" selection-start-column="79" selection-end-line="1222" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21587302" vertical-offset="0" max-vertical-offset="630">
           <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.053968254" vertical-offset="0" max-vertical-offset="630">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35238096" vertical-offset="1614" max-vertical-offset="3315">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.052380953" vertical-offset="101" max-vertical-offset="731">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1236,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.4116693" vertical-offset="4228" max-vertical-offset="4845">
           <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2126985" vertical-offset="968" max-vertical-offset="2057">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6206349" vertical-offset="204" max-vertical-offset="1088">
           <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,9 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64920634" vertical-offset="645" max-vertical-offset="1275">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1278,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="630">
           <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68881685" vertical-offset="5049" max-vertical-offset="9571">
           <caret line="338" column="17" selection-start-line="338" selection-start-column="17" selection-end-line="338" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,9 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="663">
           <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,9 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21587302" vertical-offset="0" max-vertical-offset="630">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1322,25 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.057921637" vertical-offset="0" max-vertical-offset="587">
           <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11584327" vertical-offset="0" max-vertical-offset="952">
-          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76831347" vertical-offset="535" max-vertical-offset="1122">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1348,28 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4047619" vertical-offset="0" max-vertical-offset="630">
           <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="e#1571#1572#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/Reference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,14 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75714284" vertical-offset="152" max-vertical-offset="833">
           <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPAxe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.784127" vertical-offset="152" max-vertical-offset="833">
-          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1397,31 +1177,166 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1020">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#1061#1062#0" expanded="false" />
+            <element signature="e#1094#1095#0" expanded="false" />
+            <element signature="e#3008#3009#0" expanded="false" />
+            <element signature="e#3036#3037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32380953" vertical-offset="0" max-vertical-offset="630">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIEnergy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87777776" vertical-offset="229" max-vertical-offset="1292">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/item/ItemSword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51428574" vertical-offset="305" max-vertical-offset="1496">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyIngot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="630">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/item/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327616" vertical-offset="2373" max-vertical-offset="21726">
+          <caret line="257" column="25" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/RedBull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7031746" vertical-offset="322" max-vertical-offset="1258">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Energy/Energy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6813" max-vertical-offset="7582">
+        <state vertical-scroll-proportion="0.5299838" vertical-offset="6813" max-vertical-offset="7582">
           <caret line="420" column="68" selection-start-line="420" selection-start-column="68" selection-end-line="420" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83809525" vertical-offset="101" max-vertical-offset="731">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/XPAxe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/MultiblockPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1161">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Client/GUI/ModGUIEnergy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="1292">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1173">
+          <caret line="41" column="135" selection-start-line="41" selection-start-column="135" selection-end-line="41" selection-end-column="135" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2735#2736#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1458671" vertical-offset="590" max-vertical-offset="1207">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="0.64343596" vertical-offset="461" max-vertical-offset="5676">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5088#5089#0" expanded="true" />
+            <element signature="e#5150#5151#0" expanded="true" />
+            <element signature="e#7877#7878#0" expanded="true" />
+            <element signature="e#7917#7918#0" expanded="true" />
+            <element signature="e#7963#7964#0" expanded="true" />
+            <element signature="e#8005#8006#0" expanded="true" />
+            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8121#8122#0" expanded="true" />
+            <element signature="e#8163#8164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,65 +1,39 @@
-[10:55:19] [Client thread/INFO]: Setting user: Player328
-[10:55:21] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:55:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AnZaNaMa's XP Tools
-[10:55:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:55:25] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[10:55:25] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:55:25] [Thread-7/INFO]: OpenAL initialized.
-[10:55:26] [Sound Library Loader/INFO]: Sound engine started
-[10:55:28] [Client thread/INFO]: Created: 512x512 textures-atlas
-[10:55:28] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AnZaNaMa's XP Tools
-[10:55:28] [Client thread/INFO]: SoundSystem shutting down...
-[10:55:29] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[10:55:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:55:29] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[10:55:29] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:55:29] [Thread-9/INFO]: OpenAL initialized.
-[10:55:29] [Sound Library Loader/INFO]: Sound engine started
-[10:55:30] [Client thread/INFO]: Created: 512x512 textures-atlas
-[10:55:35] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[10:55:35] [Server thread/INFO]: Generating keypair
-[10:55:36] [Server thread/INFO]: Preparing start region for level 0
-[10:55:37] [Server thread/INFO]: Changing view distance to 12, from 10
-[10:55:37] [Server thread/INFO]: Player328[local:E:26755b11] logged in with entity id 281 at (182.70964758528964, 83.0, 191.73854579116994)
-[10:55:37] [Server thread/INFO]: Player328 joined the game
-[10:55:40] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:40] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:40] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:40] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:44] [Client thread/INFO]: [CHAT] Energy Stored: 5000
-[10:55:44] [Client thread/INFO]: [CHAT] Energy Stored: 5000
-[10:55:44] [Client thread/INFO]: [CHAT] Energy Stored: 5000
-[10:55:44] [Client thread/INFO]: [CHAT] Energy Stored: 5000
-[10:55:45] [Server thread/INFO]: Saving and pausing game...
-[10:55:45] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Overworld
-[10:55:45] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Nether
-[10:55:45] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/The End
-[10:55:46] [Server thread/INFO]: Stopping server
-[10:55:46] [Server thread/INFO]: Saving players
-[10:55:46] [Server thread/INFO]: Saving worlds
-[10:55:46] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Overworld
-[10:55:46] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Nether
-[10:55:46] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/The End
-[10:55:50] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[10:55:50] [Server thread/INFO]: Generating keypair
-[10:55:50] [Server thread/INFO]: Preparing start region for level 0
-[10:55:50] [Server thread/INFO]: Changing view distance to 12, from 10
-[10:55:51] [Server thread/INFO]: Player328[local:E:9b9f5bff] logged in with entity id 772 at (182.80720044309203, 83.0, 191.55437464608744)
-[10:55:51] [Server thread/INFO]: Player328 joined the game
-[10:55:53] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:53] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:53] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:53] [Client thread/INFO]: [CHAT] Energy Stored: 0
-[10:55:55] [Server thread/INFO]: Saving and pausing game...
-[10:55:55] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Overworld
-[10:55:56] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Nether
-[10:55:56] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/The End
-[10:55:56] [Server thread/INFO]: Stopping server
-[10:55:56] [Server thread/INFO]: Saving players
-[10:55:56] [Server thread/INFO]: Saving worlds
-[10:55:56] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Overworld
-[10:55:56] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/Nether
-[10:55:56] [Server thread/INFO]: Saving chunks for level 'Test World Number 1003'/The End
-[10:55:57] [Client thread/INFO]: Stopping!
-[10:55:57] [Client thread/INFO]: SoundSystem shutting down...
-[10:55:58] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[14:22:28] [Client thread/INFO]: Setting user: Player484
+[14:22:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:22:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AnZaNaMa's XP Tools
+[14:22:35] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:22:35] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[14:22:35] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:22:35] [Thread-7/INFO]: OpenAL initialized.
+[14:22:35] [Sound Library Loader/INFO]: Sound engine started
+[14:22:37] [Client thread/INFO]: Created: 512x512 textures-atlas
+[14:22:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:AnZaNaMa's XP Tools
+[14:22:38] [Client thread/INFO]: SoundSystem shutting down...
+[14:22:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[14:22:39] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:22:39] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[14:22:39] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:22:39] [Thread-9/INFO]: OpenAL initialized.
+[14:22:39] [Sound Library Loader/INFO]: Sound engine started
+[14:22:40] [Client thread/INFO]: Created: 512x512 textures-atlas
+[14:22:53] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[14:22:53] [Server thread/INFO]: Generating keypair
+[14:22:53] [Server thread/INFO]: Preparing start region for level 0
+[14:22:54] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:22:54] [Server thread/INFO]: Player484[local:E:5742b229] logged in with entity id 61 at (0.5662051149035788, 65.0, -4.931098737635118)
+[14:22:54] [Server thread/INFO]: Player484 joined the game
+[14:24:01] [Server thread/INFO]: Player484 has just earned the achievement [Taking Inventory]
+[14:24:01] [Client thread/INFO]: [CHAT] Player484 has just earned the achievement [Taking Inventory]
+[14:24:14] [Server thread/INFO]: Saving and pausing game...
+[14:24:14] [Server thread/INFO]: Saving chunks for level 'Test World Number 1018'/Overworld
+[14:24:14] [Server thread/INFO]: Saving chunks for level 'Test World Number 1018'/Nether
+[14:24:14] [Server thread/INFO]: Saving chunks for level 'Test World Number 1018'/The End
+[14:34:58] [Server thread/INFO]: Stopping server
+[14:34:58] [Server thread/INFO]: Saving players
+[14:34:58] [Server thread/INFO]: Saving worlds
+[14:34:58] [Server thread/INFO]: Saving chunks for level 'Test World Number 1018'/Overworld
+[14:34:58] [Server thread/INFO]: Saving chunks for level 'Test World Number 1018'/Nether
+[14:34:58] [Server thread/INFO]: Saving chunks for level 'Test World Number 1018'/The End
+[14:34:59] [Client thread/INFO]: Stopping!
+[14:34:59] [Client thread/INFO]: SoundSystem shutting down...
+[14:34:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

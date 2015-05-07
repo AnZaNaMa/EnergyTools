@@ -13,6 +13,7 @@ public class ItemExpTools {
     public static Item XPHoe;
     public static Item infenergyorb;
     public static Item energyingot;
+    public static Item redbull;
 
     public static void addItems(){
         XPPick = new XPPick(EXPERIENCE, ItemNames.XPPICK);
@@ -20,5 +21,6 @@ public class ItemExpTools {
         XPAxe = new XPAxe(EXPERIENCE, ItemNames.XPAXE);
         infenergyorb = new InfiniteEnergyOrb();
         energyingot = new EnergyIngot(ItemNames.ENERGYINGOT);
+        redbull = new RedBull(ItemNames.REDBULL);
     }
 }

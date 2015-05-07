@@ -2,9 +2,11 @@ package com.AnZaNaMa.ExpTools.Block;
 
 import com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer;
 import com.AnZaNaMa.ExpTools.ExpTools;
+import com.AnZaNaMa.ExpTools.Item.ItemExpTools;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ChatComponentText;
@@ -34,7 +36,24 @@ public class Energizer extends BlockContainer {
         if(!world.isRemote) {
             TileEntity entity = world.getTileEntity(position);
             if (entity instanceof TileEntityEnergizer) {
-                player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) world.getTileEntity(position)).getEnergyContained()));
+                try {
+                    Item item = player.getHeldItem().getItem();
+                }catch(NullPointerException e){
+                    player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
+                }
+                if(player.getHeldItem().getItem() == ItemExpTools.infenergyorb){
+                    if(((TileEntityEnergizer) entity).getIsMultiblock()) {
+                        player.addChatMessage(new ChatComponentText("Is Multiblock of Size: " + ((TileEntityEnergizer) entity).getMultiblockSize()));
+                        player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
+                    }
+                    else{
+                        player.addChatMessage(new ChatComponentText("Is Not Multiblock."));
+                        player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
+                    }
+                }
+                else{
+                    player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
+                }
             }
         }
     }
