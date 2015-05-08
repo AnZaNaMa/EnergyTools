@@ -36,12 +36,13 @@ public class Energizer extends BlockContainer {
         if(!world.isRemote) {
             TileEntity entity = world.getTileEntity(position);
             if (entity instanceof TileEntityEnergizer) {
+                Item item = null;
                 try {
-                    Item item = player.getHeldItem().getItem();
+                    item = player.getHeldItem().getItem();
                 }catch(NullPointerException e){
                     player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                 }
-                if(player.getHeldItem().getItem() == ItemExpTools.infenergyorb){
+                if(item == ItemExpTools.infenergyorb){
                     if(((TileEntityEnergizer) entity).getIsMultiblock()) {
                         player.addChatMessage(new ChatComponentText("Is Multiblock of Size: " + ((TileEntityEnergizer) entity).getMultiblockSize()));
                         player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));

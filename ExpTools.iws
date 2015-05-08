@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b33171-6ac6-42a7-99de-c6ede8cfcbc5" name="Default" comment="" />
+    <list default="true" id="05b33171-6ac6-42a7-99de-c6ede8cfcbc5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-1.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-1.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-2.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-2.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-3.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-3.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-4.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-4.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-5.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-5.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-6.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-6.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-7.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-7.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/Energizer.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/Energizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExpTools.iws" afterPath="$PROJECT_DIR$/ExpTools.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-2.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-3.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-latest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-junk-earlystartup.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/latest.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/latest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/usernamecache.json" afterPath="$PROJECT_DIR$/IntelliJ/usernamecache.json" />
+    </list>
     <ignored path="ExpTools.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,14 +86,9 @@
       <file leaf-file-name="ClientProxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="765">
               <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="e#1061#1062#0" expanded="false" />
-                <element signature="e#1094#1095#0" expanded="false" />
-                <element signature="e#3008#3009#0" expanded="false" />
-                <element signature="e#3036#3037#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,7 +106,7 @@
       <file leaf-file-name="ItemNames.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -113,20 +128,10 @@
       <file leaf-file-name="TileEntityEnergizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6790924" vertical-offset="461" max-vertical-offset="5676">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.68881685" vertical-offset="2567" max-vertical-offset="4097">
+              <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5088#5089#0" expanded="true" />
-                <element signature="e#5150#5151#0" expanded="true" />
-                <element signature="e#7877#7878#0" expanded="true" />
-                <element signature="e#7917#7918#0" expanded="true" />
-                <element signature="e#7963#7964#0" expanded="true" />
-                <element signature="e#8005#8006#0" expanded="true" />
-                <element signature="e#8044#8045#0" expanded="true" />
-                <element signature="e#8084#8085#0" expanded="true" />
-                <element signature="e#8121#8122#0" expanded="true" />
-                <element signature="e#8163#8164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,12 +140,10 @@
       <file leaf-file-name="Energizer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1173">
-              <caret line="41" column="135" selection-start-line="41" selection-start-column="135" selection-end-line="41" selection-end-column="135" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1156">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2735#2736#0" expanded="true" />
-                <element signature="e#2763#2764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -249,6 +252,96 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -418,96 +511,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="com.AnZaNaMa.ExpTools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exptools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExpTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -770,7 +773,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32108107" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -816,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,39 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="7701">
           <caret line="273" column="25" selection-start-line="273" selection-start-column="25" selection-end-line="273" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2155#2156#0" expanded="false" />
-            <element signature="e#2183#2184#0" expanded="false" />
-            <element signature="e#2487#2488#0" expanded="false" />
-            <element signature="e#2551#2552#0" expanded="false" />
-            <element signature="e#8400#8401#0" expanded="false" />
-            <element signature="e#8431#8432#0" expanded="false" />
-            <element signature="e#8910#8911#0" expanded="false" />
-            <element signature="e#8983#8984#0" expanded="false" />
-            <element signature="e#14016#14017#0" expanded="false" />
-            <element signature="e#14044#14045#0" expanded="false" />
-            <element signature="e#14918#14919#0" expanded="false" />
-            <element signature="e#14951#14952#0" expanded="false" />
-            <element signature="e#14997#14998#0" expanded="false" />
-            <element signature="e#15031#15032#0" expanded="false" />
-            <element signature="e#15069#15070#0" expanded="false" />
-            <element signature="e#15104#15105#0" expanded="false" />
-            <element signature="e#15154#15155#0" expanded="false" />
-            <element signature="e#15192#15193#0" expanded="false" />
-            <element signature="e#15250#15251#0" expanded="false" />
-            <element signature="e#15281#15282#0" expanded="false" />
-            <element signature="e#15328#15329#0" expanded="false" />
-            <element signature="e#15374#15375#0" expanded="false" />
-            <element signature="e#15416#15417#0" expanded="false" />
-            <element signature="e#15461#15462#0" expanded="false" />
-            <element signature="e#15509#15510#0" expanded="false" />
-            <element signature="e#15558#15559#0" expanded="false" />
-            <element signature="e#15607#15608#0" expanded="false" />
-            <element signature="e#15656#15657#0" expanded="false" />
-            <element signature="e#15787#15788#0" expanded="false" />
-            <element signature="e#15819#15820#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11584327" vertical-offset="0" max-vertical-offset="1088">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75714284" vertical-offset="152" max-vertical-offset="833">
           <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73015875" vertical-offset="152" max-vertical-offset="850">
           <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,12 +1072,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1020">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#1061#1062#0" expanded="false" />
-            <element signature="e#1094#1095#0" expanded="false" />
-            <element signature="e#3008#3009#0" expanded="false" />
-            <element signature="e#3036#3037#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32380953" vertical-offset="0" max-vertical-offset="630">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,9 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87777776" vertical-offset="229" max-vertical-offset="1292">
           <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51428574" vertical-offset="305" max-vertical-offset="1496">
           <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1160,7 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327616" vertical-offset="2373" max-vertical-offset="21726">
           <caret line="257" column="25" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="106" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,9 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7031746" vertical-offset="322" max-vertical-offset="1258">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83809525" vertical-offset="101" max-vertical-offset="731">
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,14 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,32 +1177,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1173">
-          <caret line="41" column="135" selection-start-line="41" selection-start-column="135" selection-end-line="41" selection-end-column="135" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1156">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2735#2736#0" expanded="true" />
-            <element signature="e#2763#2764#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6790924" vertical-offset="461" max-vertical-offset="5676">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.68881685" vertical-offset="2567" max-vertical-offset="4097">
+          <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5088#5089#0" expanded="true" />
-            <element signature="e#5150#5151#0" expanded="true" />
-            <element signature="e#7877#7878#0" expanded="true" />
-            <element signature="e#7917#7918#0" expanded="true" />
-            <element signature="e#7963#7964#0" expanded="true" />
-            <element signature="e#8005#8006#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
-            <element signature="e#8084#8085#0" expanded="true" />
-            <element signature="e#8121#8122#0" expanded="true" />
-            <element signature="e#8163#8164#0" expanded="true" />
           </folding>
         </state>
       </provider>

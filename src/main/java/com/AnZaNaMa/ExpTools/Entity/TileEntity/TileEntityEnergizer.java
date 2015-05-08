@@ -30,30 +30,33 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
 
     public TileEntityEnergizer(){
         super();
-        this.updateTimer = 0;
+        this.updateTimer = 100;
         this.energyContained = 0;
-        if(completesMultiblock()){
-            this.isMultiblock = true;
-            this.multiblockSize = findMultiblockSize();
-            this.multiblockMultiplier = findMultiplier();
-            this.pickupArea = findPickupArea();
-        }
-        else{
-            this.isMultiblock = false;
-            this.multiblockSize = 1;
-            this.multiblockMultiplier = findMultiplier();
-            this.pickupArea = new AxisAlignedBB(this.pos.getX(), this.pos.getY(), this.pos.getZ(), this.pos.getX() + 1, this.pos.getY() + 2, this.pos.getZ() + 1);
-        }
         LogHelper.info("Tile Entity Position: " + this.pos.toString());
     }
 
     @Override
     public void update() {
         if (!this.worldObj.isRemote) {
+            if(updateTimer >= 100){
+                if(completesMultiblock()){
+                    this.isMultiblock = true;
+                    this.multiblockSize = findMultiblockSize();
+                    this.multiblockMultiplier = findMultiplier();
+                    this.pickupArea = findPickupArea();
+                    markDirty();
+                }
+                else{
+                    this.isMultiblock = false;
+                    this.multiblockSize = 1;
+                    this.multiblockMultiplier = findMultiplier();
+                    this.pickupArea = new AxisAlignedBB(this.pos.getX(), this.pos.getY(), this.pos.getZ(), this.pos.getX() + 1, this.pos.getY() + 2, this.pos.getZ() + 1);
+                }
+                updateTimer = 0;
+            }
             if(this.pickupArea == null){
                 findPickupArea();
             }
-            LogHelper.info("Looking for Entities Within: " + this.pickupArea.toString());
             List entities = this.worldObj.getEntitiesWithinAABB(Entity.class, this.pickupArea, IEntitySelector.selectAnything);
             for (int i = 0; i < entities.size(); i++) {
                 if (entities.get(i) instanceof EntityItem) {
@@ -70,16 +73,6 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
                         this.markDirty();
                     }
                 }
-            }
-            if(updateTimer == 100){
-                if(completesMultiblock()){
-                    this.isMultiblock = true;
-                    this.multiblockSize = findMultiblockSize();
-                    this.multiblockMultiplier = findMultiplier();
-                    this.pickupArea = findPickupArea();
-                    this.markDirty();
-                }
-                updateTimer = 0;
             }
             updateTimer++;
         }
@@ -129,7 +122,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 3; x < this.pos.getX() + 4; x++){
             for(int z = this.pos.getZ() - 3; z < this.pos.getZ() + 4; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)) == BlockExpTools.xpblock) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || new BlockPos(x, this.pos.getY(), z) == this.pos) {
 
                     } else {
                         stillMultiblock = false;
@@ -149,7 +142,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 2; x < this.pos.getX() + 3; x++){
             for(int z = this.pos.getZ() - 2; z < this.pos.getZ() + 3; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)) == BlockExpTools.xpblock) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || new BlockPos(x, this.pos.getY(), z) == this.pos) {
 
                     } else {
                         stillMultiblock = false;
@@ -169,7 +162,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 1; x < this.pos.getX() + 2; x++){
             for(int z = this.pos.getZ() - 1; z < this.pos.getZ() + 2; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)) == BlockExpTools.xpblock) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || new BlockPos(x, this.pos.getY(), z) == this.pos) {
 
                     } else {
                         stillMultiblock = false;
