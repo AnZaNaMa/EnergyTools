@@ -52,7 +52,7 @@ public class Energizer extends BlockContainer {
                         player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                     }
                 }
-                else{
+                else if(item != null){
                     player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                 }
             }

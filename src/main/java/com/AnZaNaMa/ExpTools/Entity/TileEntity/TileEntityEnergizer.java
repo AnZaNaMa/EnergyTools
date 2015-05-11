@@ -32,7 +32,6 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         super();
         this.updateTimer = 100;
         this.energyContained = 0;
-        LogHelper.info("Tile Entity Position: " + this.pos.toString());
     }
 
     @Override
@@ -71,6 +70,9 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
                     if (this.energyContained >= 50*this.multiblockMultiplier && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())) {
                         Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), 50*this.multiblockMultiplier);
                         this.markDirty();
+                    }
+                    else if(this.energyContained < 50 && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())){
+                        Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), this.energyContained);
                     }
                 }
             }
@@ -122,8 +124,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 3; x < this.pos.getX() + 4; x++){
             for(int z = this.pos.getZ() - 3; z < this.pos.getZ() + 4; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || new BlockPos(x, this.pos.getY(), z) == this.pos) {
-
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
                     } else {
                         stillMultiblock = false;
                         break;
@@ -142,8 +143,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 2; x < this.pos.getX() + 3; x++){
             for(int z = this.pos.getZ() - 2; z < this.pos.getZ() + 3; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || new BlockPos(x, this.pos.getY(), z) == this.pos) {
-
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
                     } else {
                         stillMultiblock = false;
                         break;
@@ -162,8 +162,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 1; x < this.pos.getX() + 2; x++){
             for(int z = this.pos.getZ() - 1; z < this.pos.getZ() + 2; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || new BlockPos(x, this.pos.getY(), z) == this.pos) {
-
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
                     } else {
                         stillMultiblock = false;
                         break;
@@ -179,22 +178,24 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
 
     private boolean completesMultiblock(){
         if(completesLargeMultiblock() || completesMediumMultiblock() || completesSmallMultiblock()){
+            LogHelper.info("Was Multiblock.");
             return true;
         }
         else{
+            LogHelper.info("Was not multiblock.");
             return false;
         }
     }
 
     private int findMultiblockSize(){
-        if(this.completesSmallMultiblock()){
-            return 3;
+        if(this.completesLargeMultiblock()){
+            return 7;
         }
-        else if(this.completesMediumMultiblock()){
+        else if(this.completesMediumMultiblock()) {
             return 5;
         }
-        else if(this.completesLargeMultiblock()){
-            return 7;
+        else if(this.completesSmallMultiblock()){
+            return 3;
         }
         else{
             return 1;
@@ -250,5 +251,9 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         else{
             return 1;
         }
+    }
+
+    public int getMultiplier(){
+        return this.multiblockMultiplier;
     }
 }

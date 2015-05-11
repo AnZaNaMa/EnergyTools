@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b33171-6ac6-42a7-99de-c6ede8cfcbc5" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\out\production\ExpTools\assets\exptools\textures\items\XPIngot variant 2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\ExpTools\src\main\resources\assets\exptools\textures\items\XPIngot variant 2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-1.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-1.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-2.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-2.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-3.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-3.log.gz" />
@@ -9,9 +11,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-5.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-5.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-6.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-6.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-7.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-07-7.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/Energizer.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Block/Energizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.class" afterPath="$PROJECT_DIR$/out/production/ExpTools/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExpTools.iws" afterPath="$PROJECT_DIR$/ExpTools.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" />
@@ -88,7 +94,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="765">
               <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1061#1062#0" expanded="false" />
+                <element signature="e#1094#1095#0" expanded="false" />
+                <element signature="e#3008#3009#0" expanded="false" />
+                <element signature="e#3036#3037#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +108,7 @@
       <file leaf-file-name="ItemExpTools.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="510">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding />
             </state>
@@ -106,7 +118,7 @@
       <file leaf-file-name="ItemNames.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/ItemNames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -116,23 +128,45 @@
       <file leaf-file-name="EnergySword.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TileEntityEnergizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3531" max-vertical-offset="4216">
+              <caret line="256" column="41" selection-start-line="256" selection-start-column="41" selection-end-line="256" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#8366#8367#0" expanded="true" />
+                <element signature="e#8406#8407#0" expanded="true" />
+                <element signature="e#9610#9611#0" expanded="true" />
+                <element signature="e#9658#9659#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityEnergizer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
+      <file leaf-file-name="EnergyToolsTESR.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68881685" vertical-offset="2567" max-vertical-offset="4097">
-              <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.6206349" vertical-offset="0" max-vertical-offset="1326">
+              <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TileEntitySpecialRenderer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,8 +174,8 @@
       <file leaf-file-name="Energizer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1156">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1156">
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,14 +213,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/World/WorldGenEnergyOre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/KeyBinds.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyIngot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/SmeltingHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/BlockExpTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/BlockNames.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/TileEntityReference.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergyTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/RedstoneHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/EnergyToolsEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Player/EnergyToolsLoadPlayer.java" />
@@ -207,6 +239,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/ExpTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/MultiblockPosition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java" />
       </list>
     </option>
@@ -513,6 +547,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.AnZaNaMa.ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.AnZaNaMa.ExpTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity.TileEntity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -760,8 +830,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -773,7 +843,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32108107" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -815,20 +885,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergyTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28587443" vertical-offset="0" max-vertical-offset="892">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/server/gui/IUpdatePlayerListBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.038116593" vertical-offset="0" max-vertical-offset="892">
@@ -911,14 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/item/ItemStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77015436" vertical-offset="3325" max-vertical-offset="14212">
-          <caret line="299" column="54" selection-start-line="299" selection-start-column="54" selection-end-line="299" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/util/AxisAlignedBB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41428572" vertical-offset="1371" max-vertical-offset="6290">
@@ -998,13 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64920634" vertical-offset="645" max-vertical-offset="1275">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/client/renderer/Tessellator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="630">
@@ -1072,7 +1113,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1020">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
+            <element signature="e#1094#1095#0" expanded="false" />
+            <element signature="e#3008#3009#0" expanded="false" />
+            <element signature="e#3036#3037#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,14 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87777776" vertical-offset="229" max-vertical-offset="1292">
           <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,13 +1196,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/item/ItemStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1161">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3873582" vertical-offset="305" max-vertical-offset="14212">
+          <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/CraftingHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75714284" vertical-offset="152" max-vertical-offset="884">
+          <caret line="43" column="140" selection-start-line="43" selection-start-column="140" selection-end-line="43" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/ItemExpTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,23 +1227,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergySword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1161">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Block/Energizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1156">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1156">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68881685" vertical-offset="2567" max-vertical-offset="4097">
-          <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3531" max-vertical-offset="4216">
+          <caret line="256" column="41" selection-start-line="256" selection-start-column="41" selection-end-line="256" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#8366#8367#0" expanded="true" />
+            <element signature="e#8406#8407#0" expanded="true" />
+            <element signature="e#9610#9611#0" expanded="true" />
+            <element signature="e#9658#9659#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/EnergyToolsTESR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6206349" vertical-offset="0" max-vertical-offset="1326">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

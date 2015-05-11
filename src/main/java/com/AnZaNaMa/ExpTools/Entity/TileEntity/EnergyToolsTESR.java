@@ -1,6 +1,7 @@
 package com.AnZaNaMa.ExpTools.Entity.TileEntity;
 
 import com.AnZaNaMa.ExpTools.Reference.Reference;
+import com.AnZaNaMa.ExpTools.Utility.LogHelper;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -20,7 +21,18 @@ public class EnergyToolsTESR extends TileEntitySpecialRenderer{
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f, int number){
-        ResourceLocation image = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer.png");
+        LogHelper.info("Rendering...");
+        ResourceLocation image;
+
+        if(tileEntity instanceof TileEntityEnergizer){
+            TileEntityEnergizer energizer = (TileEntityEnergizer)tileEntity;
+            LogHelper.info(energizer.getMultiplier());
+            image = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer.png");
+        }
+        else{
+            image = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer.png");
+        }
+
         Tessellator tessellator = Tessellator.getInstance();
         GL11.glPushMatrix();
         GL11.glPushAttrib(GL11.GL_ENABLE_BIT);
