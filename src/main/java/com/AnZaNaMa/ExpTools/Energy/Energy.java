@@ -8,6 +8,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
+import scala.actors.threadpool.Arrays;
+
+import java.util.ArrayList;
 
 /**
  * Created by andre_000 on 4/13/2015.
@@ -190,6 +193,7 @@ public class Energy {
             Blocks.wool.getUnlocalizedName(),
             Blocks.yellow_flower.getUnlocalizedName()
     };
+    public static ArrayList<String> lowEnergyValuesArray = new ArrayList<String>(Arrays.asList(lowEnergyValues));
 
     public static String[] mediumEnergyValues = new String[]{
             Items.armor_stand.getUnlocalizedName(),
@@ -283,6 +287,7 @@ public class Energy {
             Blocks.soul_sand.getUnlocalizedName(),
             Blocks.sticky_piston.getUnlocalizedName(),
     };
+    public static ArrayList<String> mediumEnergyValuesArray = new ArrayList<String>(Arrays.asList(mediumEnergyValues));
 
     public static String[] highEnergyValues = new String[]{
             Items.blaze_rod.getUnlocalizedName(),
@@ -315,6 +320,7 @@ public class Energy {
             Blocks.redstone_lamp.getUnlocalizedName(),
             Blocks.redstone_torch.getUnlocalizedName(),
     };
+    public static ArrayList<String> highEnergyValuesArray = new ArrayList<String>(Arrays.asList(highEnergyValues));
 
     public static String[] veryHighEnergyValues = new String[]{
             Items.diamond_axe.getUnlocalizedName(),
@@ -349,67 +355,31 @@ public class Energy {
             Blocks.redstone_block.getUnlocalizedName(),
             Blocks.redstone_ore.getUnlocalizedName(),
     };
+    public static ArrayList<String> veryHighEnergyValuesArray = new ArrayList<String>(Arrays.asList(veryHighEnergyValues));
 
     public static String[] ultimateEnergyValues = new String[]{
             Items.nether_star.getUnlocalizedName(),
             Blocks.dragon_egg.getUnlocalizedName(),
             BlockExpTools.energyblock.getUnlocalizedName()
     };
+    public static ArrayList<String> ultimateEnergyValuesArray = new ArrayList<String>(Arrays.asList(ultimateEnergyValues));
 
     public static int getItemEnergyValue(Item item){
-        Boolean hasBeenMatched = false;
-        for(int i=0; i < lowEnergyValues.length; i++){
-            if(item.getUnlocalizedName().equals(lowEnergyValues[i])){
-                hasBeenMatched = true;
-                break;
-            }
+        String name = item.getUnlocalizedName();
+        if(lowEnergyValuesArray.contains(name)){
+            return 10;
         }
-        if(!hasBeenMatched){
-            for(int i=0; i < mediumEnergyValues.length; i++){
-                if(item.getUnlocalizedName().equals(mediumEnergyValues[i])){
-                    hasBeenMatched = true;
-                    break;
-                }
-            }
-            if(!hasBeenMatched){
-                for(int i=0; i < highEnergyValues.length; i++){
-                    if(item.getUnlocalizedName().equals(highEnergyValues[i])){
-                        hasBeenMatched = true;
-                        break;
-                    }
-                }
-                if(!hasBeenMatched){
-                    for(int i=0; i < veryHighEnergyValues.length; i++){
-                        if(item.getUnlocalizedName().equals(veryHighEnergyValues[i])){
-                            hasBeenMatched = true;
-                            break;
-                        }
-                    }
-                    if(!hasBeenMatched){
-                        for(int i=0; i < ultimateEnergyValues.length; i++){
-                            if(item.getUnlocalizedName().equals(ultimateEnergyValues[i])){
-                                hasBeenMatched = true;
-                                break;
-                            }
-                        }
-                        if(hasBeenMatched){
-                            return 5000;
-                        }
-                        else{
-                            return 10;
-                        }
-                    }
-                    else{
-                        return 1000;
-                    }
-                }
-                else{
-                    return 200;
-                }
-            }
-            else{
-                return 50;
-            }
+        else if(mediumEnergyValuesArray.contains(name)){
+            return 50;
+        }
+        else if(highEnergyValuesArray.contains(name)){
+            return 200;
+        }
+        else if(veryHighEnergyValuesArray.contains(name)){
+            return 1000;
+        }
+        else if(ultimateEnergyValuesArray.contains(name)){
+            return 5000;
         }
         else{
             return 10;
