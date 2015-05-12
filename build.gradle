@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.8-1.0"
-group= "com.AnZaNaMa.ExpTools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "EXPTools"
+group= "com.AnZaNaMa.EnergyTools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "EnergyTools"
 
 minecraft {
     version = "1.8-11.14.0.1295-1.8"

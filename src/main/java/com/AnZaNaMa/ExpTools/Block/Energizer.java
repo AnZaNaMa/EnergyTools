@@ -1,7 +1,7 @@
 package com.AnZaNaMa.ExpTools.Block;
 
 import com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer;
-import com.AnZaNaMa.ExpTools.ExpTools;
+import com.AnZaNaMa.ExpTools.EnergyTools;
 import com.AnZaNaMa.ExpTools.Item.ItemExpTools;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -20,7 +20,7 @@ public class Energizer extends BlockContainer {
     public Energizer(Material material, String unlocalizedName, float localhardness, float localresistance){
         super(material);
         GameRegistry.registerBlock(this, unlocalizedName);
-        setCreativeTab(ExpTools.creativeTab);
+        setCreativeTab(EnergyTools.creativeTab);
         setHardness(localhardness);
         setResistance(localresistance);
         setUnlocalizedName(unlocalizedName);

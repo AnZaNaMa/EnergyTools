@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 public class RenderBlockRegister {
 
     public static void RegisterBlockRenderer(){
-        registerBlock(BlockExpTools.xpblock, 0);
+        registerBlock(BlockExpTools.energyblock, 0);
         registerBlock(BlockExpTools.energizer, 0);
         registerBlock(BlockExpTools.energyore, 0);
     }

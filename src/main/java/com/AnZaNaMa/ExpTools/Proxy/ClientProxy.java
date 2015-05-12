@@ -31,21 +31,21 @@ public class ClientProxy extends CommonProxy {
         RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
         renderItem.getItemModelMesher().register(ItemExpTools.infenergyorb, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.INFENERGYORB, "inventory"));
 
-        renderItem.getItemModelMesher().register(ItemExpTools.XPAxe, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.XPAXE, "inventory"));
+        renderItem.getItemModelMesher().register(ItemExpTools.energyaxe, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.ENERGYAXE, "inventory"));
 
-        renderItem.getItemModelMesher().register(ItemExpTools.XPPick, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.XPPICK, "inventory"));
+        renderItem.getItemModelMesher().register(ItemExpTools.energypick, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.ENERGYPICK, "inventory"));
 
-        renderItem.getItemModelMesher().register(ItemExpTools.XPShovel, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.XPSHOVEL, "inventory"));
+        renderItem.getItemModelMesher().register(ItemExpTools.energyshovel, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.ENERGYSHOVEL, "inventory"));
 
         renderItem.getItemModelMesher().register(ItemExpTools.energyingot, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.ENERGYINGOT, "inventory"));
 
         renderItem.getItemModelMesher().register(ItemExpTools.redbull, 0, new ModelResourceLocation(Reference.MODID + ":" + ItemNames.REDBULL, "inventory"));
 
-        renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.energyore), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.XPORE, "inventory"));
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.energyore), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.ENERGYORE, "inventory"));
 
         renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.energizer), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.ENERGIZER, "inventory"));
 
-        renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.xpblock), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.XPBLOCK, "inventory"));
+        renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockExpTools.energyblock), 0, new ModelResourceLocation(Reference.MODID + ":" + BlockNames.ENERGYBLOCK, "inventory"));
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEnergizer.class, new EnergyToolsTESR());
     }

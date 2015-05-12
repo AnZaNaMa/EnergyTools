@@ -5,7 +5,6 @@ import com.AnZaNaMa.ExpTools.Item.ItemExpTools;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potion;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -13,17 +12,17 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class CraftingHandler {
     public static void init(){
-        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.XPPick),
+        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energypick),
                 "III",
                 " S ",
                 " S ", 'I',new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
 
-        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.XPShovel),
+        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energyshovel),
                 " I ",
                 " S ",
                 " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
 
-        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.XPAxe),
+        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energyaxe),
                 " II",
                 " SI",
                 " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
@@ -36,14 +35,14 @@ public class CraftingHandler {
         GameRegistry.addShapedRecipe(new ItemStack(BlockExpTools.energizer),
                 "SRS",
                 "RER",
-                "SRS", 'S', new ItemStack(Blocks.stone), 'R', new ItemStack(Blocks.redstone_block), 'E', new ItemStack(BlockExpTools.xpblock));
+                "SRS", 'S', new ItemStack(Blocks.stone), 'R', new ItemStack(Blocks.redstone_block), 'E', new ItemStack(BlockExpTools.energyblock));
 
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.redbull),
                 "IBI",
                 "INI",
                 "ILI", 'I', new ItemStack(Items.iron_ingot), 'B', new ItemStack(Blocks.iron_bars), 'N', new ItemStack(Items.nether_star), 'L', new ItemStack(Items.potionitem, 1, 8235));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockExpTools.xpblock),
+        GameRegistry.addShapedRecipe(new ItemStack(BlockExpTools.energyblock),
                 "III",
                 "III",
                 "III", 'I', new ItemStack(ItemExpTools.energyingot));

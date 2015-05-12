@@ -2,7 +2,7 @@ package com.AnZaNaMa.ExpTools.Proxy;
 
 import com.AnZaNaMa.ExpTools.Block.BlockExpTools;
 import com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergyTools;
-import com.AnZaNaMa.ExpTools.ExpTools;
+import com.AnZaNaMa.ExpTools.EnergyTools;
 import com.AnZaNaMa.ExpTools.Handler.ConfigHandler;
 import com.AnZaNaMa.ExpTools.Handler.CraftingHandler;
 import com.AnZaNaMa.ExpTools.Handler.SmeltingHandler;
@@ -31,7 +31,7 @@ public abstract class CommonProxy implements IProxy {
 	
 	public void init(FMLInitializationEvent event)
     {
-        NetworkRegistry.INSTANCE.registerGuiHandler(ExpTools.instance, ExpTools.guiHandler);
+        NetworkRegistry.INSTANCE.registerGuiHandler(EnergyTools.instance, EnergyTools.guiHandler);
         GameRegistry.registerWorldGenerator(new WorldGenEnergyOre(), 5);
 	}
 	

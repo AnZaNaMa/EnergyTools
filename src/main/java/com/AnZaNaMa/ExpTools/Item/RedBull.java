@@ -1,6 +1,6 @@
 package com.AnZaNaMa.ExpTools.Item;
 
-import com.AnZaNaMa.ExpTools.ExpTools;
+import com.AnZaNaMa.ExpTools.EnergyTools;
 import com.AnZaNaMa.ExpTools.Reference.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +17,7 @@ public class RedBull extends Item {
     public RedBull(String name){
         GameRegistry.registerItem(this, name, Reference.MODID);
         this.setUnlocalizedName(name);
-        this.setCreativeTab(ExpTools.creativeTab);
+        this.setCreativeTab(EnergyTools.creativeTab);
     }
 
     @Override

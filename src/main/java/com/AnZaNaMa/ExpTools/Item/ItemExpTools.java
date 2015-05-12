@@ -5,20 +5,21 @@ import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemExpTools {
-    public static Item.ToolMaterial EXPERIENCE = EnumHelper.addToolMaterial("EXPERIENCE", 3, 0, 10.0F, 4.0F, 5);
-    public static Item XPPick;
-    public static Item XPAxe;
-    public static Item XPShovel;
-    public static Item XPSword;
-    public static Item XPHoe;
+    public static Item.ToolMaterial ENERGY = EnumHelper.addToolMaterial("ENERGY", 3, 0, 20.0F, 6.0F, 5);
+    public static Item energypick;
+    public static Item energyaxe;
+    public static Item energyshovel;
+    public static Item energysword;
+    public static Item energyhoe;
     public static Item infenergyorb;
     public static Item energyingot;
     public static Item redbull;
 
     public static void addItems(){
-        XPPick = new XPPick(EXPERIENCE, ItemNames.XPPICK);
-        XPShovel = new XPShovel(EXPERIENCE, ItemNames.XPSHOVEL);
-        XPAxe = new XPAxe(EXPERIENCE, ItemNames.XPAXE);
+        energypick = new EnergyPick(ENERGY, ItemNames.ENERGYPICK);
+        energyshovel = new EnergyShovel(ENERGY, ItemNames.ENERGYSHOVEL);
+        energyaxe = new EnergyAxe(ENERGY, ItemNames.ENERGYAXE);
+        energysword = new EnergySword(ENERGY, ItemNames.ENERGYSWORD);
         infenergyorb = new InfiniteEnergyOrb();
         energyingot = new EnergyIngot(ItemNames.ENERGYINGOT);
         redbull = new RedBull(ItemNames.REDBULL);

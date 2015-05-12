@@ -18,6 +18,6 @@ public class ModCreativeTabs extends CreativeTabs{
 
     @SideOnly(Side.CLIENT)
     public Item getTabIconItem() {
-        return Item.getItemFromBlock(BlockExpTools.xpblock);
+        return Item.getItemFromBlock(BlockExpTools.energyblock);
     }
 }

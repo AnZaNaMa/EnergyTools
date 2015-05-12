@@ -21,23 +21,38 @@ public class EnergyToolsTESR extends TileEntitySpecialRenderer{
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f, int number){
-        LogHelper.info("Rendering...");
-        ResourceLocation image;
+        ResourceLocation image1 = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer.png");
+        ResourceLocation image2 = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer2.png");
+        ResourceLocation image3 = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer3.png");
+        ResourceLocation image4 = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer4.png");
 
-        if(tileEntity instanceof TileEntityEnergizer){
-            TileEntityEnergizer energizer = (TileEntityEnergizer)tileEntity;
-            LogHelper.info(energizer.getMultiplier());
-            image = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer.png");
-        }
-        else{
-            image = new ResourceLocation(Reference.MODID + ":textures/blocks/energizer.png");
-        }
+
 
         Tessellator tessellator = Tessellator.getInstance();
         GL11.glPushMatrix();
         GL11.glPushAttrib(GL11.GL_ENABLE_BIT);
         GlStateManager.translate(x, y, z);
-        this.bindTexture(image);
+
+        if(tileEntity instanceof TileEntityEnergizer){
+            switch(((TileEntityEnergizer) tileEntity).getMultiblockSize()){
+                case 1:
+                    this.bindTexture(image1);
+                    break;
+                case 3:
+                    this.bindTexture(image2);
+                    break;
+                case 5:
+                    this.bindTexture(image3);
+                    break;
+                case 7:
+                    this.bindTexture(image4);
+                    break;
+                default:
+                    this.bindTexture(image1);
+                    break;
+            }
+        }
+
         GL11.glDisable(GL11.GL_LIGHTING);
         GL11.glDisable(GL11.GL_BLEND);
         GL11.glDepthMask(true);

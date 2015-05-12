@@ -353,7 +353,7 @@ public class Energy {
     public static String[] ultimateEnergyValues = new String[]{
             Items.nether_star.getUnlocalizedName(),
             Blocks.dragon_egg.getUnlocalizedName(),
-            BlockExpTools.xpblock.getUnlocalizedName()
+            BlockExpTools.energyblock.getUnlocalizedName()
     };
 
     public static int getItemEnergyValue(Item item){

@@ -13,7 +13,7 @@ import java.io.File;
  */
 public class ConfigHandler {
     public static Configuration config;
-    public static boolean enablexpblock = false;
+    public static boolean enableenergyblock = false;
 
     public static void init(File configFile){
         if(config == null){
@@ -29,7 +29,7 @@ public class ConfigHandler {
     }
 
     public void loadConfig(){
-        enablexpblock = config.getBoolean("enablexpblock", ConfigCategories.ENABLE_BLOCKS, true, "Set to false to disable Experience Block");
+        enableenergyblock = config.getBoolean("enableenergyblock", ConfigCategories.ENABLE_BLOCKS, true, "Set to false to disable Energy Block");
 
         if(config.hasChanged()){
             config.save();

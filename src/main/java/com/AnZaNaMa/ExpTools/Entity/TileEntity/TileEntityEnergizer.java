@@ -11,6 +11,9 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.server.gui.IUpdatePlayerListBox;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
@@ -43,13 +46,16 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
                     this.multiblockSize = findMultiblockSize();
                     this.multiblockMultiplier = findMultiplier();
                     this.pickupArea = findPickupArea();
-                    markDirty();
+                    worldObj.markBlockForUpdate(pos);
+                    this.markDirty();
                 }
                 else{
                     this.isMultiblock = false;
                     this.multiblockSize = 1;
                     this.multiblockMultiplier = findMultiplier();
                     this.pickupArea = new AxisAlignedBB(this.pos.getX(), this.pos.getY(), this.pos.getZ(), this.pos.getX() + 1, this.pos.getY() + 2, this.pos.getZ() + 1);
+                    worldObj.markBlockForUpdate(pos);
+                    this.markDirty();
                 }
                 updateTimer = 0;
             }
@@ -63,16 +69,20 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
                     int energyToMachine = Energy.getItemEnergyValue(items.getItem()) * this.multiblockMultiplier;
                     ((EntityItem) entities.get(i)).setInfinitePickupDelay();
                     this.energyContained += (energyToMachine * ((EntityItem) entities.get(i)).getEntityItem().stackSize);
+                    worldObj.markBlockForUpdate(pos);
                     this.markDirty();
                     ((EntityItem) entities.get(i)).getEntityItem().stackSize = 0;
                 }
                 if (entities.get(i) instanceof EntityPlayer) {
                     if (this.energyContained >= 50*this.multiblockMultiplier && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())) {
                         Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), 50*this.multiblockMultiplier);
+                        worldObj.markBlockForUpdate(pos);
                         this.markDirty();
                     }
                     else if(this.energyContained < 50 && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())){
                         Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), this.energyContained);
+                        worldObj.markBlockForUpdate(pos);
+                        this.markDirty();
                     }
                 }
             }
@@ -83,6 +93,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
     @Override
     public void readFromNBT(NBTTagCompound compound){
         super.readFromNBT(compound);
+
         this.energyContained = compound.getInteger("Energy");
         this.isMultiblock = compound.getBoolean("IsMultiblock");
         this.multiblockSize = compound.getInteger("MultiblockSize");
@@ -93,6 +104,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
     @Override
     public void writeToNBT(NBTTagCompound compound){
         super.writeToNBT(compound);
+
         compound.setInteger("Energy", this.energyContained);
         compound.setInteger("MultiblockSize", this.multiblockSize);
         compound.setInteger("Multiplier", this.multiblockMultiplier);
@@ -124,7 +136,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 3; x < this.pos.getX() + 4; x++){
             for(int z = this.pos.getZ() - 3; z < this.pos.getZ() + 4; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
                     } else {
                         stillMultiblock = false;
                         break;
@@ -143,7 +155,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 2; x < this.pos.getX() + 3; x++){
             for(int z = this.pos.getZ() - 2; z < this.pos.getZ() + 3; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
                     } else {
                         stillMultiblock = false;
                         break;
@@ -162,7 +174,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         for(int x = this.pos.getX() - 1; x < this.pos.getX() + 2; x++){
             for(int z = this.pos.getZ() - 1; z < this.pos.getZ() + 2; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.xpblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockExpTools.energizer) {
                     } else {
                         stillMultiblock = false;
                         break;
@@ -255,5 +267,17 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
 
     public int getMultiplier(){
         return this.multiblockMultiplier;
+    }
+
+    @Override
+    public Packet getDescriptionPacket(){
+        NBTTagCompound syncData = new NBTTagCompound();
+        this.writeToNBT(syncData);
+        return new S35PacketUpdateTileEntity(pos, 1, syncData);
+    }
+
+    @Override
+    public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt){
+        readFromNBT(pkt.getNbtCompound());
     }
 }
