@@ -5,8 +5,8 @@ Time: 4/14/15 12:57 PM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at com.AnZaNaMa.ExpTools.Energy.EnergyInit.init(EnergyInit.java:14)
-	at com.AnZaNaMa.ExpTools.ExpTools.init(ExpTools.java:59)
+	at com.AnZaNaMa.EnergyTools.Energy.EnergyInit.init(EnergyInit.java:14)
+	at com.AnZaNaMa.EnergyTools.ExpTools.init(ExpTools.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,8 +58,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.AnZaNaMa.ExpTools.Energy.EnergyInit.init(EnergyInit.java:14)
-	at com.AnZaNaMa.ExpTools.ExpTools.init(ExpTools.java:59)
+	at com.AnZaNaMa.EnergyTools.Energy.EnergyInit.init(EnergyInit.java:14)
+	at com.AnZaNaMa.EnergyTools.ExpTools.init(ExpTools.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

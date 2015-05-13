@@ -7,7 +7,7 @@ Description: Rendering Block Entity
 java.lang.IllegalStateException: Not building!
 	at net.minecraft.client.renderer.WorldRenderer.finishDrawing(WorldRenderer.java:465)
 	at net.minecraft.client.renderer.Tessellator.draw(Tessellator.java:26)
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.EnergyToolsTESR.renderTileEntityAt(EnergyToolsTESR.java:27)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.EnergyToolsTESR.renderTileEntityAt(EnergyToolsTESR.java:27)
 	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:137)
 	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:120)
 	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:655)
@@ -39,15 +39,15 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Stacktrace:
 	at net.minecraft.client.renderer.WorldRenderer.finishDrawing(WorldRenderer.java:465)
 	at net.minecraft.client.renderer.Tessellator.draw(Tessellator.java:26)
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.EnergyToolsTESR.renderTileEntityAt(EnergyToolsTESR.java:27)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.EnergyToolsTESR.renderTileEntityAt(EnergyToolsTESR.java:27)
 
 -- Block Entity Details --
 Details:
-	Name: energizerTileEntity // com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer
-	Block type: ID #200 (tile.energizer // com.AnZaNaMa.ExpTools.Block.Energizer)
+	Name: energizerTileEntity // com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer
+	Block type: ID #200 (tile.energizer // com.AnZaNaMa.EnergyTools.Block.Energizer)
 	Block data value: 0 / 0x0 / 0b0000
 	Block location: World: (172,66,245), Chunk: (at 12,4,5 in 10,15; contains blocks 160,0,240 to 175,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
-	Actual block type: ID #200 (tile.energizer // com.AnZaNaMa.ExpTools.Block.Energizer)
+	Actual block type: ID #200 (tile.energizer // com.AnZaNaMa.EnergyTools.Block.Energizer)
 	Actual block data value: 0 / 0x0 / 0b0000
 Stacktrace:
 	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:137)

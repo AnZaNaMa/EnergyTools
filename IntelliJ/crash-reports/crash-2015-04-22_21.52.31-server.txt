@@ -5,7 +5,7 @@ Time: 4/22/15 9:52 PM
 Description: Ticking block entity
 
 java.lang.ClassCastException: net.minecraft.entity.passive.EntityRabbit cannot be cast to net.minecraft.entity.item.EntityItem
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:56)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:56)
 	at net.minecraft.world.World.updateEntities(World.java:1720)
 	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:571)
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
@@ -20,15 +20,15 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:56)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:56)
 
 -- Block entity being ticked --
 Details:
-	Name: energizerTileEntity // com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer
-	Block type: ID #200 (tile.energizer // com.AnZaNaMa.ExpTools.Block.Energizer)
+	Name: energizerTileEntity // com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer
+	Block type: ID #200 (tile.energizer // com.AnZaNaMa.EnergyTools.Block.Energizer)
 	Block data value: 0 / 0x0 / 0b0000
 	Block location: World: (228,68,223), Chunk: (at 4,4,15 in 14,13; contains blocks 224,0,208 to 239,255,223), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
-	Actual block type: ID #200 (tile.energizer // com.AnZaNaMa.ExpTools.Block.Energizer)
+	Actual block type: ID #200 (tile.energizer // com.AnZaNaMa.EnergyTools.Block.Energizer)
 	Actual block data value: 0 / 0x0 / 0b0000
 Stacktrace:
 	at net.minecraft.world.World.updateEntities(World.java:1720)
