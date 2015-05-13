@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by andre_000 on 4/18/2015.
  */
-public class energyore extends Block {
+public class energyore extends Block implements IEnergyBlock{
     public energyore(String unlocalizedName, Material material, float localHardness, float localResistance){
         super(material);
         GameRegistry.registerBlock(this, unlocalizedName);
@@ -16,6 +16,9 @@ public class energyore extends Block {
         this.setUnlocalizedName(unlocalizedName);
         this.setHardness(localHardness);
         this.setResistance(localResistance);
+    }
 
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 }

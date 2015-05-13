@@ -1,0 +1,15 @@
+tile.energyblock.name=Energetic Block
+tile.energyore.name=Energetic Ore
+tile.energizer.name=Energizer
+
+item.energypick.name=Energetic Pickaxe
+item.energyaxe.name=Energetic Axe
+item.energyshovel.name=Energetic Spade
+item.energysword.name=Energetic Blade
+item.energyhoe.name=Energetic Tiller
+
+item.energyingot.name=Energetic Ingot
+item.infenergyorb.name=Energetic Debug Item
+item.redbull.name=Red Bison
+
+itemGroup.EnergyTab=Energy Tools

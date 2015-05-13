@@ -1,6 +1,7 @@
 package com.AnZaNaMa.EnergyTools.Item;
 
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
+import com.AnZaNaMa.EnergyTools.Utility.LogHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -22,6 +23,8 @@ public class RenderItemRegister {
     }
 
     public static void registerItem(Item item, int meta){
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName(), "inventory"));
+        if(item instanceof IEnergyItem) {
+            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + ((IEnergyItem) item).getName(), "inventory"));
+        }
     }
 }

@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 5/4/2015.
  */
-public class RedBull extends Item {
+public class RedBull extends Item implements IEnergyItem{
     public RedBull(String name){
         GameRegistry.registerItem(this, name, Reference.MODID);
         this.setUnlocalizedName(name);
@@ -63,6 +63,10 @@ public class RedBull extends Item {
                 }
             }
         }
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 
 }

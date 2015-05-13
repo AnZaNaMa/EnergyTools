@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * Created by Andrew Graber on 2/25/2015.
  */
-public class EnergyPick extends ItemPickaxe {
+public class EnergyPick extends ItemPickaxe implements IEnergyItem{
 
     public EnergyPick(ToolMaterial material, String unlocalizedName){
         super(material);
@@ -52,5 +52,9 @@ public class EnergyPick extends ItemPickaxe {
         MinecraftServer server = MinecraftServer.getServer();
         EntityPlayerMP playerMP = server.getConfigurationManager().getPlayerByUsername(Reference.PLAYERNAME);
         dataList.add("Player Energy: " + playerMP.getEntityData().getInteger("Energy"));
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 }

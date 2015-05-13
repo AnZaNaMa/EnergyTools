@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 2/25/2015.
  */
-public class energyblock extends Block {
+public class energyblock extends Block implements IEnergyBlock{
 
     public energyblock(String unlocalizedName, Material material, float localHardness, float localResistance){
         super(material);
@@ -20,6 +20,10 @@ public class energyblock extends Block {
     }
     public energyblock(String unlocalizedName, Material material){
         this(unlocalizedName, material, 1.5F, 10.0F);
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 
 }

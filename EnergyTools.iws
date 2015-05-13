@@ -2,97 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b33171-6ac6-42a7-99de-c6ede8cfcbc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Handler/EnergyToolsEventHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Energy/EnergyTransfer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TESR/RegisterTESR.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Handler/SmeltingHandler.java" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Handler\EnergyToolsEventHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Handler\SmeltingHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\resources\mcmod.info" afterPath="" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Block\BlockExpTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/BlockEnergyTools.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Block\Energizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/Energizer.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Block\energyblock.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyblock.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Block\energyore.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyore.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Client\GUI\GuiFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/GuiFactory.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Client\GUI\ModGUIConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/ModGUIConfig.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Client\GUI\ModGUIEnergy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/ModGUIEnergy.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Client\GUI\ModGUIHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/ModGUIHandler.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\CreativeTabs\ModCreativeTabs.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/CreativeTabs/ModCreativeTabs.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\EnergyTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/EnergyTools.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Energy\Energy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Energy/Energy.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Entity\TileEntity\EnergyToolsTESR.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TESR/EnergizerTESR.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Entity\TileEntity\TileEntityEnergizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TileEntityEnergizer.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Entity\TileEntity\TileEntityEnergyTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TileEntityEnergyTools.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Handler\ConfigHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Handler/ConfigHandler.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Handler\CraftingHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Handler/CraftingHandler.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\EnergyAxe.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\EnergyIngot.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\EnergyPick.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\EnergyShovel.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\EnergySword.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\InfiniteEnergyOrb.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\ItemExpTools.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/ItemExpTools.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Item\RedBull.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RedBull.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Player\EnergyPlayerConstructor.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Player/EnergyPlayerConstructor.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Proxy\ClientProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/ClientProxy.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Proxy\CommonProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/CommonProxy.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Proxy\IProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/IProxy.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Proxy\ServerProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/ServerProxy.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Reference\BlockNames.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Reference/BlockNames.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Reference\ConfigCategories.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Reference/ConfigCategories.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Reference\ItemNames.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Reference/ItemNames.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Reference\Reference.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Reference/Reference.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Reference\TileEntityReference.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Reference/TileEntityReference.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Render\Blocks\RenderBlockRegister.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Utility\KeyBinds.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Utility/KeyBinds.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Utility\LogHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Utility/LogHelper.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Utility\MultiblockPosition.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Utility/MultiblockPosition.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\Utility\RedstoneHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Utility/RedstoneHelper.java" />
-      <change type="MOVED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\java\com\AnZaNaMa\ExpTools\World\WorldGenEnergyOre.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/World/WorldGenEnergyOre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-12-1.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-12-1.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/2015-05-12-2.log.gz" afterPath="$PROJECT_DIR$/IntelliJ/logs/2015-05-12-2.log.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/IEnergyBlock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/IEnergyItem.java" />
+      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\out\production\EnergyTools\assets\mcmod.info" afterPath="" />
+      <change type="DELETED" beforePath="C:\workspace\Minecraft Mods\1.8\EnergyTools\src\main\resources\assets\mcmod.info" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/Energizer.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/Energizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Energy/Energy.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Energy/Energy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyPick.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyPick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergySword.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/EnergySword.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/RedBull.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/RedBull.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/energyblock.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/energyblock.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/energyore.class" afterPath="$PROJECT_DIR$/out/production/EnergyTools/com/AnZaNaMa/EnergyTools/Block/energyore.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/level.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/level.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/level.dat_old" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/level.dat_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/region/r.-1.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/region/r.0.0.mca" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/region/r.0.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/session.lock" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/session.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/data/villages.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/DIM1/data/villages_end.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/DIM1/data/villages_end.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/saves/New World/DIM-1/data/villages_nether.dat" afterPath="$PROJECT_DIR$/IntelliJ/saves/New World/DIM-1/data/villages_nether.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/Energizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/Energizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EnergyTools.iws" afterPath="$PROJECT_DIR$/EnergyTools.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-02-26_00.00.11-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-02-26_00.00.11-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-14_12.57.10-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-14_12.57.10-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-15_18.17.33-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-15_18.17.33-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-17_02.04.50-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-17_02.04.50-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-18_22.36.49-server.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-18_22.36.49-server.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_16.05.36-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_16.05.36-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_20.32.51-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_20.32.51-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_21.52.31-server.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_21.52.31-server.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_22.11.51-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-22_22.11.51-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-23_08.24.31-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-23_08.24.31-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-29_15.17.20-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-04-29_15.17.20-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-05_17.50.10-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-05_17.50.10-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-06_09.54.05-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-06_09.54.05-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-06_10.19.24-server.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-06_10.19.24-server.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-07_13.18.30-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-07_13.18.30-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-07_23.12.28-server.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-07_23.12.28-server.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-08_16.27.54-client.txt" afterPath="$PROJECT_DIR$/IntelliJ/crash-reports/crash-2015-05-08_16.27.54-client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/blockstates/energizer.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/blockstates/energizer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/block/energizer.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/block/energizer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energizer.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energizer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyaxe.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyaxe.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/blockstates/energyblock.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/blockstates/energyblock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/block/energyblock.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/block/energyblock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyblock.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyblock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyingot.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyingot.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/blockstates/energyore.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/blockstates/energyore.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/block/energyore.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/block/energyore.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyore.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyore.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energypick.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energypick.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyshovel.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyshovel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energysword.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energysword.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RedBull.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RedBull.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyblock.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyblock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyore.java" afterPath="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-3.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-client-latest.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/fml-junk-earlystartup.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/infenergyorb.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/infenergyorb.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/logs/latest.log" afterPath="$PROJECT_DIR$/IntelliJ/logs/latest.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/redbull.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/redbull.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntelliJ/usernamecache.json" afterPath="$PROJECT_DIR$/IntelliJ/usernamecache.json" />
     </list>
     <ignored path="ExpTools.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -154,50 +111,7 @@
     <favorites_list name="ExpTools" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="EnergyTools.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/EnergyTools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="952">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/ClientProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RenderItemRegister.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45873016" vertical-offset="0" max-vertical-offset="630">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemNames.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Reference/ItemNames.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -205,14 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/KeyBinds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyIngot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/SmeltingHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Reference/TileEntityReference.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Entity/TileEntity/TileEntityEnergyTools.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/CommonProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Utility/RedstoneHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Handler/EnergyToolsEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Player/EnergyToolsLoadPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/InfiniteEnergyOrb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Player/EnergyPlayerConstructor.java" />
@@ -241,23 +147,34 @@
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyPick.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Item/EnergyShovel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/EnergyTools.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/ExpTools/Proxy/ClientProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/RegisterTESR.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TESR/RegisterTESR.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/ClientProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Energy/EnergyTransfer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/ItemExpTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/EnergyTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/IEnergyItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RedBull.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/IEnergyBlock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/Energizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyblock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -288,7 +205,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -455,6 +372,16 @@
               <option name="myItemId" value="EnergyTools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EnergyTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EnergyTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com.AnZaNaMa.EnergyTools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
@@ -510,18 +437,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Item" />
+              <option name="myItemId" value="Block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -589,100 +506,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TileEntity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TileEntity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TESR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnergyTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -935,8 +758,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -946,9 +769,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15891892" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32108107" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -990,48 +813,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/ModGUIConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13340807" vertical-offset="0" max-vertical-offset="892">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/ModGUIEnergy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7051569" vertical-offset="0" max-vertical-offset="1139">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Client/GUI/ModGUIHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13340807" vertical-offset="0" max-vertical-offset="892">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/CreativeTabs/ModCreativeTabs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22869955" vertical-offset="0" max-vertical-offset="892">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Energy/Energy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3811149" vertical-offset="5615" max-vertical-offset="7463">
-          <caret line="357" column="0" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TESR/EnergizerTESR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46636772" vertical-offset="128" max-vertical-offset="1581">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Entity/TileEntity/TileEntityEnergizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3811149" vertical-offset="1960" max-vertical-offset="4522">
@@ -1160,14 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2984127" vertical-offset="152" max-vertical-offset="1292">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EnergyTools.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6531605" vertical-offset="1020" max-vertical-offset="11424">
@@ -1196,24 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.995238" vertical-offset="1887" max-vertical-offset="2890">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/Energizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.053968254" vertical-offset="0" max-vertical-offset="1156">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19058296" vertical-offset="0" max-vertical-offset="892">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1248,62 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="630">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6206349" vertical-offset="0" max-vertical-offset="630">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6571429" vertical-offset="283" max-vertical-offset="1088">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6031746" vertical-offset="283" max-vertical-offset="1054">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6337115" vertical-offset="306" max-vertical-offset="1020">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62222224" vertical-offset="305" max-vertical-offset="1088">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/energytools/models/item/energyhoe.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22516556" vertical-offset="0" max-vertical-offset="604">
@@ -1312,26 +1011,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21587302" vertical-offset="0" max-vertical-offset="884">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/client/renderer/ItemModelMesher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="793" max-vertical-offset="1462">
           <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/ItemExpTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5936508" vertical-offset="0" max-vertical-offset="630">
-          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1352,28 +1035,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/EnergyTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="952">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/client/resources/model/ModelResourceLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="181" max-vertical-offset="1292">
           <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/ClientProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1386,10 +1051,200 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/ItemExpTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.0.1295-1.8/snapshot_nodoc/20141130/forgeSrc-1.8-11.14.0.1295-1.8-sources.jar!/net/minecraft/world/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08427877" vertical-offset="3416" max-vertical-offset="59704">
+          <caret line="306" column="19" selection-start-line="306" selection-start-column="19" selection-end-line="306" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="630">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/IEnergyItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="630">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyAxe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="1156">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyHoe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4132901" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyIngot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43174604" vertical-offset="0" max-vertical-offset="630">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyPick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2968254" vertical-offset="169" max-vertical-offset="1122">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergyShovel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8920635" vertical-offset="475" max-vertical-offset="1173">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2240#2241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/EnergySword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89047617" vertical-offset="0" max-vertical-offset="697">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/InfiniteEnergyOrb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86507934" vertical-offset="254" max-vertical-offset="952">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RedBull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86507934" vertical-offset="492" max-vertical-offset="1190">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2898#2899#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/EnergyTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64761907" vertical-offset="289" max-vertical-offset="952">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/IEnergyBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16190477" vertical-offset="0" max-vertical-offset="630">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/Energizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0809524" vertical-offset="203" max-vertical-offset="1037">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding>
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2916#2917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="630">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Item/RenderItemRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45873016" vertical-offset="0" max-vertical-offset="630">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.5936508" vertical-offset="0" max-vertical-offset="630">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/energyblock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5126984" vertical-offset="0" max-vertical-offset="630">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#949#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83809525" vertical-offset="679" max-vertical-offset="1309">
+          <caret line="71" column="44" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnZaNaMa/EnergyTools/Block/RenderBlockRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5126984" vertical-offset="0" max-vertical-offset="630">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>

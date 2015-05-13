@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by andre_000 on 3/6/2015.
  */
-public class EnergyAxe extends ItemAxe {
+public class EnergyAxe extends ItemAxe implements IEnergyItem{
 
     public EnergyAxe(Item.ToolMaterial material, String unlocalizedName){
         super(material);
@@ -54,5 +54,9 @@ public class EnergyAxe extends ItemAxe {
         MinecraftServer server = MinecraftServer.getServer();
         EntityPlayerMP playerMP = server.getConfigurationManager().getPlayerByUsername(Reference.PLAYERNAME);
         dataList.add("Player Energy: " + playerMP.getEntityData().getInteger("Energy"));
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 }

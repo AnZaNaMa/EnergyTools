@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 5/5/2015.
  */
-public class EnergySword extends ItemSword{
+public class EnergySword extends ItemSword implements IEnergyItem{
     public EnergySword(Item.ToolMaterial toolMaterial, String unlocalizedName){
         super(toolMaterial);
         GameRegistry.registerItem(this, unlocalizedName, Reference.MODID);
@@ -35,5 +35,9 @@ public class EnergySword extends ItemSword{
         else{
             return false;
         }
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 }
