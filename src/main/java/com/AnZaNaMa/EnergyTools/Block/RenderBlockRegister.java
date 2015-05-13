@@ -1,5 +1,6 @@
 package com.AnZaNaMa.EnergyTools.Block;
 
+import com.AnZaNaMa.EnergyTools.Item.IEnergyItem;
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -18,6 +19,7 @@ public class RenderBlockRegister {
     }
 
     public static void registerBlock(Block block, int meta){
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID+":"+ block.getUnlocalizedName(), "inventory"));
+        if(block instanceof IEnergyBlock)
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID + ":" + ((IEnergyBlock)block).getName(), "inventory"));
     }
 }

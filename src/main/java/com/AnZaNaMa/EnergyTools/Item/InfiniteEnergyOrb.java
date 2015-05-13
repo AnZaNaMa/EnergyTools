@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by andre_000 on 4/13/2015.
  */
-public class InfiniteEnergyOrb extends Item{
+public class InfiniteEnergyOrb extends Item implements IEnergyItem{
 
     public InfiniteEnergyOrb(String unlocalizedName){
         GameRegistry.registerItem(this, unlocalizedName);
@@ -48,6 +48,10 @@ public class InfiniteEnergyOrb extends Item{
         else{
             return itemStackIn;
         }
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 
 }

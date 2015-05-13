@@ -1,5 +1,6 @@
 package com.AnZaNaMa.EnergyTools.Item;
 
+import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
 import com.AnZaNaMa.EnergyTools.Energy.EnergyTransfer;
 import com.AnZaNaMa.EnergyTools.EnergyTools;
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
@@ -22,7 +23,7 @@ import java.util.List;
 /**
  * Created by andre_000 on 3/6/2015.
  */
-public class EnergyShovel extends ItemSpade {
+public class EnergyShovel extends ItemSpade implements IEnergyItem{
 
     public EnergyShovel(Item.ToolMaterial material, String unlocalizedName){
         super(material);
@@ -54,5 +55,9 @@ public class EnergyShovel extends ItemSpade {
         MinecraftServer server = MinecraftServer.getServer();
         EntityPlayerMP playerMP = server.getConfigurationManager().getPlayerByUsername(Reference.PLAYERNAME);
         dataList.add("Player Energy: " + playerMP.getEntityData().getInteger("Energy"));
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 }

@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 5/12/2015.
  */
-public class EnergyHoe extends ItemHoe {
+public class EnergyHoe extends ItemHoe implements IEnergyItem{
 
     public EnergyHoe(ToolMaterial material, String unlocalizedName){
         super(material);
@@ -47,6 +47,10 @@ public class EnergyHoe extends ItemHoe {
                 return false;
             }
         }
+    }
+
+    public String getName(){
+        return this.getUnlocalizedName().substring(5);
     }
 
 
