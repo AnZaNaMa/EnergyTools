@@ -5,10 +5,10 @@ Time: 2/26/15 12:00 AM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at com.AnZaNaMa.ExpTools.Render.Blocks.RenderBlockRegister.registerBlock(RenderBlockRegister.java:20)
-	at com.AnZaNaMa.ExpTools.Render.Blocks.RenderBlockRegister.RegisterBlockRenderer(RenderBlockRegister.java:16)
-	at com.AnZaNaMa.ExpTools.Proxy.ClientProxy.init(ClientProxy.java:18)
-	at com.AnZaNaMa.ExpTools.ExpTools.init(ExpTools.java:41)
+	at com.AnZaNaMa.EnergyTools.Block.RenderBlockRegister.registerBlock(RenderBlockRegister.java:20)
+	at com.AnZaNaMa.EnergyTools.Block.RenderBlockRegister.RegisterBlockRenderer(RenderBlockRegister.java:16)
+	at com.AnZaNaMa.EnergyTools.Proxy.ClientProxy.init(ClientProxy.java:18)
+	at com.AnZaNaMa.EnergyTools.ExpTools.init(ExpTools.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,10 +60,10 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.AnZaNaMa.ExpTools.Render.Blocks.RenderBlockRegister.registerBlock(RenderBlockRegister.java:20)
-	at com.AnZaNaMa.ExpTools.Render.Blocks.RenderBlockRegister.RegisterBlockRenderer(RenderBlockRegister.java:16)
-	at com.AnZaNaMa.ExpTools.Proxy.ClientProxy.init(ClientProxy.java:18)
-	at com.AnZaNaMa.ExpTools.ExpTools.init(ExpTools.java:41)
+	at com.AnZaNaMa.EnergyTools.Block.RenderBlockRegister.registerBlock(RenderBlockRegister.java:20)
+	at com.AnZaNaMa.EnergyTools.Block.RenderBlockRegister.RegisterBlockRenderer(RenderBlockRegister.java:16)
+	at com.AnZaNaMa.EnergyTools.Proxy.ClientProxy.init(ClientProxy.java:18)
+	at com.AnZaNaMa.EnergyTools.ExpTools.init(ExpTools.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

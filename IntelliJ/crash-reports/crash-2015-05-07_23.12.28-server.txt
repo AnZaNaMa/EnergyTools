@@ -5,7 +5,7 @@ Time: 5/7/15 11:12 PM
 Description: Ticking block entity
 
 java.lang.NullPointerException: Ticking block entity
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:44)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:44)
 	at net.minecraft.world.World.updateEntities(World.java:1720)
 	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:571)
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
@@ -20,15 +20,15 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:44)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:44)
 
 -- Block entity being ticked --
 Details:
-	Name: energizerTileEntity // com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer
-	Block type: ID #200 (tile.energizer // com.AnZaNaMa.ExpTools.Block.Energizer)
+	Name: energizerTileEntity // com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer
+	Block type: ID #200 (tile.energizer // com.AnZaNaMa.EnergyTools.Block.Energizer)
 	Block data value: 0 / 0x0 / 0b0000
 	Block location: World: (171,62,167), Chunk: (at 11,3,7 in 10,10; contains blocks 160,0,160 to 175,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
-	Actual block type: ID #200 (tile.energizer // com.AnZaNaMa.ExpTools.Block.Energizer)
+	Actual block type: ID #200 (tile.energizer // com.AnZaNaMa.EnergyTools.Block.Energizer)
 	Actual block data value: 0 / 0x0 / 0b0000
 Stacktrace:
 	at net.minecraft.world.World.updateEntities(World.java:1720)

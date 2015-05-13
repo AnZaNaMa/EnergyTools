@@ -5,10 +5,10 @@ Time: 5/7/15 1:18 PM
 Description: Unexpected error
 
 java.lang.NullPointerException: Unexpected error
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.completesLargeMultiblock(TileEntityEnergizer.java:127)
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.completesMultiblock(TileEntityEnergizer.java:172)
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.<init>(TileEntityEnergizer.java:34)
-	at com.AnZaNaMa.ExpTools.Block.Energizer.createNewTileEntity(Energizer.java:29)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.completesLargeMultiblock(TileEntityEnergizer.java:127)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.completesMultiblock(TileEntityEnergizer.java:172)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.<init>(TileEntityEnergizer.java:34)
+	at com.AnZaNaMa.EnergyTools.Block.Energizer.createNewTileEntity(Energizer.java:29)
 	at net.minecraft.block.Block.createTileEntity(Block.java:1249)
 	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:725)
 	at net.minecraft.world.World.setBlockState(World.java:329)
@@ -41,10 +41,10 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.completesLargeMultiblock(TileEntityEnergizer.java:127)
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.completesMultiblock(TileEntityEnergizer.java:172)
-	at com.AnZaNaMa.ExpTools.Entity.TileEntity.TileEntityEnergizer.<init>(TileEntityEnergizer.java:34)
-	at com.AnZaNaMa.ExpTools.Block.Energizer.createNewTileEntity(Energizer.java:29)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.completesLargeMultiblock(TileEntityEnergizer.java:127)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.completesMultiblock(TileEntityEnergizer.java:172)
+	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.<init>(TileEntityEnergizer.java:34)
+	at com.AnZaNaMa.EnergyTools.Block.Energizer.createNewTileEntity(Energizer.java:29)
 	at net.minecraft.block.Block.createTileEntity(Block.java:1249)
 	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:725)
 	at net.minecraft.world.World.setBlockState(World.java:329)
