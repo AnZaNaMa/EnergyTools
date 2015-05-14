@@ -7,10 +7,13 @@ import com.AnZaNaMa.EnergyTools.Handler.ConfigHandler;
 import com.AnZaNaMa.EnergyTools.Handler.CraftingHandler;
 import com.AnZaNaMa.EnergyTools.Handler.SmeltingHandler;
 import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.Reference.Reference;
+import com.AnZaNaMa.EnergyTools.Reference.VersioningNBT;
 import com.AnZaNaMa.EnergyTools.Waila.WailaEnergyTools;
 import com.AnZaNaMa.EnergyTools.World.WorldGenEnergyOre;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -24,9 +27,6 @@ public abstract class CommonProxy implements IProxy {
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
         BlockEnergyTools.addBlocks();
         ItemExpTools.addItems();
-        CraftingHandler.init();
-        SmeltingHandler.init();
-        TileEntityEnergyTools.init();
 	}
 	
 	
@@ -34,6 +34,10 @@ public abstract class CommonProxy implements IProxy {
     {
         NetworkRegistry.INSTANCE.registerGuiHandler(EnergyTools.instance, EnergyTools.guiHandler);
         GameRegistry.registerWorldGenerator(new WorldGenEnergyOre(), 5);
+        FMLInterModComms.sendRuntimeMessage(Reference.MODID, "VersionChecker", "addUpdate", new VersioningNBT());
+        CraftingHandler.init();
+        SmeltingHandler.init();
+        TileEntityEnergyTools.init();
         WailaEnergyTools.init();
 	}
 	
