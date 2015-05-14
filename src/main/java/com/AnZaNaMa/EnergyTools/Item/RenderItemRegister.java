@@ -20,6 +20,7 @@ public class RenderItemRegister {
         registerItem(ItemExpTools.infenergyorb, 0);
         registerItem(ItemExpTools.energyingot, 0);
         registerItem(ItemExpTools.redbull, 0);
+        registerItem(ItemExpTools.coalstick, 0);
     }
 
     public static void registerItem(Item item, int meta){

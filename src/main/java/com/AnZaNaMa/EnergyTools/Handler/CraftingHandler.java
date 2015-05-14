@@ -27,6 +27,16 @@ public class CraftingHandler {
                 " SI",
                 " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
 
+        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energysword),
+                " I ",
+                " I ",
+                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+
+        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energyhoe),
+                " II",
+                " S ",
+                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+
         GameRegistry.addShapedRecipe(new ItemStack(BlockEnergyTools.energizer),
                 "PEP",
                 "IRI",
@@ -46,6 +56,10 @@ public class CraftingHandler {
                 "III",
                 "III",
                 "III", 'I', new ItemStack(ItemExpTools.energyingot));
+
+        GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.coalstick),
+                "S",
+                "S", 'S', new ItemStack(Blocks.coal_block));
 
     }
 }
