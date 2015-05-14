@@ -14,6 +14,7 @@ public class ItemExpTools {
     public static Item infenergyorb;
     public static Item energyingot;
     public static Item redbull;
+    public static Item coalstick;
 
     public static void addItems(){
         energypick = new EnergyPick(ENERGY, ItemNames.ENERGYPICK);
@@ -24,5 +25,6 @@ public class ItemExpTools {
         infenergyorb = new InfiniteEnergyOrb(ItemNames.INFENERGYORB);
         energyingot = new EnergyIngot(ItemNames.ENERGYINGOT);
         redbull = new RedBull(ItemNames.REDBULL);
+        coalstick = new CoalStick(ItemNames.COALSTICK);
     }
 }

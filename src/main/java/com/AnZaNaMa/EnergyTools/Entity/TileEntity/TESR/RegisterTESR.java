@@ -10,12 +10,6 @@ import net.minecraftforge.fml.client.registry.ClientRegistry;
  */
 public class RegisterTESR {
     public static void registerModRenderers(){
-        register(TileEntityEnergizer.class, new EnergizerTESR());
-    }
-
-    private static void register(Class tileEntityClass, TileEntitySpecialRenderer renderer){
-        if(tileEntityClass.isAssignableFrom(TileEntity.class)) {
-            ClientRegistry.bindTileEntitySpecialRenderer(tileEntityClass, renderer);
-        }
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEnergizer.class, new EnergizerTESR());
     }
 }

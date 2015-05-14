@@ -7,6 +7,7 @@ import com.AnZaNaMa.EnergyTools.Handler.ConfigHandler;
 import com.AnZaNaMa.EnergyTools.Handler.CraftingHandler;
 import com.AnZaNaMa.EnergyTools.Handler.SmeltingHandler;
 import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.Waila.WailaEnergyTools;
 import com.AnZaNaMa.EnergyTools.World.WorldGenEnergyOre;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -33,6 +34,7 @@ public abstract class CommonProxy implements IProxy {
     {
         NetworkRegistry.INSTANCE.registerGuiHandler(EnergyTools.instance, EnergyTools.guiHandler);
         GameRegistry.registerWorldGenerator(new WorldGenEnergyOre(), 5);
+        WailaEnergyTools.init();
 	}
 	
 	

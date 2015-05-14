@@ -1,0 +1,169 @@
+// class version 50.0 (50)
+// access flags 0x21
+public class net/minecraft/block/BlockMobSpawner extends net/minecraft/block/BlockContainer  {
+
+  // compiled from: BlockMobSpawner.java
+
+  // access flags 0x1A
+  private final static Ljava/lang/String; __OBFID = "CL_00000269"
+
+  // access flags 0x4
+  protected <init>()V
+   L0
+    LINENUMBER 21 L0
+    ALOAD 0
+    GETSTATIC net/minecraft/block/material/Material.rock : Lnet/minecraft/block/material/Material;
+    INVOKESPECIAL net/minecraft/block/BlockContainer.<init> (Lnet/minecraft/block/material/Material;)V
+   L1
+    LINENUMBER 22 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L2 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public createNewTileEntity(Lnet/minecraft/world/World;I)Lnet/minecraft/tileentity/TileEntity;
+   L0
+    LINENUMBER 26 L0
+    NEW net/minecraft/tileentity/TileEntityMobSpawner
+    DUP
+    INVOKESPECIAL net/minecraft/tileentity/TileEntityMobSpawner.<init> ()V
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    LOCALVARIABLE worldIn Lnet/minecraft/world/World; L0 L1 1
+    LOCALVARIABLE meta I L0 L1 2
+    MAXSTACK = 2
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public getItemDropped(Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;I)Lnet/minecraft/item/Item;
+   L0
+    LINENUMBER 31 L0
+    ACONST_NULL
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    LOCALVARIABLE state Lnet/minecraft/block/state/IBlockState; L0 L1 1
+    LOCALVARIABLE rand Ljava/util/Random; L0 L1 2
+    LOCALVARIABLE fortune I L0 L1 3
+    MAXSTACK = 1
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public quantityDropped(Ljava/util/Random;)I
+   L0
+    LINENUMBER 36 L0
+    ICONST_0
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    LOCALVARIABLE random Ljava/util/Random; L0 L1 1
+    MAXSTACK = 1
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public dropBlockAsItemWithChance(Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;FI)V
+   L0
+    LINENUMBER 41 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ALOAD 3
+    FLOAD 4
+    ILOAD 5
+    INVOKESPECIAL net/minecraft/block/BlockContainer.dropBlockAsItemWithChance (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;FI)V
+   L1
+    LINENUMBER 42 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L2 0
+    LOCALVARIABLE worldIn Lnet/minecraft/world/World; L0 L2 1
+    LOCALVARIABLE pos Lnet/minecraft/util/BlockPos; L0 L2 2
+    LOCALVARIABLE state Lnet/minecraft/block/state/IBlockState; L0 L2 3
+    LOCALVARIABLE chance F L0 L2 4
+    LOCALVARIABLE fortune I L0 L2 5
+    MAXSTACK = 6
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public getExpDrop(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;I)I
+   L0
+    LINENUMBER 47 L0
+    BIPUSH 15
+    GETSTATIC net/minecraft/block/BlockMobSpawner.RANDOM : Ljava/util/Random;
+    BIPUSH 15
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    GETSTATIC net/minecraft/block/BlockMobSpawner.RANDOM : Ljava/util/Random;
+    BIPUSH 15
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    LOCALVARIABLE world Lnet/minecraft/world/IBlockAccess; L0 L1 1
+    LOCALVARIABLE pos Lnet/minecraft/util/BlockPos; L0 L1 2
+    LOCALVARIABLE fortune I L0 L1 3
+    MAXSTACK = 3
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public isOpaqueCube()Z
+   L0
+    LINENUMBER 52 L0
+    ICONST_0
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getRenderType()I
+   L0
+    LINENUMBER 57 L0
+    ICONST_3
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getBlockLayer()Lnet/minecraft/util/EnumWorldBlockLayer;
+  @Lnet/minecraftforge/fml/relauncher/SideOnly;(value=Lnet/minecraftforge/fml/relauncher/Side;.CLIENT)
+   L0
+    LINENUMBER 63 L0
+    GETSTATIC net/minecraft/util/EnumWorldBlockLayer.CUTOUT : Lnet/minecraft/util/EnumWorldBlockLayer;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getItem(Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/item/Item;
+  @Lnet/minecraftforge/fml/relauncher/SideOnly;(value=Lnet/minecraftforge/fml/relauncher/Side;.CLIENT)
+   L0
+    LINENUMBER 69 L0
+    ACONST_NULL
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/block/BlockMobSpawner; L0 L1 0
+    LOCALVARIABLE worldIn Lnet/minecraft/world/World; L0 L1 1
+    LOCALVARIABLE pos Lnet/minecraft/util/BlockPos; L0 L1 2
+    MAXSTACK = 1
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public onBlockPlacedBy(Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/item/ItemStack;)V
+    ALOAD 1
+    ALOAD 2
+    ALOAD 5
+    INVOKESTATIC codechicken/nei/ItemMobSpawner.onBlockPlaced (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/item/ItemStack;)V
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 6
+}
