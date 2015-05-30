@@ -1,76 +1,58 @@
-[10:45:03] [Client thread/INFO]: Setting user: Player859
-[10:45:06] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:45:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's Energy Tools, FMLFileResourcePack:Waila
-[10:45:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:45:11] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[10:45:11] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:45:11] [Thread-8/INFO]: OpenAL initialized.
-[10:45:12] [Sound Library Loader/INFO]: Sound engine started
-[10:45:15] [Client thread/INFO]: Created: 512x512 textures-atlas
-[10:45:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's Energy Tools, FMLFileResourcePack:Waila
-[10:45:17] [Client thread/INFO]: SoundSystem shutting down...
-[10:45:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[10:45:17] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:45:17] [Thread-12/INFO]: Initializing LWJGL OpenAL
-[10:45:17] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:45:17] [Thread-12/INFO]: OpenAL initialized.
-[10:45:17] [Sound Library Loader/INFO]: Sound engine started
-[10:45:19] [Client thread/INFO]: Created: 512x512 textures-atlas
-[10:45:25] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[10:45:25] [Server thread/INFO]: Generating keypair
-[10:45:26] [Server thread/INFO]: Preparing start region for level 0
-[10:45:27] [Server thread/INFO]: Changing view distance to 8, from 10
-[10:45:28] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6416bae7[id=bd11acc2-8e1a-348b-89a6-a309159aa437,name=Player859,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:151) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.launchIntegratedServer(Minecraft.java:2224) [Minecraft.class:?]
-	at net.minecraftforge.fml.client.FMLClientHandler.tryLoadExistingWorld(FMLClientHandler.java:670) [FMLClientHandler.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.func_146615_e(GuiSelectWorld.java:190) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.actionPerformed(GuiSelectWorld.java:137) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:472) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:544) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.handleMouseInput(GuiSelectWorld.java:77) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:516) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1663) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1022) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:196) ~[?:1.7.0_51]
-	at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[?:1.7.0_51]
-	at sun.security.ssl.InputRecord.readFully(InputRecord.java:442) ~[?:1.7.0_51]
-	at sun.security.ssl.InputRecord.read(InputRecord.java:480) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[?:1.7.0_51]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_51]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 27 more
-[10:45:28] [Server thread/INFO]: Player859[local:E:4f5a4f32] logged in with entity id 409 at (-341.68976650391096, 64.0, 259.1991053037591)
-[10:45:28] [Server thread/INFO]: Player859 joined the game
-[10:45:30] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6416bae7[id=bd11acc2-8e1a-348b-89a6-a309159aa437,name=Player859,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+[11:08:48] [Client thread/INFO]: Setting user: Player93
+[11:08:51] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:08:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila
+[11:08:55] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:08:55] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[11:08:55] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:08:55] [Thread-8/INFO]: OpenAL initialized.
+[11:08:56] [Sound Library Loader/INFO]: Sound engine started
+[11:08:57] [Client thread/INFO]: Created: 512x512 textures-atlas
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:08:58] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:08:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila
+[11:08:59] [Client thread/INFO]: SoundSystem shutting down...
+[11:08:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:08:59] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:08:59] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[11:08:59] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:08:59] [Thread-12/INFO]: OpenAL initialized.
+[11:09:00] [Sound Library Loader/INFO]: Sound engine started
+[11:09:01] [Client thread/INFO]: Created: 512x512 textures-atlas
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:09:01] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[11:09:06] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[11:09:06] [Server thread/INFO]: Generating keypair
+[11:09:07] [Server thread/INFO]: Preparing start region for level 0
+[11:09:08] [Server thread/INFO]: Changing view distance to 8, from 10
+[11:09:09] [Server thread/INFO]: Player93[local:E:db2ac806] logged in with entity id 217 at (213.5793600517916, 80.0, 280.33417911387784)
+[11:09:09] [Server thread/INFO]: Player93 joined the game
+[11:09:10] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@57d7349f[id=04ba6478-628e-32a2-915d-0b45ca8b366b,name=Player93,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
@@ -89,65 +71,16 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_51]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_51]
 	at java.lang.Thread.run(Thread.java:744) [?:1.7.0_51]
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:196) ~[?:1.7.0_51]
-	at java.net.SocketInputStream.read(SocketInputStream.java:122) ~[?:1.7.0_51]
-	at sun.security.ssl.InputRecord.readFully(InputRecord.java:442) ~[?:1.7.0_51]
-	at sun.security.ssl.InputRecord.read(InputRecord.java:480) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[?:1.7.0_51]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_51]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[10:45:32] [Server thread/INFO]: Player859 has just earned the achievement [Taking Inventory]
-[10:45:32] [Client thread/INFO]: [CHAT] Player859 has just earned the achievement [Taking Inventory]
-[10:49:21] [Server thread/INFO]: [Player859: Set the time to 1000]
-[10:49:21] [Client thread/INFO]: [CHAT] Set the time to 1000
-[10:49:36] [Client thread/INFO]: [CHAT] You are now playing creative+
-[10:49:39] [Client thread/INFO]: [CHAT] You are now playing adventure
-[10:49:39] [Client thread/INFO]: [CHAT] You are now playing survival
-[10:49:40] [Client thread/INFO]: [CHAT] You are now playing creative
-[10:49:41] [Client thread/INFO]: [CHAT] You are now playing creative+
-[10:50:12] [Client thread/INFO]: [CHAT] You are now playing adventure
-[10:50:13] [Client thread/INFO]: [CHAT] You are now playing survival
-[10:50:17] [Server thread/INFO]: [Player859: Given [Minecart with Command Block] * 1 to Player859]
-[10:50:17] [Client thread/INFO]: [CHAT] Given [Minecart with Command Block] * 1 to Player859
-[10:50:20] [Server thread/INFO]: [Player859: Given [Redstone Comparator] * 64 to Player859]
-[10:50:20] [Client thread/INFO]: [CHAT] Given [Redstone Comparator] * 64 to Player859
-[10:50:34] [Server thread/INFO]: [Player859: Given [Powered Rail] * 64 to Player859]
-[10:50:34] [Client thread/INFO]: [CHAT] Given [Powered Rail] * 64 to Player859
-[10:50:37] [Server thread/INFO]: [Player859: Given [Powered Rail] * 1 to Player859]
-[10:50:37] [Client thread/INFO]: [CHAT] Given [Powered Rail] * 1 to Player859
-[10:50:37] [Server thread/INFO]: [Player859: Given [Powered Rail] * 1 to Player859]
-[10:50:37] [Client thread/INFO]: [CHAT] Given [Powered Rail] * 1 to Player859
-[10:50:37] [Server thread/INFO]: [Player859: Given [Powered Rail] * 1 to Player859]
-[10:50:37] [Client thread/INFO]: [CHAT] Given [Powered Rail] * 1 to Player859
-[10:50:39] [Server thread/INFO]: [Player859: Given [Detector Rail] * 1 to Player859]
-[10:50:39] [Client thread/INFO]: [CHAT] Given [Detector Rail] * 1 to Player859
-[10:50:39] [Server thread/INFO]: [Player859: Given [Detector Rail] * 1 to Player859]
-[10:50:39] [Client thread/INFO]: [CHAT] Given [Detector Rail] * 1 to Player859
-[10:50:45] [Server thread/INFO]: [Player859: Given [Activator Rail] * 1 to Player859]
-[10:50:45] [Client thread/INFO]: [CHAT] Given [Activator Rail] * 1 to Player859
-[10:50:46] [Server thread/INFO]: [Player859: Given [Rail] * 1 to Player859]
-[10:50:46] [Client thread/INFO]: [CHAT] Given [Rail] * 1 to Player859
-[10:51:06] [Server thread/INFO]: [Player859: Given [Rail] * 64 to Player859]
-[10:51:06] [Client thread/INFO]: [CHAT] Given [Rail] * 64 to Player859
-[10:52:27] [Server thread/INFO]: Saving and pausing game...
-[10:52:27] [Server thread/INFO]: Saving chunks for level 'Updated Textures And Stufferoni'/Overworld
-[10:52:27] [Server thread/INFO]: Saving chunks for level 'Updated Textures And Stufferoni'/Nether
-[10:52:27] [Server thread/INFO]: Saving chunks for level 'Updated Textures And Stufferoni'/The End
-[10:52:28] [Server thread/INFO]: Stopping server
-[10:52:28] [Server thread/INFO]: Saving players
-[10:52:28] [Server thread/INFO]: Saving worlds
-[10:52:28] [Server thread/INFO]: Saving chunks for level 'Updated Textures And Stufferoni'/Overworld
-[10:52:28] [Server thread/INFO]: Saving chunks for level 'Updated Textures And Stufferoni'/Nether
-[10:52:28] [Server thread/INFO]: Saving chunks for level 'Updated Textures And Stufferoni'/The End
-[10:52:30] [Client thread/INFO]: Stopping!
-[10:52:30] [Client thread/INFO]: SoundSystem shutting down...
-[10:52:30] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:09:21] [Server thread/INFO]: Saving and pausing game...
+[11:09:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Overworld
+[11:09:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Nether
+[11:09:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/The End
+[11:09:21] [Server thread/INFO]: Stopping server
+[11:09:21] [Server thread/INFO]: Saving players
+[11:09:21] [Server thread/INFO]: Saving worlds
+[11:09:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Overworld
+[11:09:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Nether
+[11:09:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/The End
+[11:09:23] [Client thread/INFO]: Stopping!
+[11:09:23] [Client thread/INFO]: SoundSystem shutting down...
+[11:09:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

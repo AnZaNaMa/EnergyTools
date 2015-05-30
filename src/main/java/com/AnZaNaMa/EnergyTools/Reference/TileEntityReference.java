@@ -5,4 +5,6 @@ package com.AnZaNaMa.EnergyTools.Reference;
  */
 public class TileEntityReference {
     public static final String ENERGIZER = "energizerTileEntity";
+    public static final String ENERVATOR = "enervatorTileEntity";
+    public static final String PIPE = "pipeTileEntity";
 }

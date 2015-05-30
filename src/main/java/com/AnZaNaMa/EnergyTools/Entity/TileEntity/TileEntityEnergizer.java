@@ -4,6 +4,8 @@ import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
 import com.AnZaNaMa.EnergyTools.Energy.Energy;
 import com.AnZaNaMa.EnergyTools.Utility.LogHelper;
 import com.AnZaNaMa.EnergyTools.Utility.RedstoneHelper;
+import com.AnZaNaMa.EnergyTools.api.PowerConnectable;
+import com.AnZaNaMa.EnergyTools.api.PowerProvider;
 import net.minecraft.command.IEntitySelector;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
@@ -13,8 +15,6 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
-import net.minecraft.server.gui.IUpdatePlayerListBox;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
 
@@ -23,17 +23,18 @@ import java.util.List;
 /**
  * Created by Andrew Graber on 4/20/2015.
  */
-public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerListBox {
+public class TileEntityEnergizer extends PowerProvider {
 
     private byte updateTimer;
     private boolean isMultiblock;
-    private int energyContained, multiblockSize, multiblockMultiplier;
+    private int multiblockSize, multiblockMultiplier;
     private AxisAlignedBB pickupArea;
+    private int ghostSpins;
 
     public TileEntityEnergizer(){
         super();
         this.updateTimer = 100;
-        this.energyContained = 0;
+        this.ghostSpins = 0;
     }
 
     @Override
@@ -98,6 +99,7 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
         this.multiblockSize = compound.getInteger("MultiblockSize");
         this.multiblockMultiplier = compound.getInteger("Multiplier");
         this.pickupArea = findPickupArea();
+        this.ghostSpins = 0;
     }
 
     @Override
@@ -278,5 +280,17 @@ public class TileEntityEnergizer extends TileEntity implements IUpdatePlayerList
     @Override
     public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt){
         readFromNBT(pkt.getNbtCompound());
+    }
+
+    public int getGhostSpins(){
+        return this.ghostSpins;
+    }
+
+    public void setGhostSpins(int i){
+        this.ghostSpins = i;
+    }
+
+    public void addGhostSpin(){
+        this.ghostSpins++;
     }
 }

@@ -3,11 +3,14 @@ package com.AnZaNaMa.EnergyTools.Client.GUI;
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
 import com.AnZaNaMa.EnergyTools.Utility.LogHelper;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.opengl.GL11;
 
@@ -33,9 +36,9 @@ public class ModGUIEnergy extends Gui {
         {
             return;
         }
-            EntityPlayerMP player = MinecraftServer.getServer().getConfigurationManager().getPlayerByUsername(Minecraft.getMinecraft().thePlayer.getName());
-            String energyString = Integer.toString(player.getEntityData().getInteger("Energy"));
 
+            EntityPlayerSP player = FMLClientHandler.instance().getClientPlayerEntity();
+            String energyString = Integer.toString(player.getEntityData().getInteger("Energy"));
             int xPos = 10 + (energyString.length() * 16);
             int yPos = 10;
             GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
@@ -47,7 +50,8 @@ public class ModGUIEnergy extends Gui {
                 drawTexturedModalRect(xPos, yPos, ((player.getEntityData().getInteger("Energy") / (int) Math.pow(10, i)) % 10) * 16, 0, 16, 16);
                 xPos -= 16;
             }
-            //drawString(mc.fontRendererObj, "Energy: " + Integer.toString(Energy.PlayerTotalEnergy), 10, 10, 0xFFffffff);
+
+            //drawString(mc.fontRendererObj, "Energy: " + Integer.toString(player.getEntityData().getInteger("Energy")), 10, 10, 0xFFffffff);
     }
 
     private int getXPosForNumber(String number){

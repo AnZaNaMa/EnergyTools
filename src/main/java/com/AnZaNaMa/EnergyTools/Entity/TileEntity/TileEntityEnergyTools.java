@@ -10,6 +10,8 @@ public class TileEntityEnergyTools {
 
     public static void init(){
         GameRegistry.registerTileEntity(TileEntityEnergizer.class, TileEntityReference.ENERGIZER);
+        GameRegistry.registerTileEntity(TileEntityEnervator.class, TileEntityReference.ENERVATOR);
+        GameRegistry.registerTileEntity(TileEntityPipe.class, TileEntityReference.PIPE);
     }
 
 }

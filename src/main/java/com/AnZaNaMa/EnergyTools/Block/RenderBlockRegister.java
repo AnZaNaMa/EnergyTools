@@ -16,6 +16,9 @@ public class RenderBlockRegister {
         registerBlock(BlockEnergyTools.energyblock, 0);
         registerBlock(BlockEnergyTools.energizer, 0);
         registerBlock(BlockEnergyTools.energyore, 0);
+        registerBlock(BlockEnergyTools.goldbrick, 0);
+        registerBlock(BlockEnergyTools.enervator, 0);
+        registerBlock(BlockEnergyTools.energeticpipe, 0);
     }
 
     public static void registerBlock(Block block, int meta){

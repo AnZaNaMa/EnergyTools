@@ -20,10 +20,10 @@ public class Energizer extends BlockContainer implements IEnergyBlock {
     public Energizer(Material material, String unlocalizedName, float localhardness, float localresistance){
         super(material);
         GameRegistry.registerBlock(this, unlocalizedName);
-        setCreativeTab(EnergyTools.creativeTab);
-        setHardness(localhardness);
-        setResistance(localresistance);
-        setUnlocalizedName(unlocalizedName);
+        this.setCreativeTab(EnergyTools.creativeTab);
+        this.setHardness(localhardness);
+        this.setResistance(localresistance);
+        this.setUnlocalizedName(unlocalizedName);
     }
 
     public TileEntity createNewTileEntity(World world, int number){

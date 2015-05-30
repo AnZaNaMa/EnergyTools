@@ -15,27 +15,27 @@ public class CraftingHandler {
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energypick),
                 "III",
                 " S ",
-                " S ", 'I',new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+                " S ", 'I',new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(ItemExpTools.coalstick));
 
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energyshovel),
                 " I ",
                 " S ",
-                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(ItemExpTools.coalstick));
 
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energyaxe),
                 " II",
                 " SI",
-                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(ItemExpTools.coalstick));
 
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energysword),
                 " I ",
                 " I ",
-                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(ItemExpTools.coalstick));
 
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.energyhoe),
                 " II",
                 " S ",
-                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(Items.stick));
+                " S ", 'I', new ItemStack(ItemExpTools.energyingot), 'S', new ItemStack(ItemExpTools.coalstick));
 
         GameRegistry.addShapedRecipe(new ItemStack(BlockEnergyTools.energizer),
                 "PEP",
@@ -60,6 +60,11 @@ public class CraftingHandler {
         GameRegistry.addShapedRecipe(new ItemStack(ItemExpTools.coalstick),
                 "S",
                 "S", 'S', new ItemStack(Blocks.coal_block));
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockEnergyTools.goldbrick),
+                "III",
+                "III",
+                "III", 'I', new ItemStack(Items.gold_nugget));
 
     }
 }
