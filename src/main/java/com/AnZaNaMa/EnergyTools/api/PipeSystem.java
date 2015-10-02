@@ -8,9 +8,10 @@ import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
 public class PipeSystem {
     private int pipesInSystem, numEnergyProviders, numEnergyAcceptors;
     private TileEntityPipe[] pipes;
-    private PowerConnectable[] providers, acceptors;
+    private PowerProvider[] providers;
+    private PowerAcceptor[] acceptors;
 
-    public PipeSystem(int numPipes, int numProviders, int numAcceptors, TileEntityPipe[] pipesIn, PowerConnectable[] providersIn, PowerConnectable[] acceptorsIn){
+    public PipeSystem(int numPipes, int numProviders, int numAcceptors, TileEntityPipe[] pipesIn, PowerProvider[] providersIn, PowerAcceptor[] acceptorsIn){
         this.pipesInSystem = numPipes;
         this.numEnergyProviders = numProviders;
         this.numEnergyAcceptors = numAcceptors;
@@ -19,7 +20,7 @@ public class PipeSystem {
         this.acceptors = acceptorsIn;
     }
 
-    public PipeSystem(TileEntityPipe[] pipesIn, PowerConnectable[] providersIn, PowerConnectable[] acceptorsIn){
+    public PipeSystem(TileEntityPipe[] pipesIn, PowerProvider[] providersIn, PowerAcceptor[] acceptorsIn){
         this(pipesIn.length, providersIn.length, acceptorsIn.length, pipesIn, providersIn, acceptorsIn);
     }
 

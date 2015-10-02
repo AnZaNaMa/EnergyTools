@@ -53,7 +53,7 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
 
     @Override
     public void writeToNBT(NBTTagCompound tag){
-        tag.
+
     }
 
     @Override
