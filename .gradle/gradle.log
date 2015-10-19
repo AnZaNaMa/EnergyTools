@@ -5,7 +5,13 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : snapshot_nodoc_20141130
 ****************************
+:ideaModule
+Download http://repo1.maven.org/maven2/org/scala-lang/modules/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1-sources.jar
+Download http://repo1.maven.org/maven2/org/scala-lang/modules/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1-javadoc.jar
+:ideaProject
+:ideaWorkspace
+:idea
 
 BUILD SUCCESSFUL
 
-Total time: 1.474 secs
+Total time: 2 mins 42.892 secs
