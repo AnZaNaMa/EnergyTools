@@ -8,6 +8,8 @@ import net.minecraft.client.gui.Gui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.management.ServerConfigurationManager;
+import net.minecraft.server.management.UserList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.client.FMLClientHandler;
@@ -37,7 +39,7 @@ public class ModGUIEnergy extends Gui {
             return;
         }
 
-            EntityPlayerSP player = FMLClientHandler.instance().getClientPlayerEntity();
+            EntityPlayerMP player = MinecraftServer.getServer().getConfigurationManager().getPlayerByUUID(Minecraft.getMinecraft().thePlayer.getUniqueID());
             String energyString = Integer.toString(player.getEntityData().getInteger("Energy"));
             int xPos = 10 + (energyString.length() * 16);
             int yPos = 10;

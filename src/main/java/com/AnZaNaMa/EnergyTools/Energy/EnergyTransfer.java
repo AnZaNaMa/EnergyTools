@@ -41,7 +41,7 @@ public class EnergyTransfer {
             }
         }
         else{
-            return false;
+            return true;
         }
     }
 }

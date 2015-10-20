@@ -37,6 +37,7 @@ public class RedBull extends Item implements IEnergyItem{
             }
             else if(playerIn.getEntityData().getBoolean("hasWings")){
                 playerIn.capabilities.allowFlying = false;
+                playerIn.capabilities.isFlying = false;
                 playerIn.sendPlayerAbilities();
                 playerIn.getEntityData().setBoolean("hasWings", false);
                 return itemStackIn;
@@ -59,6 +60,8 @@ public class RedBull extends Item implements IEnergyItem{
                 } else if(entityIn.getEntityData().getInteger("Energy") <=0){
                     entityIn.getEntityData().setBoolean("hasWings", false);
                     ((EntityPlayer) entityIn).capabilities.allowFlying = false;
+                    ((EntityPlayer) entityIn).capabilities.isFlying = false;
+                    ((EntityPlayer) entityIn).getEntityData().getCompoundTag("abilities").setBoolean("flying", false);
                     ((EntityPlayer) entityIn).sendPlayerAbilities();
                 }
             }

@@ -1,245 +1,88 @@
-[10:30:45] [Client thread/INFO]: Setting user: Player781
-[10:30:48] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:30:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's Energy Tools, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
-[10:30:53] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:30:53] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[10:30:53] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:30:53] [Thread-10/INFO]: OpenAL initialized.
-[10:30:53] [Sound Library Loader/INFO]: Sound engine started
-[10:30:55] [Client thread/INFO]: Created: 512x512 textures-atlas
-[10:30:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's Energy Tools, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
-[10:30:57] [Client thread/INFO]: SoundSystem shutting down...
-[10:30:57] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[10:30:57] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[10:30:57] [Thread-15/INFO]: Initializing LWJGL OpenAL
-[10:30:57] [Thread-15/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[10:30:57] [Thread-15/INFO]: OpenAL initialized.
-[10:30:58] [Sound Library Loader/INFO]: Sound engine started
-[10:30:59] [Client thread/INFO]: Created: 512x512 textures-atlas
-[10:31:07] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[10:31:07] [Server thread/INFO]: Generating keypair
-[10:31:08] [Server thread/INFO]: Preparing start region for level 0
-[10:31:09] [Server thread/INFO]: Changing view distance to 8, from 10
-[10:31:09] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6ce20427[id=bf0c47d3-02b6-3463-8e38-457226b1407c,name=Player781,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:151) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.launchIntegratedServer(Minecraft.java:2224) [Minecraft.class:?]
-	at net.minecraftforge.fml.client.FMLClientHandler.tryLoadExistingWorld(FMLClientHandler.java:670) [FMLClientHandler.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.func_146615_e(GuiSelectWorld.java:190) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld$List.elementClicked(GuiSelectWorld.java:264) [GuiSelectWorld$List.class:?]
-	at net.minecraft.client.gui.GuiSlot.handleMouseInput(GuiSlot.java:287) [GuiSlot.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.handleMouseInput(GuiSelectWorld.java:78) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:516) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1663) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1022) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178) ~[?:1.7.0_51]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.7.0_51]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.7.0_51]
-	at java.net.Socket.connect(Socket.java:579) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618) ~[?:1.7.0_51]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.7.0_51]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.7.0_51]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.7.0_51]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:975) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.7.0_51]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_51]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 26 more
-[10:31:10] [Server thread/INFO]: Player781[local:E:31777c48] logged in with entity id 214 at (213.36669857188974, 80.0, 279.70681636226715)
-[10:31:10] [Server thread/INFO]: Player781 joined the game
-[10:31:11] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6ce20427[id=bf0c47d3-02b6-3463-8e38-457226b1407c,name=Player781,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:132) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [?:1.7.0_51]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [?:1.7.0_51]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_51]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_51]
-	at java.lang.Thread.run(Thread.java:744) [?:1.7.0_51]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178) ~[?:1.7.0_51]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.7.0_51]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.7.0_51]
-	at java.net.Socket.connect(Socket.java:579) ~[?:1.7.0_51]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618) ~[?:1.7.0_51]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.7.0_51]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.7.0_51]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.7.0_51]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:975) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.7.0_51]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300) ~[?:1.7.0_51]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_51]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[10:31:11] [Client thread/WARN]: Failed to load texture: energytools:textures/gui/energybar.png
-java.io.FileNotFoundException: energytools:textures/gui/energybar.png
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:70) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:44) [TextureManager.class:?]
-	at com.AnZaNaMa.EnergyTools.Client.GUI.ModGUIEnergy.onGUIRenderEvent(ModGUIEnergy.java:47) [ModGUIEnergy.class:?]
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_29_ModGUIEnergy_onGUIRenderEvent_RenderGameOverlayEvent.invoke(.dynamic) [?:?]
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:55) [ASMEventHandler.class:?]
-	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:138) [EventBus.class:?]
-	at net.minecraftforge.client.GuiIngameForge.post(GuiIngameForge.java:858) [GuiIngameForge.class:?]
-	at net.minecraftforge.client.GuiIngameForge.renderExperience(GuiIngameForge.java:567) [GuiIngameForge.class:?]
-	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:155) [GuiIngameForge.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1056) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1049) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[10:31:12] [Client thread/WARN]: Failed to load texture: energytools:textures/blocks/enervatoroff.png
-java.io.FileNotFoundException: energytools:textures/blocks/enervatoroff.png
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:70) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:44) [TextureManager.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer.bindTexture(TileEntitySpecialRenderer.java:26) [TileEntitySpecialRenderer.class:?]
-	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TESR.EnervatorTESR.renderTileEntityAt(EnervatorTESR.java:40) [EnervatorTESR.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:137) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:120) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:655) [RenderGlobal.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1294) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1207) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1032) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1049) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[10:31:12] [Client thread/WARN]: Failed to load texture: energytools:textures/blocks/enervatorblankoff.png
-java.io.FileNotFoundException: energytools:textures/blocks/enervatorblankoff.png
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:70) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:44) [TextureManager.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer.bindTexture(TileEntitySpecialRenderer.java:26) [TileEntitySpecialRenderer.class:?]
-	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TESR.EnervatorTESR.renderTileEntityAt(EnervatorTESR.java:83) [EnervatorTESR.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:137) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:120) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:655) [RenderGlobal.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1294) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1207) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1032) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1049) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[10:31:15] [Client thread/WARN]: Failed to load texture: energytools:textures/blocks/energeticpipe.png
-java.io.FileNotFoundException: energytools:textures/blocks/energeticpipe.png
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:70) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:44) [TextureManager.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer.bindTexture(TileEntitySpecialRenderer.java:26) [TileEntitySpecialRenderer.class:?]
-	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TESR.PipeTESR.renderTileEntityAt(PipeTESR.java:28) [PipeTESR.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:137) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:120) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:655) [RenderGlobal.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1294) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1207) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1032) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1049) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[10:31:20] [Server thread/INFO]: Saving and pausing game...
-[10:31:20] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Overworld
-[10:31:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Nether
-[10:31:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/The End
-[10:31:21] [Server thread/INFO]: Stopping server
-[10:31:21] [Server thread/INFO]: Saving players
-[10:31:21] [Server thread/INFO]: Saving worlds
-[10:31:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Overworld
-[10:31:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/Nether
-[10:31:21] [Server thread/INFO]: Saving chunks for level 'Test World Number Who Knows'/The End
-[10:31:22] [Client thread/INFO]: Stopping!
-[10:31:22] [Client thread/INFO]: SoundSystem shutting down...
-[10:31:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[00:05:23] [Client thread/INFO]: Setting user: Player205
+[00:05:27] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:05:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[00:05:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:05:32] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[00:05:32] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:05:32] [Thread-10/INFO]: OpenAL initialized.
+[00:05:33] [Sound Library Loader/INFO]: Sound engine started
+[00:05:34] [Client thread/INFO]: Created: 512x512 textures-atlas
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:34] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[00:05:36] [Client thread/INFO]: SoundSystem shutting down...
+[00:05:36] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[00:05:36] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:05:36] [Thread-15/INFO]: Initializing LWJGL OpenAL
+[00:05:36] [Thread-15/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:05:36] [Thread-15/INFO]: OpenAL initialized.
+[00:05:37] [Sound Library Loader/INFO]: Sound engine started
+[00:05:38] [Client thread/INFO]: Created: 512x512 textures-atlas
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:38] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[00:05:44] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[00:05:44] [Server thread/INFO]: Generating keypair
+[00:05:45] [Server thread/INFO]: Preparing start region for level 0
+[00:05:45] [Server thread/WARN]: Skipping BlockEntity with id 
+[00:05:45] [Server thread/WARN]: Skipping BlockEntity with id 
+[00:05:46] [Server thread/INFO]: Changing view distance to 8, from 10
+[00:05:47] [Server thread/INFO]: Player205[local:E:258ce3a4] logged in with entity id 296 at (133.10357105731592, 67.0, 264.7256034536049)
+[00:05:47] [Server thread/INFO]: Player205 joined the game
+[00:05:52] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:52] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:52] [Client thread/INFO]: [CHAT] Acting Player: None
+[00:05:53] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:53] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:53] [Client thread/INFO]: [CHAT] Acting Player: None
+[00:05:55] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:55] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:55] [Client thread/INFO]: [CHAT] Acting Player: Player205
+[00:05:55] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:55] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:55] [Client thread/INFO]: [CHAT] Acting Player: Player205
+[00:05:56] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:56] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:56] [Client thread/INFO]: [CHAT] Acting Player: None
+[00:05:57] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:57] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:57] [Client thread/INFO]: [CHAT] Acting Player: Player205
+[00:05:59] [Client thread/INFO]: [CHAT] Energy: 0
+[00:05:59] [Client thread/INFO]: [CHAT] Boost: 0
+[00:05:59] [Client thread/INFO]: [CHAT] Acting Player: None
+[00:06:23] [Server thread/INFO]: Saving and pausing game...
+[00:06:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:06:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:06:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:06:26] [Server thread/INFO]: Stopping server
+[00:06:26] [Server thread/INFO]: Saving players
+[00:06:26] [Server thread/INFO]: Saving worlds
+[00:06:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:06:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:06:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:06:27] [Client thread/INFO]: Stopping!
+[00:06:27] [Client thread/INFO]: SoundSystem shutting down...
+[00:06:27] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

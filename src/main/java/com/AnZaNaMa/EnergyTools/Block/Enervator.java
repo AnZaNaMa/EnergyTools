@@ -42,6 +42,7 @@ public class Enervator extends BlockContainer implements IEnergyBlock {
                     TileEntityEnervator enervator = (TileEntityEnervator) worldIn.getTileEntity(pos);
                     playerIn.addChatMessage(new ChatComponentText("Energy: " + enervator.getEnergyContained()));
                     playerIn.addChatMessage(new ChatComponentText("Boost: " + enervator.getMultiblockNumber()));
+                    playerIn.addChatMessage(new ChatComponentText("Acting Player: " + enervator.getActingPlayerName()));
                 } else {
 
                 }
