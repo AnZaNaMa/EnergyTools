@@ -12,6 +12,7 @@ public class TileEntityEnergyTools {
         GameRegistry.registerTileEntity(TileEntityEnergizer.class, TileEntityReference.ENERGIZER);
         GameRegistry.registerTileEntity(TileEntityEnervator.class, TileEntityReference.ENERVATOR);
         GameRegistry.registerTileEntity(TileEntityPipe.class, TileEntityReference.PIPE);
+        GameRegistry.registerTileEntity(TileEntityEnergyBlock.class, TileEntityReference.ENERGYBLOCK);
     }
 
 }

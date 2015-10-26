@@ -1,6 +1,7 @@
 package com.AnZaNaMa.EnergyTools.Entity.TileEntity.TESR;
 
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
+import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergyBlock;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnervator;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -15,5 +16,6 @@ public class RegisterTESR {
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEnergizer.class, new EnergizerTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEnervator.class, new EnervatorTESR());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPipe.class, new PipeTESR());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEnergyBlock.class, new EnergyBlockTESR());
     }
 }

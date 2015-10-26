@@ -24,3 +24,10 @@ debug*
 /temp
 /texturepacks
 /options.txt
+.gradle/
+.idea/
+build/
+Intellij/
+*.iml
+*.ipr
+*.iws
