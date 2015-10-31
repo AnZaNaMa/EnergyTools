@@ -1,4 +1,4 @@
-package com.AnZaNaMa.EnergyTools.api;
+package com.AnZaNaMa.EnergyTools.api.Tech;
 
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
 

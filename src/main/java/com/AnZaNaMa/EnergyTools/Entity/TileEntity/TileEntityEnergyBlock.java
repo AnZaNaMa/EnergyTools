@@ -48,4 +48,20 @@ public class TileEntityEnergyBlock extends TileEntity implements IUpdatePlayerLi
         return this.rotation;
     }
 
+    public void setCorner(int texnum, int rotate){
+        if(texnum == 1) this.textureNumber = 3;
+        else if(texnum == 2) this.textureNumber = 5;
+        else if(texnum == 3) this.textureNumber = 7;
+        else this.textureNumber = 3;
+        this.setRotation((byte)rotate);
+    }
+
+    public void setStraight(int texnum, int rotate){
+        if(texnum == 1) this.textureNumber = 2;
+        else if(texnum == 2) this.textureNumber = 4;
+        else if(texnum == 3) this.textureNumber = 6;
+        else this.textureNumber = 1;
+        this.setRotation((byte)rotate);
+    }
+
 }

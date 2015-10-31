@@ -1,10 +1,8 @@
 package com.AnZaNaMa.EnergyTools.Entity.TileEntity;
 
 import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
-import com.AnZaNaMa.EnergyTools.api.PowerAcceptor;
-import com.AnZaNaMa.EnergyTools.api.PowerConnectable;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerAcceptor;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.AxisAlignedBB;

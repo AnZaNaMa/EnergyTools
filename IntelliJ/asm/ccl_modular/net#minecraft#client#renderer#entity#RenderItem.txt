@@ -35,8 +35,8 @@ public class net/minecraft/client/renderer/entity/RenderItem implements net/mine
   public final static enum INNERCLASS net/minecraft/block/BlockDoublePlant$EnumPlantType net/minecraft/block/BlockDoublePlant EnumPlantType
   // access flags 0x4019
   public final static enum INNERCLASS net/minecraft/block/BlockPlanks$EnumType net/minecraft/block/BlockPlanks EnumType
-  // access flags 0x4009
-  public static enum INNERCLASS net/minecraft/block/BlockSilverfish$EnumType net/minecraft/block/BlockSilverfish EnumType
+  // access flags 0x4409
+  public static abstract enum INNERCLASS net/minecraft/block/BlockSilverfish$EnumType net/minecraft/block/BlockSilverfish EnumType
   // access flags 0x4019
   public final static enum INNERCLASS net/minecraft/block/BlockPrismarine$EnumType net/minecraft/block/BlockPrismarine EnumType
   // access flags 0x4019
@@ -790,22 +790,21 @@ public class net/minecraft/client/renderer/entity/RenderItem implements net/mine
     ALOAD 7
     ILOAD 8
     INVOKESPECIAL net/minecraft/client/renderer/entity/RenderItem.renderQuad (Lnet/minecraft/client/renderer/WorldRenderer;Lnet/minecraft/client/renderer/block/model/BakedQuad;I)V
-   L14
     GOTO L4
    L5
     LINENUMBER 245 L5
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/renderer/WorldRenderer java/util/List I net/minecraft/item/ItemStack I java/util/Iterator] []
     RETURN
-   L15
-    LOCALVARIABLE bakedquad Lnet/minecraft/client/renderer/block/model/BakedQuad; L7 L14 7
-    LOCALVARIABLE j I L8 L14 8
+   L14
+    LOCALVARIABLE bakedquad Lnet/minecraft/client/renderer/block/model/BakedQuad; L7 L5 7
+    LOCALVARIABLE j I L8 L5 8
     LOCALVARIABLE iterator Ljava/util/Iterator; L4 L5 6
-    LOCALVARIABLE this Lnet/minecraft/client/renderer/entity/RenderItem; L0 L15 0
-    LOCALVARIABLE renderer Lnet/minecraft/client/renderer/WorldRenderer; L0 L15 1
-    LOCALVARIABLE quads Ljava/util/List; L0 L15 2
-    LOCALVARIABLE color I L0 L15 3
-    LOCALVARIABLE stack Lnet/minecraft/item/ItemStack; L0 L15 4
-    LOCALVARIABLE flag Z L3 L15 5
+    LOCALVARIABLE this Lnet/minecraft/client/renderer/entity/RenderItem; L0 L14 0
+    LOCALVARIABLE renderer Lnet/minecraft/client/renderer/WorldRenderer; L0 L14 1
+    LOCALVARIABLE quads Ljava/util/List; L0 L14 2
+    LOCALVARIABLE color I L0 L14 3
+    LOCALVARIABLE stack Lnet/minecraft/item/ItemStack; L0 L14 4
+    LOCALVARIABLE flag Z L3 L14 5
     MAXSTACK = 4
     MAXLOCALS = 9
 

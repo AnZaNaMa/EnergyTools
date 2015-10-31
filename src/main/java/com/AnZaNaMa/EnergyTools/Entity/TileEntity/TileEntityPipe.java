@@ -1,8 +1,8 @@
 package com.AnZaNaMa.EnergyTools.Entity.TileEntity;
 
 import com.AnZaNaMa.EnergyTools.api.DirectionHandler;
-import com.AnZaNaMa.EnergyTools.api.PipeSystem;
-import com.AnZaNaMa.EnergyTools.api.PowerConnectable;
+import com.AnZaNaMa.EnergyTools.api.Tech.PipeSystem;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable;
 import net.minecraft.util.EnumFacing;
 
 /**

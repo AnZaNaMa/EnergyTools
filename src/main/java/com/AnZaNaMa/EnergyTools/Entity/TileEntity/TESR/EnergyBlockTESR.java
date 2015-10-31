@@ -63,6 +63,27 @@ public class EnergyBlockTESR extends TileEntitySpecialRenderer{
         GL11.glDepthMask(true);
 
         tessellator.getWorldRenderer().startDrawingQuads();
+
+        switch(rotation){
+            case 1:
+                renderRotation1(tessellator);
+                break;
+            case 2:
+                renderRotation2(tessellator);
+                break;
+            case 3:
+                renderRotation3(tessellator);
+                break;
+            case 4:
+                renderRotation4(tessellator);
+                break;
+            default:
+                renderRotation1(tessellator);
+        }
+
+        tessellator.draw();
+        GL11.glPopAttrib();
+        GL11.glPopMatrix();
     }
 
     public static void renderRotation1(Tessellator tessellator){
@@ -89,13 +110,127 @@ public class EnergyBlockTESR extends TileEntitySpecialRenderer{
         tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 0, 0);
         tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 0, 1);
         tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 1, 1);
-        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 1, 0);
 
         //top
         tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 0, 0);
         tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 0, 1);
         tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 1, 1);
         tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 1, 0);
+
+        //bottom
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 1, 0);
+    }
+
+    public static void renderRotation2(Tessellator tessellator){
+        //front
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 1, 0);
+
+        //left
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 1, 0);
+
+        //right
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 0);
+
+        //back
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 1, 0);
+
+        //top
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 1, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 0, 0);
+
+        //bottom
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 0, 0);
+    }
+
+    public static void renderRotation3(Tessellator tessellator){
+        //front
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 1, 0);
+
+        //left
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 1, 0);
+
+        //right
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 0);
+
+        //back
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 1, 0);
+
+        //top
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 1, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 0, 1);
+
+        //bottom
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 1, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 0, 1);
+    }
+
+    public static void renderRotation4(Tessellator tessellator){
+        //front
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 1, 0);
+
+        //left
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 1, 0);
+
+        //right
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 0);
+
+        //back
+        tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 1, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 1, 0);
+
+        //top
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 0, 1, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(0, 1, 1, 0, 0);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 1, 0, 1);
+        tessellator.getWorldRenderer().addVertexWithUV(1, 1, 0, 1, 1);
 
         //bottom
         tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);

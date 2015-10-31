@@ -13,9 +13,9 @@ Time: 5/29/15 11:05 AM
 Description: Exception in world tick
 
 java.lang.NullPointerException: Exception in world tick
-	at com.AnZaNaMa.EnergyTools.api.PowerConnectable.findSystemizedConnections(PowerConnectable.java:35)
-	at com.AnZaNaMa.EnergyTools.api.PowerConnectable.anyConnectionSystemized(PowerConnectable.java:68)
-	at com.AnZaNaMa.EnergyTools.api.PowerConnectable.<init>(PowerConnectable.java:18)
+	at com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable.findSystemizedConnections(PowerConnectable.java:35)
+	at com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable.anyConnectionSystemized(PowerConnectable.java:68)
+	at com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable.<init>(PowerConnectable.java:18)
 	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnervator.<init>(TileEntityEnervator.java:21)
 	at com.AnZaNaMa.EnergyTools.Block.Enervator.createNewTileEntity(Enervator.java:30)
 	at net.minecraft.block.Block.createTileEntity(Block.java:1249)
@@ -47,9 +47,9 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.AnZaNaMa.EnergyTools.api.PowerConnectable.findSystemizedConnections(PowerConnectable.java:35)
-	at com.AnZaNaMa.EnergyTools.api.PowerConnectable.anyConnectionSystemized(PowerConnectable.java:68)
-	at com.AnZaNaMa.EnergyTools.api.PowerConnectable.<init>(PowerConnectable.java:18)
+	at com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable.findSystemizedConnections(PowerConnectable.java:35)
+	at com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable.anyConnectionSystemized(PowerConnectable.java:68)
+	at com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable.<init>(PowerConnectable.java:18)
 	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnervator.<init>(TileEntityEnervator.java:21)
 	at com.AnZaNaMa.EnergyTools.Block.Enervator.createNewTileEntity(Enervator.java:30)
 	at net.minecraft.block.Block.createTileEntity(Block.java:1249)
