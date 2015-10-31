@@ -1,0 +1,9 @@
+{
+	"parent": "block/orientable",
+	"textures": {
+		"side": "energytools:blocks/enervatoroff",
+		"front": "energytools:blocks/enervatoroff",
+		"top": "energytools:blocks/enervatorblankoff",
+		"bottom": "energytools:blocks/enervatorblankoff"
+	}
+}
