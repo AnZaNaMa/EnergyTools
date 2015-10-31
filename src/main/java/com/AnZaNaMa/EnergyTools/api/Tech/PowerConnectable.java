@@ -1,4 +1,4 @@
-package com.AnZaNaMa.EnergyTools.api;
+package com.AnZaNaMa.EnergyTools.api.Tech;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.gui.IUpdatePlayerListBox;
