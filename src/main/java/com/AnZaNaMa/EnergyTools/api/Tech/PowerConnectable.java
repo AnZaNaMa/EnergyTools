@@ -13,6 +13,7 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     protected PowerConnectable[] systemizedConnections;
     protected EnumFacing[] connections = new EnumFacing[6];
     protected PipeSystem pipeSystem;
+    protected int energyContained;
 
     public PowerConnectable(){
         if(anyConnectionSystemized()){
@@ -155,5 +156,16 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     //Will either be null or a direction respective to the index provided. Check above comment for list of values.
     public EnumFacing getConnection(int number){
         return this.connections[number];
+    }
+
+    public PowerConnectable[] getConnectedMachines(){
+        PowerConnectable[] machines = new PowerConnectable[]{null};
+        BlockPos[] positions = new BlockPos[]{pos.north(), pos.east(), pos.south(), pos.west(), pos.up(), pos.down()};
+        for(int i=0; i<positions.length; i++){
+            if(worldObj.getTileEntity(positions[i]) != null && worldObj.getTileEntity(positions[i]) instanceof PowerConnectable){
+                machines[machines.length] = (PowerConnectable)worldObj.getTileEntity(positions[i]);
+            }
+        }
+        return machines;
     }
 }

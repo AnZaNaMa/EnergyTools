@@ -1,120 +1,61 @@
-[14:43:00] [Client thread/INFO]: Setting user: Player907
-[14:43:05] [Client thread/INFO]: LWJGL Version: 2.9.1
-[14:43:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
-[14:43:14] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[14:43:14] [Thread-12/INFO]: Initializing LWJGL OpenAL
-[14:43:14] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[14:43:14] [Thread-12/INFO]: OpenAL initialized.
-[14:43:14] [Sound Library Loader/INFO]: Sound engine started
-[14:43:20] [Client thread/INFO]: Created: 512x512 textures-atlas
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:20] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
-[14:43:23] [Client thread/INFO]: SoundSystem shutting down...
-[14:43:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[14:43:23] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[14:43:23] [Thread-17/INFO]: Initializing LWJGL OpenAL
-[14:43:23] [Thread-17/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[14:43:23] [Thread-17/INFO]: OpenAL initialized.
-[14:43:24] [Sound Library Loader/INFO]: Sound engine started
-[14:43:25] [Client thread/INFO]: Created: 512x512 textures-atlas
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:43:26] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[14:44:33] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[14:44:33] [Server thread/INFO]: Generating keypair
-[14:44:33] [Server thread/INFO]: Preparing start region for level 0
-[14:44:34] [Server thread/INFO]: Preparing spawn area: 36%
-[14:44:34] [Server thread/WARN]: Skipping BlockEntity with id 
-[14:44:34] [Server thread/WARN]: Skipping BlockEntity with id 
-[14:44:35] [Server thread/INFO]: Changing view distance to 8, from 10
-[14:44:36] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@629f2844[id=b5b2ff24-9e23-373f-97d2-19884357bdea,name=Player907,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:151) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.launchIntegratedServer(Minecraft.java:2231) [Minecraft.class:?]
-	at net.minecraftforge.fml.client.FMLClientHandler.tryLoadExistingWorld(FMLClientHandler.java:698) [FMLClientHandler.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.func_146615_e(GuiSelectWorld.java:190) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld$List.elementClicked(GuiSelectWorld.java:264) [GuiSelectWorld$List.class:?]
-	at net.minecraft.client.gui.GuiSlot.handleMouseInput(GuiSlot.java:287) [GuiSlot.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.handleMouseInput(GuiSelectWorld.java:78) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:516) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1670) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:345) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140) [idea_rt.jar:?]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_60]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_60]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_60]
-	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_60]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668) ~[?:1.8.0_60]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:90) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1432) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1430) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1429) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.8.0_60]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 26 more
-[14:44:36] [Server thread/INFO]: Player907[local:E:80ec7585] logged in with entity id 255 at (-258.40593705421657, 64.0, 184.34637580123118)
-[14:44:36] [Server thread/INFO]: Player907 joined the game
-[14:44:37] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@629f2844[id=b5b2ff24-9e23-373f-97d2-19884357bdea,name=Player907,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+[13:56:39] [Client thread/INFO]: Setting user: Player588
+[13:56:45] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:56:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[13:56:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:56:57] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[13:56:57] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:56:57] [Thread-12/INFO]: OpenAL initialized.
+[13:56:57] [Sound Library Loader/INFO]: Sound engine started
+[13:57:02] [Client thread/INFO]: Created: 512x512 textures-atlas
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[13:57:07] [Client thread/INFO]: SoundSystem shutting down...
+[13:57:07] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[13:57:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:57:07] [Thread-17/INFO]: Initializing LWJGL OpenAL
+[13:57:07] [Thread-17/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:57:07] [Thread-17/INFO]: OpenAL initialized.
+[13:57:07] [Sound Library Loader/INFO]: Sound engine started
+[13:57:11] [Client thread/INFO]: Created: 512x512 textures-atlas
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:58:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[13:58:47] [Server thread/INFO]: Generating keypair
+[13:58:48] [Server thread/INFO]: Preparing start region for level 0
+[13:58:49] [Server thread/INFO]: Preparing spawn area: 17%
+[13:58:49] [Server thread/WARN]: Skipping BlockEntity with id 
+[13:58:50] [Server thread/INFO]: Preparing spawn area: 86%
+[13:58:51] [Server thread/INFO]: Changing view distance to 8, from 10
+[13:58:52] [Server thread/INFO]: Player588[local:E:a4e6192b] logged in with entity id 222 at (92.06013857329835, 68.0, 261.8488668147951)
+[13:58:52] [Server thread/INFO]: Player588 joined the game
+[13:58:53] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@32dc7ae3[id=3e3cdda1-3fb1-331c-b583-7387437040de,name=Player588,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
@@ -133,55 +74,27 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_60]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_60]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_60]
-	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_60]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668) ~[?:1.8.0_60]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:90) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1432) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1430) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1429) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.8.0_60]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[14:44:45] [Server thread/ERROR]: Encountered an unexpected exception
-net.minecraft.util.ReportedException: Ticking block entity
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:710) ~[MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:598) ~[MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:164) ~[IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:478) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
-Caused by: java.lang.ClassCastException: com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer cannot be cast to com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergyBlock
-	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.setSlaveBlocks(TileEntityEnergizer.java:294) ~[TileEntityEnergizer.class:?]
-	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.makeMultiblock(TileEntityEnergizer.java:284) ~[TileEntityEnergizer.class:?]
-	at com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer.update(TileEntityEnergizer.java:44) ~[TileEntityEnergizer.class:?]
-	at net.minecraft.world.World.updateEntities(World.java:1735) ~[World.class:?]
-	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:571) ~[WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:704) ~[MinecraftServer.class:?]
-	... 4 more
-[14:44:45] [Server thread/ERROR]: This crash report has been saved to: C:\Workspace\Minecraft Mods\1.8\EnergyTools\IntelliJ\.\crash-reports\crash-2015-10-26_14.44.45-server.txt
-[14:44:45] [Server thread/INFO]: Stopping server
-[14:44:45] [Server thread/INFO]: Saving players
-[14:44:45] [Server thread/INFO]: Saving worlds
-[14:44:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:44:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:44:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:59:57] [Server thread/INFO]: [Player588: Set the time to 1000]
+[13:59:57] [Client thread/INFO]: [CHAT] Set the time to 1000
+[14:01:54] [Server thread/INFO]: Player588 has just earned the achievement [Taking Inventory]
+[14:01:54] [Client thread/INFO]: [CHAT] Player588 has just earned the achievement [Taking Inventory]
+[14:03:01] [Server thread/INFO]: Saving and pausing game...
+[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
+[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
+[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
+[14:03:40] [Server thread/INFO]: Saving and pausing game...
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:03:41] [Server thread/INFO]: Stopping server
+[14:03:41] [Server thread/INFO]: Saving players
+[14:03:41] [Server thread/INFO]: Saving worlds
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:03:44] [Client thread/INFO]: Stopping!
+[14:03:44] [Client thread/INFO]: SoundSystem shutting down...
+[14:03:44] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

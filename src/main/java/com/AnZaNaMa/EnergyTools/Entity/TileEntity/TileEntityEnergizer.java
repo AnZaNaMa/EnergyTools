@@ -128,10 +128,14 @@ public class TileEntityEnergizer extends PowerProvider {
 
     private boolean completesLargeMultiblock(){
         boolean stillMultiblock = true;
+        int energizersInZone = 0;
         for(int x = this.pos.getX() - 3; x < this.pos.getX() + 4; x++){
             for(int z = this.pos.getZ() - 3; z < this.pos.getZ() + 4; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer && energizersInZone == 0) {
+                        if(worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer){
+                            energizersInZone++;
+                        }
                     } else {
                         stillMultiblock = false;
                         break;
@@ -147,10 +151,14 @@ public class TileEntityEnergizer extends PowerProvider {
 
     private boolean completesMediumMultiblock(){
         boolean stillMultiblock = true;
+        int energizersInZone = 0;
         for(int x = this.pos.getX() - 2; x < this.pos.getX() + 3; x++){
             for(int z = this.pos.getZ() - 2; z < this.pos.getZ() + 3; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer && energizersInZone == 0) {
+                        if(worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer){
+                            energizersInZone++;
+                        }
                     } else {
                         stillMultiblock = false;
                         break;
@@ -166,10 +174,14 @@ public class TileEntityEnergizer extends PowerProvider {
 
     private boolean completesSmallMultiblock(){
         boolean stillMultiblock = true;
+        int energizersInZone = 0;
         for(int x = this.pos.getX() - 1; x < this.pos.getX() + 2; x++){
             for(int z = this.pos.getZ() - 1; z < this.pos.getZ() + 2; z++){
                 try {
-                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer) {
+                    if (worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energyblock || worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer && energizersInZone == 0) {
+                        if(worldObj.getBlockState(new BlockPos(x, this.pos.getY(), z)).getBlock() == BlockEnergyTools.energizer){
+                            energizersInZone++;
+                        }
                     } else {
                         stillMultiblock = false;
                         break;
@@ -185,11 +197,9 @@ public class TileEntityEnergizer extends PowerProvider {
 
     private boolean completesMultiblock(){
         if(completesLargeMultiblock() || completesMediumMultiblock() || completesSmallMultiblock()){
-            LogHelper.info("Was Multiblock.");
             return true;
         }
         else{
-            LogHelper.info("Was not multiblock.");
             return false;
         }
     }
@@ -287,60 +297,75 @@ public class TileEntityEnergizer extends PowerProvider {
     }
 
     public void setSlaveBlocks(){
+        int texNum;
+        switch(this.multiblockSize) {
+            case 3:
+                texNum = 1;
+                break;
+            case 5:
+                texNum = 2;
+                break;
+            case 7:
+                texNum = 3;
+                break;
+            default:
+                texNum = 1;
+        }
         if(this.multiblockSize >= 3){
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()))).setStraight(1, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()))).setStraight(1, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()+1))).setStraight(1, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()-1))).setStraight(1, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()+1))).setCorner(1, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()-1))).setCorner(1, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()+1))).setCorner(1, 3);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()-1))).setCorner(1, 4);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()+1))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()-1))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()+1))).setCorner(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()-1))).setCorner(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()+1))).setCorner(texNum, 3);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()-1))).setCorner(texNum, 4);
         }
         if(this.multiblockSize >=5){
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()+1))).setStraight(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()+2))).setCorner(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()-1))).setStraight(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()-2))).setCorner(2, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()))).setStraight(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()+1))).setStraight(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()+2))).setCorner(2, 4);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()-1))).setStraight(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()-2))).setCorner(2, 3);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()))).setStraight(2, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()+2))).setStraight(2, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()+2))).setStraight(2, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()-2))).setStraight(2, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()-2))).setStraight(2, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()+2))).setStraight(2, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()-2))).setStraight(2, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()+1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()+2))).setCorner(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()-1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()-2))).setCorner(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()+1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()+2))).setCorner(texNum, 3);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()-1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()-2))).setCorner(texNum, 4);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()+2))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()+2))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()-2))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()-2))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()+2))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()-2))).setStraight(texNum, 1);
         }
         if(this.multiblockSize == 7){
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+1))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+2))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+3))).setCorner(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()-1))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()-2))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()-3))).setCorner(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()+1))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()+2))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()+3))).setCorner(3, 4);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-1))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-2))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-3))).setCorner(3, 3);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()))).setStraight(3, 1);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()+3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()+3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()+3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()+3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()+3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()-3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()-3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()-3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()-3))).setStraight(3, 2);
-            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()-3))).setStraight(3, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+2))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+3))).setCorner(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()-1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()-2))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()-3))).setCorner(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()+1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()+2))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()+3))).setCorner(texNum, 3);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-1))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-2))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-3))).setCorner(texNum, 4);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()))).setStraight(texNum, 2);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()+3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()+3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()+3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()+3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()+3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX(), pos.getY(), pos.getZ()-3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+1, pos.getY(), pos.getZ()-3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()+2, pos.getY(), pos.getZ()-3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-1, pos.getY(), pos.getZ()-3))).setStraight(texNum, 1);
+            ((TileEntityEnergyBlock)worldObj.getTileEntity(new BlockPos(pos.getX()-2, pos.getY(), pos.getZ()-3))).setStraight(texNum, 1);
         }
+        worldObj.markBlockRangeForRenderUpdate(new BlockPos(pos.getX()-3, pos.getY(), pos.getZ()-3), new BlockPos(pos.getX()+3, pos.getY(), pos.getZ()+3));
     }
 
     public int getGhostSpins(){

@@ -31,4 +31,23 @@ public class PipeSystem {
     public PipeSystem(){
         this(0, 0, 0, null, null, null);
     }
+
+    public void updatePipeSystem(){
+        PowerConnectable[] adjacentMachines;
+        for(int i=0; i<pipesInSystem; i++){
+            if(isInSystem(pipes[i])){
+                adjacentMachines = pipes[i].getConnectedMachines();
+                for(int j=0; j<adjacentMachines.length; j++){
+                    if(adjacentMachines[j].getPipeSystem() == this){
+                    } else {
+                        adjacentMachines[j].setPipeSystem(this);
+                    }
+                }
+            }
+        }
+    }
+
+    public boolean isInSystem(PowerConnectable tileEntity){
+        return tileEntity.getPipeSystem() == this;
+    }
 }
