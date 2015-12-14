@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  * Created by Andrew Graber on 5/20/2015.
  */
 public class EnergeticPipe extends BlockContainer implements IEnergyBlock {
+
     float pixel = 1F / 16F;
 
     public EnergeticPipe(Material material, String unlocalizedName, float hardness, float resistance){

@@ -1,0 +1,100 @@
+[13:56:39] [Client thread/INFO]: Setting user: Player588
+[13:56:45] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:56:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[13:56:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:56:57] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[13:56:57] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:56:57] [Thread-12/INFO]: OpenAL initialized.
+[13:56:57] [Sound Library Loader/INFO]: Sound engine started
+[13:57:02] [Client thread/INFO]: Created: 512x512 textures-atlas
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[13:57:07] [Client thread/INFO]: SoundSystem shutting down...
+[13:57:07] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[13:57:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:57:07] [Thread-17/INFO]: Initializing LWJGL OpenAL
+[13:57:07] [Thread-17/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:57:07] [Thread-17/INFO]: OpenAL initialized.
+[13:57:07] [Sound Library Loader/INFO]: Sound engine started
+[13:57:11] [Client thread/INFO]: Created: 512x512 textures-atlas
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[13:58:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[13:58:47] [Server thread/INFO]: Generating keypair
+[13:58:48] [Server thread/INFO]: Preparing start region for level 0
+[13:58:49] [Server thread/INFO]: Preparing spawn area: 17%
+[13:58:49] [Server thread/WARN]: Skipping BlockEntity with id 
+[13:58:50] [Server thread/INFO]: Preparing spawn area: 86%
+[13:58:51] [Server thread/INFO]: Changing view distance to 8, from 10
+[13:58:52] [Server thread/INFO]: Player588[local:E:a4e6192b] logged in with entity id 222 at (92.06013857329835, 68.0, 261.8488668147951)
+[13:58:52] [Server thread/INFO]: Player588 joined the game
+[13:58:53] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@32dc7ae3[id=3e3cdda1-3fb1-331c-b583-7387437040de,name=Player588,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:132) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_60]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+[13:59:57] [Server thread/INFO]: [Player588: Set the time to 1000]
+[13:59:57] [Client thread/INFO]: [CHAT] Set the time to 1000
+[14:01:54] [Server thread/INFO]: Player588 has just earned the achievement [Taking Inventory]
+[14:01:54] [Client thread/INFO]: [CHAT] Player588 has just earned the achievement [Taking Inventory]
+[14:03:01] [Server thread/INFO]: Saving and pausing game...
+[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
+[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
+[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
+[14:03:40] [Server thread/INFO]: Saving and pausing game...
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:03:41] [Server thread/INFO]: Stopping server
+[14:03:41] [Server thread/INFO]: Saving players
+[14:03:41] [Server thread/INFO]: Saving worlds
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:03:44] [Client thread/INFO]: Stopping!
+[14:03:44] [Client thread/INFO]: SoundSystem shutting down...
+[14:03:44] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
