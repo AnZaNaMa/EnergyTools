@@ -647,7 +647,7 @@ NEICorePlugin (NotEnoughItems-1.8-1.0.5.104-universal.jar)
 [13:47:00] [Client thread/TRACE] [FML/]: Attempting to deliver 1 IMC messages to mod Waila
 [13:47:00] [Client thread/TRACE] [Waila/Waila]: Sending event IMCEvent to mod Waila
 [13:47:00] [Thread-15/INFO] [VersionChecker/VersionChecker]: Received update from mod energytools
-[13:47:00] [Client thread/INFO] [Waila/Waila]: Receiving registration request from [ energytools ] for method com.AnZaNaMa.EnergyTools.Waila.WailaTileHandler.callbackRegister
+[13:47:00] [Client thread/INFO] [Waila/Waila]: Receiving registration request from [ energytools ] for method com.AnZaNaMa.EnergyTools.Waila.WailaEnergizerHandler.callbackRegister
 [13:47:00] [Client thread/TRACE] [Waila/Waila]: Sent event IMCEvent to mod Waila
 [13:47:00] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod VersionChecker
 [13:47:00] [Client thread/TRACE] [VersionChecker/VersionChecker]: Sending event IMCEvent to mod VersionChecker
@@ -707,7 +707,7 @@ NEICorePlugin (NotEnoughItems-1.8-1.0.5.104-universal.jar)
 [13:47:01] [Client thread/TRACE] [energytools/energytools]: Sending event FMLLoadCompleteEvent to mod energytools
 [13:47:01] [Client thread/TRACE] [energytools/energytools]: Sent event FMLLoadCompleteEvent to mod energytools
 [13:47:01] [Client thread/TRACE] [Waila/Waila]: Sending event FMLLoadCompleteEvent to mod Waila
-[13:47:01] [Client thread/INFO] [Waila/Waila]: Trying to reflect com.AnZaNaMa.EnergyTools.Waila.WailaTileHandler callbackRegister
+[13:47:01] [Client thread/INFO] [Waila/Waila]: Trying to reflect com.AnZaNaMa.EnergyTools.Waila.WailaEnergizerHandler callbackRegister
 [13:47:01] [Client thread/INFO] [Waila/Waila]: Success in registering energytools
 [13:47:01] [Client thread/TRACE] [Waila/Waila]: Sent event FMLLoadCompleteEvent to mod Waila
 [13:47:01] [Client thread/TRACE] [VersionChecker/VersionChecker]: Sending event FMLLoadCompleteEvent to mod VersionChecker

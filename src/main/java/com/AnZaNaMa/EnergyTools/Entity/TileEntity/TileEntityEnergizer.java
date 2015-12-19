@@ -123,7 +123,7 @@ public class TileEntityEnergizer extends PowerProvider {
     }
 
     public boolean hasEnergy(){
-        return this.energyContained > 0 ? true : false;
+        return this.energyContained > 0;
     }
 
     private boolean completesLargeMultiblock(){

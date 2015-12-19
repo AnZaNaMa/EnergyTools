@@ -1,59 +1,203 @@
-[13:56:39] [Client thread/INFO]: Setting user: Player588
-[13:56:45] [Client thread/INFO]: LWJGL Version: 2.9.1
-[13:56:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
-[13:56:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:56:57] [Thread-12/INFO]: Initializing LWJGL OpenAL
-[13:56:57] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:56:57] [Thread-12/INFO]: OpenAL initialized.
-[13:56:57] [Sound Library Loader/INFO]: Sound engine started
-[13:57:02] [Client thread/INFO]: Created: 512x512 textures-atlas
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:03] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
-[13:57:07] [Client thread/INFO]: SoundSystem shutting down...
-[13:57:07] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[13:57:07] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:57:07] [Thread-17/INFO]: Initializing LWJGL OpenAL
-[13:57:07] [Thread-17/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:57:07] [Thread-17/INFO]: OpenAL initialized.
-[13:57:07] [Sound Library Loader/INFO]: Sound engine started
-[13:57:11] [Client thread/INFO]: Created: 512x512 textures-atlas
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:57:11] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
-[13:58:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[13:58:47] [Server thread/INFO]: Generating keypair
-[13:58:48] [Server thread/INFO]: Preparing start region for level 0
-[13:58:49] [Server thread/INFO]: Preparing spawn area: 17%
-[13:58:49] [Server thread/WARN]: Skipping BlockEntity with id 
-[13:58:50] [Server thread/INFO]: Preparing spawn area: 86%
-[13:58:51] [Server thread/INFO]: Changing view distance to 8, from 10
-[13:58:52] [Server thread/INFO]: Player588[local:E:a4e6192b] logged in with entity id 222 at (92.06013857329835, 68.0, 261.8488668147951)
-[13:58:52] [Server thread/INFO]: Player588 joined the game
-[13:58:53] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@32dc7ae3[id=3e3cdda1-3fb1-331c-b583-7387437040de,name=Player588,properties={},legacy=false]
+[23:16:22] [main/INFO]: Extra: []
+[23:16:22] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/AnZaN_000/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.8, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[23:16:22] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[23:16:22] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[23:16:22] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[23:16:22] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[23:16:23] [main/INFO]: Forge Mod Loader version 8.99.124.1450 for Minecraft 1.8 loading
+[23:16:23] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_45, running on Windows 8.1:amd64:6.3, installed at C:\Program Files\Java\jdk1.8.0_45\jre
+[23:16:23] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[23:16:24] [main/WARN]: The coremod codechicken.core.launch.CodeChickenCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[23:16:25] [main/WARN]: The coremod codechicken.lib.asm.CCLCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[23:16:25] [main/WARN]: The coremod codechicken.lib.asm.CCLCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[23:16:25] [main/WARN]: The coremod codechicken.nei.asm.NEICorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[23:16:25] [main/WARN]: The coremod com.dynious.versionchecker.asm.LoadingPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[23:16:25] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[23:16:25] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[23:16:25] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[23:16:25] [main/INFO]: Injecting location in coremod codechicken.core.asm.MCPDeobfuscationTransformer.LoadPlugin
+[23:16:25] [main/INFO]: Injecting location in coremod codechicken.lib.asm.CCLCorePlugin
+[23:16:25] [main/INFO]: Injecting location in coremod codechicken.core.launch.CodeChickenCorePlugin
+[23:16:25] [main/INFO]: Injecting location in coremod codechicken.lib.asm.CCLCorePlugin
+[23:16:25] [main/INFO]: Injecting location in coremod codechicken.nei.asm.NEICorePlugin
+[23:16:25] [main/INFO]: Injecting location in coremod com.dynious.versionchecker.asm.LoadingPlugin
+[23:16:25] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:16:25] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[23:16:25] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[23:16:25] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:16:25] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:16:25] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:25] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[23:16:27] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:16:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[23:16:28] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[23:16:28] [main/INFO]: Remapping AccessTransformer rules...
+[23:16:28] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[23:16:28] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[23:16:28] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[23:16:33] [Client thread/INFO]: Setting user: Player28
+[23:16:38] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:16:39] [Client thread/INFO]: [net.minecraftforge.fml.client.SplashProgress:start:235]: ---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  LoadingPlugin (VersionChecker-1.2.2.jar)
+  CCLCorePlugin (CodeChickenLib-1.8-1.1.2.133-dev.jar)
+  CodeChickenCorePlugin (CodeChickenCore-1.8-1.0.5.36-universal.jar)
+  CCCDeobfPlugin (unknown)
+  NEICorePlugin (NotEnoughItems-1.8-1.0.5.104-universal.jar)
+Contact their authors BEFORE contacting forge
+
+// Why did you do that?
+
+Time: 12/18/15 11:16 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 821839400 bytes (783 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+LoadingPlugin (VersionChecker-1.2.2.jar)
+  
+CCLCorePlugin (CodeChickenLib-1.8-1.1.2.133-dev.jar)
+  codechicken.lib.asm.ClassHeirachyManager
+  codechicken.lib.asm.RenderHookTransformer
+CodeChickenCorePlugin (CodeChickenCore-1.8-1.0.5.36-universal.jar)
+  codechicken.core.asm.InterfaceDependancyTransformer
+  codechicken.core.asm.TweakTransformer
+  codechicken.core.asm.DelegatedTransformer
+  codechicken.core.asm.DefaultImplementationTransformer
+CCCDeobfPlugin (unknown)
+  
+NEICorePlugin (NotEnoughItems-1.8-1.0.5.104-universal.jar)
+  codechicken.nei.asm.NEITransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 355.60' Renderer: 'GeForce GTX 980/PCIe/SSE2'
+[23:16:40] [Client thread/INFO]: Attempting early MinecraftForge initialization
+[23:16:40] [Client thread/INFO]: MinecraftForge v11.14.3.1450 Initialized
+[23:16:40] [Client thread/INFO]: Replaced 204 ore recipies
+[23:16:40] [Client thread/INFO]: Completed early MinecraftForge initialization
+[23:16:40] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[23:16:40] [Client thread/INFO]: Searching C:\Workspace\Minecraft Mods\1.8\EnergyTools\IntelliJ\mods for mods
+[23:16:40] [Client thread/INFO]: Also searching C:\Workspace\Minecraft Mods\1.8\EnergyTools\IntelliJ\mods\1.8 for mods
+[23:16:43] [Client thread/INFO]: Forge Mod Loader has identified 8 mods to load
+[23:16:44] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, CodeChickenCore, NotEnoughItems, energytools, Waila, VersionChecker] at CLIENT
+[23:16:44] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, CodeChickenCore, NotEnoughItems, energytools, Waila, VersionChecker] at SERVER
+[23:16:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[23:16:45] [Client thread/INFO]: Processing ObjectHolder annotations
+[23:16:45] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[23:16:45] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[23:16:45] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[23:16:45] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[23:16:45] [Client thread/INFO]: Mod Pre-Initialized!
+[23:16:45] [Client thread/INFO]: Applying holder lookups
+[23:16:45] [Client thread/INFO]: Holder lookups applied
+[23:16:45] [Client thread/INFO]: Injecting itemstacks
+[23:16:45] [Client thread/INFO]: Itemstack injection complete
+[23:16:45] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:16:45] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[23:16:45] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:16:46] [Thread-12/INFO]: OpenAL initialized.
+[23:16:46] [Sound Library Loader/INFO]: Sound engine started
+[23:16:49] [Client thread/INFO]: Created: 512x512 textures-atlas
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:49] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:49] [Client thread/ERROR]: Model definition for location energytools:energeticpipe#inventory not found
+[23:16:49] [Client thread/ERROR]: Model definition for location energytools:energeticpipe#normal not found
+[23:16:51] [Client thread/INFO]: Mod Initialized!
+[23:16:51] [Client thread/INFO]: Receiving registration request from [ energytools ] for method com.AnZaNaMa.EnergyTools.Waila.WailaEnergizerHandler.callbackRegister
+[23:16:51] [Client thread/INFO]: Injecting itemstacks
+[23:16:51] [Thread-15/INFO]: Received version check from mod VersionChecker
+[23:16:51] [Client thread/INFO]: Itemstack injection complete
+[23:16:51] [Thread-15/INFO]: Received update from mod energytools
+[23:16:51] [Client thread/INFO]: Mod Post-Initialized!
+[23:16:51] [Client thread/WARN]: =============================================================
+[23:16:51] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[23:16:51] [Client thread/WARN]: Offendor: mcp/mobius/waila/gui/truetyper/TrueTypeFont.loadImage(Ljava/awt/image/BufferedImage;)I
+[23:16:51] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
+[23:16:51] [Client thread/WARN]: =============================================================
+[23:16:51] [Client thread/INFO]: [mcp.mobius.waila.gui.truetyper.TrueTypeFont:<init>:99]: TrueTypeFont loaded: java.awt.Font[family=Minecraftia,name=Minecraftia Regular,style=plain,size=14] - AntiAlias = true
+[23:16:52] [Client thread/INFO]: Trying to reflect com.AnZaNaMa.EnergyTools.Waila.WailaEnergizerHandler callbackRegister
+[23:16:52] [Client thread/INFO]: Success in registering energytools
+[23:16:52] [Client thread/INFO]: Forge Mod Loader has successfully loaded 8 mods
+[23:16:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AnZaNaMa's EnergyTools Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Version Checker
+[23:16:52] [Client thread/INFO]: SoundSystem shutting down...
+[23:16:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[23:16:52] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:16:52] [Thread-17/INFO]: Initializing LWJGL OpenAL
+[23:16:52] [Thread-17/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:16:52] [Thread-17/INFO]: OpenAL initialized.
+[23:16:52] [Sound Library Loader/INFO]: Sound engine started
+[23:16:54] [Client thread/INFO]: Created: 512x512 textures-atlas
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #top in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #front in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:54] [Client thread/WARN]: Unable to resolve texture due to upward reference: #side in minecraft:models/block/orientable
+[23:16:54] [Client thread/ERROR]: Model definition for location energytools:energeticpipe#inventory not found
+[23:16:54] [Client thread/ERROR]: Model definition for location energytools:energeticpipe#normal not found
+[23:16:55] [Thread-15/INFO]: Version Checker Status for Version Checker: OUTDATED! Using 1.2.2, latest 1.2.4
+[23:18:14] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[23:18:14] [Server thread/INFO]: Generating keypair
+[23:18:14] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[23:18:14] [Server thread/INFO]: Applying holder lookups
+[23:18:14] [Server thread/INFO]: Holder lookups applied
+[23:18:14] [Server thread/INFO]: Loading dimension 0 (Test World 2) (net.minecraft.server.integrated.IntegratedServer@689451cc)
+[23:18:14] [Server thread/INFO]: Loading dimension 1 (Test World 2) (net.minecraft.server.integrated.IntegratedServer@689451cc)
+[23:18:14] [Server thread/INFO]: Loading dimension -1 (Test World 2) (net.minecraft.server.integrated.IntegratedServer@689451cc)
+[23:18:14] [Server thread/INFO]: Preparing start region for level 0
+[23:18:15] [Server thread/WARN]: Skipping BlockEntity with id 
+[23:18:15] [Server thread/INFO]: Preparing spawn area: 69%
+[23:18:16] [Server thread/INFO]: Changing view distance to 8, from 10
+[23:18:17] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[23:18:17] [Netty Server IO #1/INFO]: Client protocol version 2
+[23:18:17] [Netty Server IO #1/INFO]: Client attempting to join with 8 mods : CodeChickenCore@1.0.5.36,NotEnoughItems@1.0.5.104,energytools@1.8-1.0b1,VersionChecker@1.2.2,Waila@1.6.0_B1,FML@8.0.99.99,Forge@11.14.3.1450,mcp@9.05
+[23:18:17] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[23:18:17] [Server thread/INFO]: [Server thread] Server side modded connection established
+[23:18:17] [Server thread/INFO]: Player28[local:E:47b05598] logged in with entity id 315 at (-197.91243590700373, 70.0, 48.41194644286392)
+[23:18:17] [Server thread/INFO]: Player28 joined the game
+[23:18:17] [Server thread/INFO]: Player EntityPlayerMP['Player28'/315, l='Test World 2', x=-197.91, y=70.00, z=48.41] connected. Sending ping
+[23:18:18] [Netty Local Client IO #0/INFO]: Received server authentication msg. Remote sync will be activated
+[23:18:18] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@30696c34[id=50dde602-6a46-34aa-95e3-8463932e70f7,name=Player28,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
@@ -69,32 +213,28 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
 	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:132) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_60]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
-	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
-[13:59:57] [Server thread/INFO]: [Player588: Set the time to 1000]
-[13:59:57] [Client thread/INFO]: [CHAT] Set the time to 1000
-[14:01:54] [Server thread/INFO]: Player588 has just earned the achievement [Taking Inventory]
-[14:01:54] [Client thread/INFO]: [CHAT] Player588 has just earned the achievement [Taking Inventory]
-[14:03:01] [Server thread/INFO]: Saving and pausing game...
-[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:03:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
-[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
-[14:03:09] [Client thread/ERROR]: Item entity 9613 has no item?!
-[14:03:40] [Server thread/INFO]: Saving and pausing game...
-[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:03:41] [Server thread/INFO]: Stopping server
-[14:03:41] [Server thread/INFO]: Saving players
-[14:03:41] [Server thread/INFO]: Saving worlds
-[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:03:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:03:44] [Client thread/INFO]: Stopping!
-[14:03:44] [Client thread/INFO]: SoundSystem shutting down...
-[14:03:44] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_45]
+[23:18:38] [Server thread/INFO]: Player28 has just earned the achievement [Taking Inventory]
+[23:18:38] [Client thread/INFO]: [CHAT] Player28 has just earned the achievement [Taking Inventory]
+[23:19:30] [Server thread/INFO]: Saving and pausing game...
+[23:19:30] [Server thread/INFO]: Saving chunks for level 'Test World 2'/Overworld
+[23:19:30] [Server thread/INFO]: Saving chunks for level 'Test World 2'/Nether
+[23:19:30] [Server thread/INFO]: Saving chunks for level 'Test World 2'/The End
+[23:19:30] [Server thread/INFO]: Stopping server
+[23:19:30] [Server thread/INFO]: Saving players
+[23:19:30] [Server thread/INFO]: Saving worlds
+[23:19:30] [Server thread/INFO]: Saving chunks for level 'Test World 2'/Overworld
+[23:19:31] [Server thread/INFO]: Saving chunks for level 'Test World 2'/Nether
+[23:19:31] [Server thread/INFO]: Saving chunks for level 'Test World 2'/The End
+[23:19:31] [Server thread/INFO]: Unloading dimension 0
+[23:19:31] [Server thread/INFO]: Unloading dimension -1
+[23:19:31] [Server thread/INFO]: Unloading dimension 1
+[23:19:31] [Server thread/INFO]: Applying holder lookups
+[23:19:31] [Server thread/INFO]: Holder lookups applied
+[23:19:32] [Client thread/INFO]: Stopping!
+[23:19:32] [Client thread/INFO]: SoundSystem shutting down...
+[23:19:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

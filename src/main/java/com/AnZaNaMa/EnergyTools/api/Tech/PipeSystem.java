@@ -50,4 +50,16 @@ public class PipeSystem {
     public boolean isInSystem(PowerConnectable tileEntity){
         return tileEntity.getPipeSystem() == this;
     }
+
+    public int getNumPipesInSystem(){
+        return this.pipesInSystem;
+    }
+
+    public int getNumEnergyProviders(){
+        return this.numEnergyProviders;
+    }
+
+    public int getNumEnergyAcceptors(){
+        return this.numEnergyAcceptors;
+    }
 }

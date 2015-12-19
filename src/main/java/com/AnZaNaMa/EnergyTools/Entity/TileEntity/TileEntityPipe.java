@@ -2,7 +2,9 @@ package com.AnZaNaMa.EnergyTools.Entity.TileEntity;
 
 import com.AnZaNaMa.EnergyTools.api.DirectionHandler;
 import com.AnZaNaMa.EnergyTools.api.Tech.PipeSystem;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerAcceptor;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerProvider;
 import net.minecraft.util.EnumFacing;
 
 /**
@@ -10,20 +12,20 @@ import net.minecraft.util.EnumFacing;
  */
 public class TileEntityPipe extends PowerConnectable {
     private PipeSystem pipeSystem;
+    private PowerProvider[] connectedProviders;
+    private PowerAcceptor[] connectedAcceptors;
 
     public TileEntityPipe(){
-        if(anyConnectionSystemized()){
-            this.pipeSystem = getFirstSystemizedConnection(this.systemizedConnections).getPipeSystem();
-        }
-        else{
-            this.pipeSystem = new PipeSystem(1, 0, 0, new TileEntityPipe[]{this}, null, null);
-        }
+        super();
+
     }
 
     //called every tick (20 times/second)
     @Override
     public void update(){
         super.update();
+        getConnectedMachines();
+
     }
 
     //Returns true if the pipe should render as a 'long pipe'

@@ -1,5 +1,6 @@
 package com.AnZaNaMa.EnergyTools.api.Tech;
 
+import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.gui.IUpdatePlayerListBox;
 import net.minecraft.tileentity.TileEntity;
@@ -11,17 +12,20 @@ import net.minecraft.util.EnumFacing;
  */
 public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox{
     protected PowerConnectable[] systemizedConnections;
+    private PowerConnectable[] connectedMachines;
     protected EnumFacing[] connections = new EnumFacing[6];
     protected PipeSystem pipeSystem;
     protected int energyContained;
 
     public PowerConnectable(){
-        if(anyConnectionSystemized()){
-            this.pipeSystem = getFirstSystemizedConnection(this.systemizedConnections).getPipeSystem();
+        this.connectedMachines = getConnectedMachines();
+        if(connectedMachines[0] != null){
+            this.pipeSystem = connectedMachines[0].getPipeSystem();
         }
         else{
             this.pipeSystem = new PipeSystem();
         }
+        this.energyContained = 0;
     }
 
     //called every tick (20 times/second)
@@ -159,13 +163,25 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     }
 
     public PowerConnectable[] getConnectedMachines(){
-        PowerConnectable[] machines = new PowerConnectable[]{null};
+        PowerConnectable[] machines = new PowerConnectable[6];
         BlockPos[] positions = new BlockPos[]{pos.north(), pos.east(), pos.south(), pos.west(), pos.up(), pos.down()};
         for(int i=0; i<positions.length; i++){
-            if(worldObj.getTileEntity(positions[i]) != null && worldObj.getTileEntity(positions[i]) instanceof PowerConnectable){
-                machines[machines.length] = (PowerConnectable)worldObj.getTileEntity(positions[i]);
-            }
+            try {
+                if(worldObj.getTileEntity(positions[i]) != null) {
+                    if (worldObj.getTileEntity(positions[i]) instanceof PowerConnectable) {
+                        int next = 0;
+                        for(int j=0; j<positions.length; j++) {
+                            if(positions[j] == null) next = j;
+                        }
+                        machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[i]);
+                    }
+                }
+            } catch (NullPointerException e){}
         }
         return machines;
+    }
+
+    public int getEnergyContained(){
+        return this.energyContained;
     }
 }
