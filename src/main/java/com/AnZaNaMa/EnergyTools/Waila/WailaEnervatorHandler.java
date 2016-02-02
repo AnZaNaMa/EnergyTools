@@ -4,6 +4,7 @@ import com.AnZaNaMa.EnergyTools.Block.EnergeticPipe;
 import com.AnZaNaMa.EnergyTools.Block.Energizer;
 import com.AnZaNaMa.EnergyTools.Block.Enervator;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
+import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnervator;
 import mcp.mobius.waila.api.*;
 import mcp.mobius.waila.api.impl.TipList;
 import net.minecraft.item.ItemStack;
@@ -15,12 +16,12 @@ import net.minecraftforge.fml.common.Optional;
  * Created by Andrew Graber on 5/13/2015.
  */
 @Optional.Interface(iface = "mcp.mobius.waila.api.IWailaDataProvider", modid = "Waila")
-public class WailaEnergizerHandler implements IWailaDataProvider {
+public class WailaEnervatorHandler implements IWailaDataProvider {
 
     @Optional.Method(modid = "Waila")
     public static void callbackRegister(IWailaRegistrar register){
-        WailaEnergizerHandler energizer = new WailaEnergizerHandler();
-        register.registerBodyProvider(energizer, Energizer.class);
+        WailaEnervatorHandler enervator = new WailaEnervatorHandler();
+        register.registerBodyProvider(enervator, Enervator.class);
         register.addConfig("EnergyTools", "option.energytools.showMore", "Show More?", false);
     }
 
@@ -40,10 +41,10 @@ public class WailaEnergizerHandler implements IWailaDataProvider {
     @Optional.Method(modid = "Waila")
     public ITaggedList.ITipList getWailaBody(ItemStack itemStack, ITaggedList.ITipList currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
 
-        if(accessor.getTileEntity() instanceof TileEntityEnergizer) {
-            ((TipList)currenttip).add("Energy: " + accessor.getNBTData().getInteger("Energy"));
+        if(accessor.getTileEntity() instanceof TileEntityEnervator) {
+            ((TipList)currenttip).add(((TileEntityEnervator) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnervator) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
             if(config.getConfig("option.energytools.showMore")){
-                ((TipList)currenttip).add("Multiblock: " + ((TileEntityEnergizer) accessor.getTileEntity()).getIsMultiblock());
+                ((TipList)currenttip).add("Multiblock: " + ((TileEntityEnervator) accessor.getTileEntity()).getIsMultiblock());
                 ((TipList)currenttip).add("Multiblock Size: " + ((TileEntityEnergizer) accessor.getTileEntity()).getMultiblockSize());
             }
         }

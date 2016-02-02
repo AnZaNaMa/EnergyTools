@@ -1,6 +1,5 @@
 package com.AnZaNaMa.EnergyTools.Item;
 
-import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
 import com.AnZaNaMa.EnergyTools.Energy.EnergyTransfer;
 import com.AnZaNaMa.EnergyTools.EnergyTools;
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
@@ -36,7 +35,7 @@ public class EnergyShovel extends ItemSpade implements IEnergyItem{
     public boolean onBlockDestroyed(ItemStack stack, World worldIn, Block blockIn, BlockPos pos, EntityLivingBase playerIn)
     {
         if(playerIn instanceof EntityPlayer) {
-            if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) playerIn, 10)) {
+            if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) playerIn, 10)) {
                 return true;
             }
             else{

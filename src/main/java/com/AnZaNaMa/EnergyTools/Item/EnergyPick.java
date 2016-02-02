@@ -1,10 +1,8 @@
 package com.AnZaNaMa.EnergyTools.Item;
 
-import com.AnZaNaMa.EnergyTools.Energy.Energy;
 import com.AnZaNaMa.EnergyTools.Energy.EnergyTransfer;
 import com.AnZaNaMa.EnergyTools.EnergyTools;
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
-import com.typesafe.config.ConfigException;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
@@ -69,7 +67,7 @@ public class EnergyPick extends ItemPickaxe implements IEnergyItem{
                                 breakBlock(worldIn, new BlockPos(pos.getX() + 1, pos.getY(), pos.getZ() - 1), pos, stack);
                                 breakBlock(worldIn, new BlockPos(pos.getX() - 1, pos.getY(), pos.getZ() + 1), pos, stack);
                                 breakBlock(worldIn, new BlockPos(pos.getX() - 1, pos.getY(), pos.getZ() - 1), pos, stack);
-                                if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) playerIn, 100)) {
+                                if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) playerIn, 100)) {
                                     return true;
                                 } else {
                                     stack.stackSize = 0;
@@ -84,7 +82,7 @@ public class EnergyPick extends ItemPickaxe implements IEnergyItem{
                                 breakBlock(worldIn, new BlockPos(pos.getX() + 1, pos.getY() - 1, pos.getZ()), pos, stack);
                                 breakBlock(worldIn, new BlockPos(pos.getX() - 1, pos.getY() + 1, pos.getZ()), pos, stack);
                                 breakBlock(worldIn, new BlockPos(pos.getX() - 1, pos.getY() - 1, pos.getZ()), pos, stack);
-                                if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) playerIn, 100)) {
+                                if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) playerIn, 100)) {
                                     return true;
                                 } else {
                                     stack.stackSize = 0;
@@ -99,7 +97,7 @@ public class EnergyPick extends ItemPickaxe implements IEnergyItem{
                             breakBlock(worldIn, new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ() + 1), pos, stack);
                             breakBlock(worldIn, new BlockPos(pos.getX(), pos.getY() + 1, pos.getZ() - 1), pos, stack);
                             breakBlock(worldIn, new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ() - 1), pos, stack);
-                            if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) playerIn, 100)) {
+                            if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) playerIn, 100)) {
                                 return true;
                             } else {
                                 stack.stackSize = 0;
@@ -107,7 +105,7 @@ public class EnergyPick extends ItemPickaxe implements IEnergyItem{
                             }
                         }
 
-                        } else if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) playerIn, 10)) {
+                        } else if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) playerIn, 10)) {
                             return true;
                         } else {
                             stack.stackSize = 0;
@@ -119,7 +117,7 @@ public class EnergyPick extends ItemPickaxe implements IEnergyItem{
                 return false;
             }
         } catch (NullPointerException e){
-            if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) playerIn, 10)) {
+            if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) playerIn, 10)) {
                 return true;
             } else {
                 stack.stackSize = 0;

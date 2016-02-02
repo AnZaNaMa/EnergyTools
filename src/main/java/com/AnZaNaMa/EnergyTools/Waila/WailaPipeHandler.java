@@ -44,8 +44,6 @@ public class WailaPipeHandler implements IWailaDataProvider {
             ((TipList)currenttip).add("Energy: " + accessor.getNBTData().getInteger("Energy"));
             if(config.getConfig("option.energytools.showMore")){
                 ((TipList)currenttip).add("PipeSystem Pipes: " + ((TileEntityPipe) accessor.getTileEntity()).getPipeSystem().getNumPipesInSystem());
-                ((TipList)currenttip).add("PipeSystem EnergyProviders: " + ((TileEntityPipe) accessor.getTileEntity()).getPipeSystem().getNumEnergyProviders());
-                ((TipList)currenttip).add("PipeSystem EnergyAcceptors: " + ((TileEntityPipe) accessor.getTileEntity()).getPipeSystem().getNumEnergyAcceptors());
             }
         }
         return currenttip;

@@ -24,7 +24,7 @@ public class EnergySword extends ItemSword implements IEnergyItem{
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker){
         if(attacker instanceof EntityPlayer) {
-            if (EnergyTransfer.subtractEnergy(attacker.getEntityWorld(), (EntityPlayer) attacker, 10)) {
+            if (EnergyTransfer.subtractEnergyFromPlayer(attacker.getEntityWorld(), (EntityPlayer) attacker, 10)) {
                 return true;
             }
             else{

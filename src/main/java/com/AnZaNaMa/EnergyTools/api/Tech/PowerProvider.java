@@ -9,6 +9,6 @@ public class PowerProvider extends PowerConnectable {
     protected int energyContained;
 
     public PowerProvider(){
-        this.energyContained = 0;
+        super();
     }
 }

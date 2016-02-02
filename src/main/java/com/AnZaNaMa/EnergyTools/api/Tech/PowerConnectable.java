@@ -12,19 +12,14 @@ import net.minecraft.util.EnumFacing;
  */
 public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox{
     protected PowerConnectable[] systemizedConnections;
-    private PowerConnectable[] connectedMachines;
+    protected PowerConnectable[] connectedMachines;
     protected EnumFacing[] connections = new EnumFacing[6];
     protected PipeSystem pipeSystem;
-    protected int energyContained;
+    protected int energyContained, maxEnergyContained;
 
     public PowerConnectable(){
         this.connectedMachines = getConnectedMachines();
-        if(connectedMachines[0] != null){
-            this.pipeSystem = connectedMachines[0].getPipeSystem();
-        }
-        else{
-            this.pipeSystem = new PipeSystem();
-        }
+        this.maxEnergyContained = 500000;
         this.energyContained = 0;
     }
 
@@ -32,6 +27,7 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     @Override
     public void update(){
         this.updateConnections();
+        this.connectedMachines = getConnectedMachines();
     }
 
     public void findSystemizedConnections(EnumFacing[] connections){
@@ -183,5 +179,27 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
 
     public int getEnergyContained(){
         return this.energyContained;
+    }
+
+    public int getMaxEnergyContained() {
+        return this.maxEnergyContained;
+    }
+
+    public void addEnergy(int energy){
+        if(this.energyContained + energy <= this.getMaxEnergyContained()) {
+            this.energyContained = this.energyContained + energy;
+        }
+        else{
+            this.energyContained = this.getMaxEnergyContained();
+        }
+    }
+
+    public void subtractEnergy(int energy){
+        this.energyContained = this.energyContained + energy;
+    }
+
+    public void transferEnergy(PowerConnectable sender, PowerConnectable receiver, int amount){
+        receiver.addEnergy(amount);
+        sender.subtractEnergy(amount);
     }
 }

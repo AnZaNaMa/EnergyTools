@@ -35,7 +35,7 @@ public class EnergyHoe extends ItemHoe implements IEnergyItem{
         {
             worldIn.setBlockState(target, newState);
             if(player instanceof EntityPlayer) {
-                if (EnergyTransfer.subtractEnergy(worldIn, (EntityPlayer) player, 10)) {
+                if (EnergyTransfer.subtractEnergyFromPlayer(worldIn, (EntityPlayer) player, 10)) {
                     return true;
                 }
                 else{

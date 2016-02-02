@@ -88,7 +88,7 @@ public class TileEntityEnervator extends PowerAcceptor {
         tag.setBoolean("isMultiblock", this.isMultiblock);
         tag.setBoolean("isMovingPlayer", this.isActive);
         tag.setInteger("cloudDistance", this.cloudDistance);
-        tag.setString("actingPlayerUUID", this.actingPlayerUUID.toString());
+        if(this.actingPlayerUUID != null) tag.setString("actingPlayerUUID", this.actingPlayerUUID.toString());
     }
 
     private boolean completesMultiblock(){
@@ -139,6 +139,10 @@ public class TileEntityEnervator extends PowerAcceptor {
         }
         EntityPlayer player = MinecraftServer.getServer().getConfigurationManager().getPlayerByUUID(actingPlayerUUID);
         return player.getDisplayNameString();
+    }
+
+    public boolean getIsMultiblock() {
+        return this.isMultiblock;
     }
 
 

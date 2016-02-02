@@ -10,7 +10,7 @@ import net.minecraft.world.World;
  * Created by Andrew Graber on 5/12/2015.
  */
 public class EnergyTransfer {
-    public static boolean addEnergy(World world, EntityPlayer player, int amount){
+    public static boolean addEnergyToPlayer(World world, EntityPlayer player, int amount){
         if(!world.isRemote) {
             NBTTagCompound data = player.getEntityData();
             if (data.getInteger("Energy") + amount <= Integer.MAX_VALUE) {
@@ -27,7 +27,7 @@ public class EnergyTransfer {
         }
     }
 
-    public static boolean subtractEnergy(World world, EntityPlayer player, int amount){
+    public static boolean subtractEnergyFromPlayer(World world, EntityPlayer player, int amount){
         if(!world.isRemote) {
             NBTTagCompound data = player.getEntityData();
             if (data.getInteger("Energy") - amount >= 0) {
