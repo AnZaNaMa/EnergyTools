@@ -41,7 +41,7 @@ public class WailaEnergizerHandler implements IWailaDataProvider {
     public ITaggedList.ITipList getWailaBody(ItemStack itemStack, ITaggedList.ITipList currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
 
         if(accessor.getTileEntity() instanceof TileEntityEnergizer) {
-            ((TipList)currenttip).add("Energy: " + accessor.getNBTData().getInteger("Energy"));
+            ((TipList)currenttip).add(((TileEntityEnergizer) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnergizer) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
             if(config.getConfig("option.energytools.showMore")){
                 ((TipList)currenttip).add("Multiblock: " + ((TileEntityEnergizer) accessor.getTileEntity()).getIsMultiblock());
                 ((TipList)currenttip).add("Multiblock Size: " + ((TileEntityEnergizer) accessor.getTileEntity()).getMultiblockSize());

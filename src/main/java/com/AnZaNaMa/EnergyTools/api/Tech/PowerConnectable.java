@@ -14,7 +14,6 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     protected PowerConnectable[] systemizedConnections;
     protected PowerConnectable[] connectedMachines;
     protected EnumFacing[] connections = new EnumFacing[6];
-    protected PipeSystem pipeSystem;
     protected int energyContained, maxEnergyContained;
 
     public PowerConnectable(){
@@ -54,12 +53,17 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
 
     @Override
     public void writeToNBT(NBTTagCompound tag){
-
+        tag.setInteger("energy", this.energyContained);
+        tag.setInteger("maxenergy", this.maxEnergyContained);
     }
 
     @Override
     public void readFromNBT(NBTTagCompound tag){
-
+        this.energyContained = tag.getInteger("energy");
+        this.maxEnergyContained = tag.getInteger("maxenergy");
+        this.updateConnections();
+        findSystemizedConnections(this.connections);
+        this.connectedMachines = getConnectedMachines();
     }
 
     public PowerConnectable getFirstSystemizedConnection(PowerConnectable[] sysconnections){
@@ -90,14 +94,6 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
             } catch(NullPointerException e){}
         }
         return anySystemized;
-    }
-
-    public PipeSystem getPipeSystem() {
-        return this.pipeSystem;
-    }
-
-    public void setPipeSystem(PipeSystem system){
-        this.pipeSystem = system;
     }
 
     //Checks to see if the TileEntities in all directions are compatible to connect to the pipe.
@@ -195,7 +191,12 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     }
 
     public void subtractEnergy(int energy){
-        this.energyContained = this.energyContained + energy;
+        if(this.energyContained - energy >= 0) {
+            this.energyContained = this.energyContained - energy;
+        }
+        else{
+            this.energyContained = 0;
+        }
     }
 
     public void transferEnergy(PowerConnectable sender, PowerConnectable receiver, int amount){

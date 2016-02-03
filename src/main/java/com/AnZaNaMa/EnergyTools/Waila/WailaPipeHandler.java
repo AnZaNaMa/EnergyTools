@@ -19,7 +19,7 @@ public class WailaPipeHandler implements IWailaDataProvider {
 
     @Optional.Method(modid = "Waila")
     public static void callbackRegister(IWailaRegistrar register){
-        WailaEnergizerHandler instance = new WailaEnergizerHandler();
+        WailaPipeHandler instance = new WailaPipeHandler();
         register.registerBodyProvider(instance, EnergeticPipe.class);
         register.addConfig("EnergyTools", "option.energytools.showMore", "Show More?", false);
     }
@@ -43,7 +43,6 @@ public class WailaPipeHandler implements IWailaDataProvider {
         if(accessor.getTileEntity() instanceof TileEntityPipe) {
             ((TipList)currenttip).add("Energy: " + accessor.getNBTData().getInteger("Energy"));
             if(config.getConfig("option.energytools.showMore")){
-                ((TipList)currenttip).add("PipeSystem Pipes: " + ((TileEntityPipe) accessor.getTileEntity()).getPipeSystem().getNumPipesInSystem());
             }
         }
         return currenttip;

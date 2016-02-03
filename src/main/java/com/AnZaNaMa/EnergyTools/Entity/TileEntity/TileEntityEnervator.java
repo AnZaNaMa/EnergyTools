@@ -37,7 +37,7 @@ public class TileEntityEnervator extends PowerAcceptor {
     @Override
     public void update(){
         if(!this.worldObj.isRemote){
-            if(this.counter >= 100){
+            if(this.counter >= 50){
                 if(!this.isMultiblock && completesMultiblock()){
                     this.multiblockNumber = getMultiblockSize();
                 }

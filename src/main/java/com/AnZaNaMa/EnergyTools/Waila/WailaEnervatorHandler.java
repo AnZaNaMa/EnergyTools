@@ -44,8 +44,8 @@ public class WailaEnervatorHandler implements IWailaDataProvider {
         if(accessor.getTileEntity() instanceof TileEntityEnervator) {
             ((TipList)currenttip).add(((TileEntityEnervator) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnervator) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
             if(config.getConfig("option.energytools.showMore")){
-                ((TipList)currenttip).add("Multiblock: " + ((TileEntityEnervator) accessor.getTileEntity()).getIsMultiblock());
-                ((TipList)currenttip).add("Multiblock Size: " + ((TileEntityEnergizer) accessor.getTileEntity()).getMultiblockSize());
+                ((TipList)currenttip).add("Boosted? " + ((TileEntityEnervator) accessor.getTileEntity()).getIsMultiblock());
+                ((TipList)currenttip).add("Boost Size: " + ((TileEntityEnervator) accessor.getTileEntity()).getMultiblockNumber());
             }
         }
         return currenttip;
