@@ -80,7 +80,7 @@ public class TileEntityEnervator extends PowerAcceptor {
         this.isMultiblock = tag.getBoolean("isMultiblock");
         this.isActive = tag.getBoolean("isMovingPlayer");
         this.cloudDistance = tag.getInteger("cloudDistance");
-        this.actingPlayerUUID = UUID.fromString(tag.getString("actingPlayerUUID"));
+        if(this.isActive) this.actingPlayerUUID = UUID.fromString(tag.getString("actingPlayerUUID"));
     }
 
     @Override

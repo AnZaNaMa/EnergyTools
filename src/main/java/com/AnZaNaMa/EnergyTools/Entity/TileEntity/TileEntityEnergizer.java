@@ -87,8 +87,6 @@ public class TileEntityEnergizer extends PowerProvider {
     @Override
     public void readFromNBT(NBTTagCompound compound){
         super.readFromNBT(compound);
-
-        this.setEnergyContained(compound.getInteger("Energy"));
         this.isMultiblock = compound.getBoolean("IsMultiblock");
         this.multiblockSize = compound.getInteger("MultiblockSize");
         this.multiblockMultiplier = compound.getInteger("Multiplier");
@@ -99,8 +97,6 @@ public class TileEntityEnergizer extends PowerProvider {
     @Override
     public void writeToNBT(NBTTagCompound compound){
         super.writeToNBT(compound);
-
-        compound.setInteger("Energy", this.getEnergyContained());
         compound.setInteger("MultiblockSize", this.multiblockSize);
         compound.setInteger("Multiplier", this.multiblockMultiplier);
         compound.setBoolean("IsMultiblock", this.isMultiblock);
