@@ -41,7 +41,7 @@ public class WailaPipeHandler implements IWailaDataProvider {
     public ITaggedList.ITipList getWailaBody(ItemStack itemStack, ITaggedList.ITipList currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
 
         if(accessor.getTileEntity() instanceof TileEntityPipe) {
-            ((TipList)currenttip).add("Energy: " + accessor.getNBTData().getInteger("Energy"));
+            ((TipList)currenttip).add(((TileEntityPipe) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityPipe) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
             if(config.getConfig("option.energytools.showMore")){
             }
         }

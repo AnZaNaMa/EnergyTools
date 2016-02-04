@@ -24,11 +24,11 @@ import java.util.List;
  */
 public class TileEntityEnergizer extends PowerProvider {
 
-    private byte updateTimer;
-    private boolean isMultiblock;
-    private int multiblockSize, multiblockMultiplier;
-    private AxisAlignedBB pickupArea;
-    private int ghostSpins;
+    byte updateTimer;
+    boolean isMultiblock;
+    int multiblockSize, multiblockMultiplier;
+    AxisAlignedBB pickupArea;
+    int ghostSpins;
 
     public TileEntityEnergizer(){
         super();
@@ -62,19 +62,19 @@ public class TileEntityEnergizer extends PowerProvider {
                     ItemStack items = new ItemStack(((EntityItem) entities.get(i)).getEntityItem().getItem(), ((EntityItem) entities.get(i)).getEntityItem().stackSize, ((EntityItem) entities.get(i)).getEntityItem().getMetadata());
                     int energyToMachine = Energy.getItemEnergyValue(items.getItem()) * this.multiblockMultiplier;
                     ((EntityItem) entities.get(i)).setInfinitePickupDelay();
-                    this.energyContained += (energyToMachine * ((EntityItem) entities.get(i)).getEntityItem().stackSize);
+                    this.setEnergyContained(this.getEnergyContained() + (energyToMachine * ((EntityItem) entities.get(i)).getEntityItem().stackSize));
                     worldObj.markBlockForUpdate(pos);
                     this.markDirty();
                     ((EntityItem) entities.get(i)).getEntityItem().stackSize = 0;
                 }
                 if (entities.get(i) instanceof EntityPlayer) {
-                    if (this.energyContained >= 50*this.multiblockMultiplier && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())) {
+                    if (this.getEnergyContained() >= 50*this.multiblockMultiplier && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())) {
                         Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), 50*this.multiblockMultiplier);
                         worldObj.markBlockForUpdate(pos);
                         this.markDirty();
                     }
-                    else if(this.energyContained < 50 && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())){
-                        Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), this.energyContained);
+                    else if(this.getEnergyContained() < 50 && RedstoneHelper.isPoweredByRedstone(this.worldObj, this.getPos())){
+                        Energy.tryMoveEnergy(this, (EntityPlayer) entities.get(i), this.getEnergyContained());
                         worldObj.markBlockForUpdate(pos);
                         this.markDirty();
                     }
@@ -88,7 +88,7 @@ public class TileEntityEnergizer extends PowerProvider {
     public void readFromNBT(NBTTagCompound compound){
         super.readFromNBT(compound);
 
-        this.energyContained = compound.getInteger("Energy");
+        this.setEnergyContained(compound.getInteger("Energy"));
         this.isMultiblock = compound.getBoolean("IsMultiblock");
         this.multiblockSize = compound.getInteger("MultiblockSize");
         this.multiblockMultiplier = compound.getInteger("Multiplier");
@@ -100,30 +100,14 @@ public class TileEntityEnergizer extends PowerProvider {
     public void writeToNBT(NBTTagCompound compound){
         super.writeToNBT(compound);
 
-        compound.setInteger("Energy", this.energyContained);
+        compound.setInteger("Energy", this.getEnergyContained());
         compound.setInteger("MultiblockSize", this.multiblockSize);
         compound.setInteger("Multiplier", this.multiblockMultiplier);
         compound.setBoolean("IsMultiblock", this.isMultiblock);
     }
 
-    public int getEnergyContained(){
-        return this.energyContained;
-    }
-
-    public void setEnergyContained(int amount){
-        this.energyContained = amount;
-    }
-
-    public void addEnergyContained(int amount){
-        this.energyContained += amount;
-    }
-
-    public void subtractEnergyContained(int amount){
-        this.energyContained -= amount;
-    }
-
     public boolean hasEnergy(){
-        return this.energyContained > 0;
+        return this.getEnergyContained() > 0;
     }
 
     private boolean completesLargeMultiblock(){
@@ -219,14 +203,6 @@ public class TileEntityEnergizer extends PowerProvider {
         }
     }
 
-    public void setIsMultiblock(boolean bool){
-        this.isMultiblock = bool;
-    }
-
-    public void setMultiblockSize(int size){
-        this.multiblockSize = size;
-    }
-
     public boolean getIsMultiblock(){
         return this.isMultiblock;
     }
@@ -268,10 +244,6 @@ public class TileEntityEnergizer extends PowerProvider {
         else{
             return 1;
         }
-    }
-
-    public int getMultiplier(){
-        return this.multiblockMultiplier;
     }
 
     @Override

@@ -1,9 +1,6 @@
 package com.AnZaNaMa.EnergyTools.Waila;
 
-import com.AnZaNaMa.EnergyTools.Block.EnergeticPipe;
-import com.AnZaNaMa.EnergyTools.Block.Energizer;
 import com.AnZaNaMa.EnergyTools.Block.Enervator;
-import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnervator;
 import mcp.mobius.waila.api.*;
 import mcp.mobius.waila.api.impl.TipList;
@@ -44,7 +41,7 @@ public class WailaEnervatorHandler implements IWailaDataProvider {
         if(accessor.getTileEntity() instanceof TileEntityEnervator) {
             ((TipList)currenttip).add(((TileEntityEnervator) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnervator) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
             if(config.getConfig("option.energytools.showMore")){
-                ((TipList)currenttip).add("Boosted? " + ((TileEntityEnervator) accessor.getTileEntity()).getIsMultiblock());
+                ((TipList)currenttip).add("Boosted: " + ((TileEntityEnervator) accessor.getTileEntity()).getIsMultiblock());
                 ((TipList)currenttip).add("Boost Size: " + ((TileEntityEnervator) accessor.getTileEntity()).getMultiblockNumber());
             }
         }

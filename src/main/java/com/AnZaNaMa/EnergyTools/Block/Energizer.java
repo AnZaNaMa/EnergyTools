@@ -40,7 +40,6 @@ public class Energizer extends BlockContainer implements IEnergyBlock {
                 try {
                     item = player.getHeldItem().getItem();
                 }catch(NullPointerException e){
-                    player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                 }
                 if(item == ItemExpTools.infenergyorb){
                     if(((TileEntityEnergizer) entity).getIsMultiblock()) {
@@ -48,12 +47,9 @@ public class Energizer extends BlockContainer implements IEnergyBlock {
                         player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                     }
                     else{
-                        player.addChatMessage(new ChatComponentText("Is Not Multiblock."));
-                        player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                     }
                 }
                 else if(item != null){
-                    player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
                 }
             }
         }

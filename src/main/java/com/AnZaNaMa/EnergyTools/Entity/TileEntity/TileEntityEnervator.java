@@ -4,6 +4,9 @@ import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerAcceptor;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
@@ -19,15 +22,14 @@ public class TileEntityEnervator extends PowerAcceptor {
     private static final byte MAX_MULTIBLOCK = 10;
     private static final int MAX_STORAGE = 100000;
 
-    private byte counter;
-    private int energyContained, multiblockNumber, cloudDistance;
-    private boolean isActive, isMultiblock;
-    private UUID actingPlayerUUID;
+    byte counter;
+    int multiblockNumber, cloudDistance;
+    boolean isActive, isMultiblock;
+    UUID actingPlayerUUID;
 
     public TileEntityEnervator(){
         super();
-        this.counter = 100;
-        this.energyContained = 0;
+        this.counter = 50;
         this.isActive = false;
         this.isMultiblock = false;
         this.multiblockNumber = 0;
@@ -73,7 +75,7 @@ public class TileEntityEnervator extends PowerAcceptor {
 
     @Override
     public void readFromNBT(NBTTagCompound tag){
-        this.energyContained = tag.getInteger("Energy");
+        super.readFromNBT(tag);
         this.multiblockNumber = tag.getInteger("multiblockSize");
         this.isMultiblock = tag.getBoolean("isMultiblock");
         this.isActive = tag.getBoolean("isMovingPlayer");
@@ -83,7 +85,7 @@ public class TileEntityEnervator extends PowerAcceptor {
 
     @Override
     public void writeToNBT(NBTTagCompound tag){
-        tag.setInteger("Energy", this.energyContained);
+        super.writeToNBT(tag);
         tag.setInteger("multiblockSize", this.multiblockNumber);
         tag.setBoolean("isMultiblock", this.isMultiblock);
         tag.setBoolean("isMovingPlayer", this.isActive);
@@ -117,14 +119,6 @@ public class TileEntityEnervator extends PowerAcceptor {
         return count;
     }
 
-
-
-
-
-    public int getEnergyContained(){
-        return this.energyContained;
-    }
-
     public int getMultiblockNumber(){
         return this.multiblockNumber;
     }
@@ -145,5 +139,15 @@ public class TileEntityEnervator extends PowerAcceptor {
         return this.isMultiblock;
     }
 
+    @Override
+    public Packet getDescriptionPacket(){
+        NBTTagCompound syncData = new NBTTagCompound();
+        this.writeToNBT(syncData);
+        return new S35PacketUpdateTileEntity(this.pos, 1, syncData);
+    }
 
+    @Override
+    public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity packet){
+        this.readFromNBT(packet.getNbtCompound());
+    }
 }

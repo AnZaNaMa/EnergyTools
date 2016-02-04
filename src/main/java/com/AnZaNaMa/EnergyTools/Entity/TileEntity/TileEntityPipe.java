@@ -5,6 +5,7 @@ import com.AnZaNaMa.EnergyTools.api.DirectionHandler;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerAcceptor;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerProvider;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerTransfer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.Packet;
@@ -15,11 +16,11 @@ import net.minecraft.util.EnumFacing;
  * Created by Andrew Graber on 5/20/2015.
  */
 public class TileEntityPipe extends PowerConnectable {
-    public int maxTransferValue = 20;
+    int maxTransferValue = 20;
 
     public TileEntityPipe(){
         super();
-        this.maxEnergyContained = 1000;
+        this.setMaxEnergyContained(1000);
     }
 
     //called every tick (20 times/second)
@@ -66,51 +67,51 @@ public class TileEntityPipe extends PowerConnectable {
     }
 
     private void grabPower(){
+        PowerConnectable[] connectedMachines = this.getConnectedMachines();
         for(int i=0; i<connectedMachines.length; i++){
             if(connectedMachines[i] instanceof PowerProvider && connectedMachines[i].getEnergyContained()>= maxTransferValue && (this.getMaxEnergyContained()-this.getEnergyContained())>= this.maxTransferValue){
-                transferEnergy(connectedMachines[i], this, maxTransferValue);
+                PowerTransfer.transferEnergy(connectedMachines[i], this, maxTransferValue);
                 this.markDirty();
                 connectedMachines[i].markDirty();
                 worldObj.markBlockForUpdate(pos);
                 worldObj.markBlockForUpdate(connectedMachines[i].getPos());
-                LogHelper.info("Transfering max energy into pipe at: " + this.pos.toString() + " from PowerProvider of type: " + connectedMachines[i].getClass().toString() + " at location: " + connectedMachines[i].getPos().toString());
             }
             else if(connectedMachines[i] instanceof PowerProvider && connectedMachines[i].getEnergyContained() < maxTransferValue && connectedMachines[i].getEnergyContained() > 0 && (this.getMaxEnergyContained()-this.getEnergyContained()>=connectedMachines[i].getEnergyContained())) {
-                transferEnergy(connectedMachines[i], this, connectedMachines[i].getEnergyContained());
+                PowerTransfer.transferEnergy(connectedMachines[i], this, connectedMachines[i].getEnergyContained());
                 this.markDirty();
                 connectedMachines[i].markDirty();
                 worldObj.markBlockForUpdate(pos);
                 worldObj.markBlockForUpdate(connectedMachines[i].getPos());
-                LogHelper.info("Transferring " + connectedMachines[i].getEnergyContained() + "energy into pipe at: " + this.pos.toString() + "from PowerProvider of type: " + connectedMachines[i].getClass().toString() + " at location: " + connectedMachines[i].getPos().toString());
             }
         }
     }
 
     private void sendPower(){
+        PowerConnectable[] connectedMachines = this.getConnectedMachines();
         for(int i=0; i<connectedMachines.length; i++){
             if(connectedMachines[i] instanceof PowerAcceptor && (connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained()) >= this.maxTransferValue && this.getEnergyContained()>=this.maxTransferValue){
-                transferEnergy(this, connectedMachines[i], this.maxTransferValue);
+                PowerTransfer.transferEnergy(this, connectedMachines[i], this.maxTransferValue);
                 this.markDirty();
                 connectedMachines[i].markDirty();
                 worldObj.markBlockForUpdate(pos);
                 worldObj.markBlockForUpdate(connectedMachines[i].getPos());
             }
             else if(connectedMachines[i] instanceof PowerAcceptor && (connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained() < this.maxTransferValue) && this.getEnergyContained()>=(connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained())){
-                transferEnergy(this, connectedMachines[i], connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained());
+                PowerTransfer.transferEnergy(this, connectedMachines[i], connectedMachines[i].getMaxEnergyContained() - connectedMachines[i].getEnergyContained());
                 this.markDirty();
                 connectedMachines[i].markDirty();
                 worldObj.markBlockForUpdate(pos);
                 worldObj.markBlockForUpdate(connectedMachines[i].getPos());
             }
             else if(connectedMachines[i] instanceof TileEntityPipe && (connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained()) >= this.maxTransferValue && this.getEnergyContained()>=this.maxTransferValue){
-                transferEnergy(this, connectedMachines[i], this.maxTransferValue);
+                PowerTransfer.transferEnergy(this, connectedMachines[i], this.maxTransferValue);
                 this.markDirty();
                 connectedMachines[i].markDirty();
                 worldObj.markBlockForUpdate(pos);
                 worldObj.markBlockForUpdate(connectedMachines[i].getPos());
             }
             else if(connectedMachines[i] instanceof TileEntityPipe && (connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained() < this.maxTransferValue) && this.getEnergyContained()>=(connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained())){
-                transferEnergy(this, connectedMachines[i], connectedMachines[i].getMaxEnergyContained()-connectedMachines[i].getEnergyContained());
+                PowerTransfer.transferEnergy(this, connectedMachines[i], connectedMachines[i].getMaxEnergyContained() - connectedMachines[i].getEnergyContained());
                 this.markDirty();
                 connectedMachines[i].markDirty();
                 worldObj.markBlockForUpdate(pos);

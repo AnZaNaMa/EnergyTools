@@ -3,6 +3,8 @@ package com.AnZaNaMa.EnergyTools.Energy;
 import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
 import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable;
+import com.AnZaNaMa.EnergyTools.api.Tech.PowerTransfer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -388,7 +390,7 @@ public class Energy {
 
     public static void tryMoveEnergy(TileEntity tileEntity, EntityPlayer player, int amount){
         if(canMoveEnergy(tileEntity, player, amount)){
-            ((TileEntityEnergizer)tileEntity).subtractEnergyContained(amount);
+                PowerTransfer.subtractEnergy((PowerConnectable)tileEntity, amount);
             player.getEntityData().setInteger("Energy", player.getEntityData().getInteger("Energy") + amount);
         }
     }

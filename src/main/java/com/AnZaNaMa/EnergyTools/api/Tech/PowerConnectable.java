@@ -11,13 +11,13 @@ import net.minecraft.util.EnumFacing;
  * Created by Andrew Graber on 5/21/2015.
  */
 public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox{
-    protected PowerConnectable[] systemizedConnections;
-    protected PowerConnectable[] connectedMachines;
-    protected EnumFacing[] connections = new EnumFacing[6];
-    protected int energyContained, maxEnergyContained;
+    PowerConnectable[] systemizedConnections;
+    PowerConnectable[] connectedMachines;
+    EnumFacing[] connections = new EnumFacing[6];
+    int energyContained, maxEnergyContained;
 
     public PowerConnectable(){
-        this.connectedMachines = getConnectedMachines();
+        this.connectedMachines = findConnectedMachines();
         this.maxEnergyContained = 500000;
         this.energyContained = 0;
     }
@@ -26,7 +26,7 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
     @Override
     public void update(){
         this.updateConnections();
-        this.connectedMachines = getConnectedMachines();
+        this.connectedMachines = findConnectedMachines();
     }
 
     public void findSystemizedConnections(EnumFacing[] connections){
@@ -63,7 +63,7 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
         this.maxEnergyContained = tag.getInteger("maxenergy");
         this.updateConnections();
         findSystemizedConnections(this.connections);
-        this.connectedMachines = getConnectedMachines();
+        this.connectedMachines = findConnectedMachines();
     }
 
     public PowerConnectable getFirstSystemizedConnection(PowerConnectable[] sysconnections){
@@ -154,53 +154,90 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
         return this.connections[number];
     }
 
-    public PowerConnectable[] getConnectedMachines(){
+    public PowerConnectable[] findConnectedMachines(){
         PowerConnectable[] machines = new PowerConnectable[6];
         BlockPos[] positions = new BlockPos[]{pos.north(), pos.east(), pos.south(), pos.west(), pos.up(), pos.down()};
-        for(int i=0; i<positions.length; i++){
-            try {
-                if(worldObj.getTileEntity(positions[i]) != null) {
-                    if (worldObj.getTileEntity(positions[i]) instanceof PowerConnectable) {
-                        int next = 0;
-                        for(int j=0; j<positions.length; j++) {
-                            if(positions[j] == null) next = j;
-                        }
-                        machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[i]);
-                    }
+        int next = 0;
+        try {
+            if (worldObj.getTileEntity(positions[0]) != null) {
+                if (worldObj.getTileEntity(positions[0]) instanceof PowerProvider || worldObj.getTileEntity(positions[0]) instanceof PowerAcceptor || worldObj.getTileEntity(positions[0]) instanceof TileEntityPipe) {
+                    machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[0]);
+                    next++;
                 }
-            } catch (NullPointerException e){}
-        }
+            }
+        }catch(NullPointerException e){}
+        try {
+            if (worldObj.getTileEntity(positions[1]) != null) {
+                if (worldObj.getTileEntity(positions[1]) instanceof PowerProvider || worldObj.getTileEntity(positions[1]) instanceof PowerAcceptor || worldObj.getTileEntity(positions[1]) instanceof TileEntityPipe) {
+                    machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[1]);
+                    next++;
+                }
+            }
+        }catch(NullPointerException e){}
+        try {
+            if (worldObj.getTileEntity(positions[2]) != null) {
+                if (worldObj.getTileEntity(positions[2]) instanceof PowerProvider || worldObj.getTileEntity(positions[2]) instanceof PowerAcceptor || worldObj.getTileEntity(positions[2]) instanceof TileEntityPipe) {
+                    machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[2]);
+                    next++;
+                }
+            }
+        }catch(NullPointerException e){}
+        try {
+            if (worldObj.getTileEntity(positions[3]) != null) {
+                if (worldObj.getTileEntity(positions[3]) instanceof PowerProvider || worldObj.getTileEntity(positions[3]) instanceof PowerAcceptor || worldObj.getTileEntity(positions[3]) instanceof TileEntityPipe) {
+                    machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[3]);
+                    next++;
+                }
+            }
+        }catch(NullPointerException e){}
+        try {
+            if (worldObj.getTileEntity(positions[4]) != null) {
+                if (worldObj.getTileEntity(positions[4]) instanceof PowerProvider || worldObj.getTileEntity(positions[4]) instanceof PowerAcceptor || worldObj.getTileEntity(positions[4]) instanceof TileEntityPipe) {
+                    machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[4]);
+                    next++;
+                }
+            }
+        }catch(NullPointerException e){}
+        try {
+            if (worldObj.getTileEntity(positions[5]) != null) {
+                if (worldObj.getTileEntity(positions[5]) instanceof PowerProvider || worldObj.getTileEntity(positions[5]) instanceof PowerAcceptor || worldObj.getTileEntity(positions[5]) instanceof TileEntityPipe) {
+                    machines[next] = (PowerConnectable) worldObj.getTileEntity(positions[5]);
+                    next++;
+                }
+            }
+        }catch(NullPointerException e){}
         return machines;
+    }
+
+    public void setEnergyContained(int energy){
+        this.energyContained = energy;
     }
 
     public int getEnergyContained(){
         return this.energyContained;
     }
 
+    public void setMaxEnergyContained(int energy) {
+        this.maxEnergyContained = energy;
+    }
+
     public int getMaxEnergyContained() {
         return this.maxEnergyContained;
     }
 
-    public void addEnergy(int energy){
-        if(this.energyContained + energy <= this.getMaxEnergyContained()) {
-            this.energyContained = this.energyContained + energy;
-        }
-        else{
-            this.energyContained = this.getMaxEnergyContained();
-        }
+    public PowerConnectable[] getSystemizedConnections(){
+        return this.systemizedConnections;
     }
 
-    public void subtractEnergy(int energy){
-        if(this.energyContained - energy >= 0) {
-            this.energyContained = this.energyContained - energy;
-        }
-        else{
-            this.energyContained = 0;
-        }
+    public void setSystemizedConnections(PowerConnectable[] newConnections){
+        this.systemizedConnections = newConnections;
     }
 
-    public void transferEnergy(PowerConnectable sender, PowerConnectable receiver, int amount){
-        receiver.addEnergy(amount);
-        sender.subtractEnergy(amount);
+    public PowerConnectable[] getConnectedMachines(){
+        return this.connectedMachines;
+    }
+
+    public void setConnectedMachines(PowerConnectable[] newConnections){
+        this.connectedMachines = newConnections;
     }
 }
