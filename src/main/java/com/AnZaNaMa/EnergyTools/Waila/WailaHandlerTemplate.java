@@ -1,12 +1,9 @@
 package com.AnZaNaMa.EnergyTools.Waila;
 
-import com.AnZaNaMa.EnergyTools.Block.EnergeticPipe;
-import com.AnZaNaMa.EnergyTools.Block.Energizer;
-import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
-import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
-import mcp.mobius.waila.api.*;
-import mcp.mobius.waila.api.impl.TipList;
-import net.minecraft.entity.player.EntityPlayer;
+import mcp.mobius.waila.api.IWailaConfigHandler;
+import mcp.mobius.waila.api.IWailaDataAccessor;
+import mcp.mobius.waila.api.IWailaDataProvider;
+import mcp.mobius.waila.api.IWailaRegistrar;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -18,16 +15,16 @@ import net.minecraftforge.fml.common.Optional;
 import java.util.List;
 
 /**
- * Created by Andrew Graber on 12/14/2015.
+ * Created by Andrew Graber on 2/5/2016.
  */
+
 @Optional.Interface(iface = "mcp.mobius.waila.api.IWailaDataProvider", modid = "Waila")
-public class WailaPipeHandler implements IWailaDataProvider{
+public class WailaHandlerTemplate implements IWailaDataProvider{
 
     @Optional.Method(modid = "Waila")
     public static void callbackRegister(IWailaRegistrar register){
-        WailaPipeHandler instance = new WailaPipeHandler();
-        register.registerBodyProvider(instance, TileEntityPipe.class);
-        register.addConfig("EnergyTools", "option.energytools.showMore", "Show More?", false);
+        WailaHandlerTemplate instance = new WailaHandlerTemplate();
+        register.registerBodyProvider(instance, null);
     }
 
     @Override
@@ -45,11 +42,6 @@ public class WailaPipeHandler implements IWailaDataProvider{
     @Override
     @Optional.Method(modid = "Waila")
     public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        if(accessor.getTileEntity() instanceof TileEntityPipe){
-
-            currenttip.add(((TileEntityPipe) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityPipe) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
-        }
-
         return currenttip;
     }
 

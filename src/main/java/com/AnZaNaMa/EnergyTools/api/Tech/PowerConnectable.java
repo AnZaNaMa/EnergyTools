@@ -2,15 +2,15 @@ package com.AnZaNaMa.EnergyTools.api.Tech;
 
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.server.gui.IUpdatePlayerListBox;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ITickable;
 
 /**
  * Created by Andrew Graber on 5/21/2015.
  */
-public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox{
+public class PowerConnectable extends TileEntity implements ITickable{
     PowerConnectable[] systemizedConnections;
     PowerConnectable[] connectedMachines;
     EnumFacing[] connections = new EnumFacing[6];

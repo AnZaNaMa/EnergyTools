@@ -5,7 +5,6 @@ import com.AnZaNaMa.EnergyTools.Energy.Energy;
 import com.AnZaNaMa.EnergyTools.Utility.LogHelper;
 import com.AnZaNaMa.EnergyTools.Utility.RedstoneHelper;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerProvider;
-import net.minecraft.command.IEntitySelector;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -56,7 +55,7 @@ public class TileEntityEnergizer extends PowerProvider {
             if(this.pickupArea == null){
                 findPickupArea();
             }
-            List entities = this.worldObj.getEntitiesWithinAABB(Entity.class, this.pickupArea, IEntitySelector.selectAnything);
+            List<Entity> entities = this.worldObj.getEntitiesWithinAABB(Entity.class, this.pickupArea);
             for (int i = 0; i < entities.size(); i++) {
                 if (entities.get(i) instanceof EntityItem) {
                     ItemStack items = new ItemStack(((EntityItem) entities.get(i)).getEntityItem().getItem(), ((EntityItem) entities.get(i)).getEntityItem().stackSize, ((EntityItem) entities.get(i)).getEntityItem().getMetadata());
