@@ -61,7 +61,7 @@ public class EnergizerTESR extends TileEntitySpecialRenderer{
         GL11.glDisable(GL11.GL_BLEND);
         GL11.glDepthMask(true);
 
-        tessellator.getWorldRenderer().startDrawingQuads();
+        tessellator.getWorldRenderer().begin();
 
         //front
         tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);
