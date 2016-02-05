@@ -53,17 +53,16 @@ public class PowerConnectable extends TileEntity implements IUpdatePlayerListBox
 
     @Override
     public void writeToNBT(NBTTagCompound tag){
+        super.writeToNBT(tag);
         tag.setInteger("energy", this.energyContained);
         tag.setInteger("maxenergy", this.maxEnergyContained);
     }
 
     @Override
     public void readFromNBT(NBTTagCompound tag){
+        super.readFromNBT(tag);
         this.energyContained = tag.getInteger("energy");
         this.maxEnergyContained = tag.getInteger("maxenergy");
-        this.updateConnections();
-        findSystemizedConnections(this.connections);
-        this.connectedMachines = findConnectedMachines();
     }
 
     public PowerConnectable getFirstSystemizedConnection(PowerConnectable[] sysconnections){

@@ -16,7 +16,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 4/19/2015.
  */
+
 public class Energizer extends BlockContainer implements IEnergyBlock {
+
     public Energizer(Material material, String unlocalizedName, float localhardness, float localresistance){
         super(material);
         GameRegistry.registerBlock(this, unlocalizedName);
