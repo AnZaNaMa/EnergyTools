@@ -6,22 +6,27 @@ import com.AnZaNaMa.EnergyTools.Block.Enervator;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
 import mcp.mobius.waila.api.*;
 import mcp.mobius.waila.api.impl.TipList;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Optional;
+
+import java.util.List;
 
 /**
  * Created by Andrew Graber on 5/13/2015.
  */
+
 @Optional.Interface(iface = "mcp.mobius.waila.api.IWailaDataProvider", modid = "Waila")
-public class WailaEnergizerHandler implements IWailaDataProvider {
+public class WailaEnergizerHandler implements IWailaDataProvider{
 
     @Optional.Method(modid = "Waila")
     public static void callbackRegister(IWailaRegistrar register){
-        WailaEnergizerHandler energizer = new WailaEnergizerHandler();
-        register.registerBodyProvider(energizer, Energizer.class);
-        register.addConfig("EnergyTools", "option.energytools.showMore", "Show More?", false);
+        WailaEnergizerHandler instance = new WailaEnergizerHandler();
+        register.registerBodyProvider(instance, TileEntityEnergizer.class);
     }
 
     @Override
@@ -32,37 +37,28 @@ public class WailaEnergizerHandler implements IWailaDataProvider {
 
     @Override
     @Optional.Method(modid = "Waila")
-    public ITaggedList.ITipList getWailaHead(ItemStack itemStack, ITaggedList.ITipList currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
+    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-    public ITaggedList.ITipList getWailaBody(ItemStack itemStack, ITaggedList.ITipList currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-
-        if(accessor.getTileEntity() instanceof TileEntityEnergizer) {
-            ((TipList)currenttip).add(((TileEntityEnergizer) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnergizer) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
-            if(config.getConfig("option.energytools.showMore")){
-                ((TipList)currenttip).add("Multiblock: " + ((TileEntityEnergizer) accessor.getTileEntity()).getIsMultiblock());
-                ((TipList)currenttip).add("Multiblock Size: " + ((TileEntityEnergizer) accessor.getTileEntity()).getMultiblockSize());
-            }
+    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        if(accessor.getTileEntity() instanceof TileEntityEnergizer){
+            currenttip.add(((TileEntityEnergizer) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnergizer) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
         }
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-    public ITaggedList.ITipList getWailaTail(ItemStack itemStack, ITaggedList.ITipList currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
+    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-    public NBTTagCompound getNBTData(TileEntity te, NBTTagCompound tag, IWailaDataAccessorServer accessor){
-        if(te != null){
-            te.writeToNBT(tag);
-        }
+    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
         return tag;
     }
-
 }
