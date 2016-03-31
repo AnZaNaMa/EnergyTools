@@ -54,7 +54,7 @@ public class PipeTESR extends TileEntitySpecialRenderer {
 /*
     public void drawCore(){
         Tessellator tessellator = Tessellator.getInstance();
-        tessellator.getWorldRenderer().startDrawingQuads();
+        tessellator.getWorldRenderer().begin
 
         //Front
         tessellator.getWorldRenderer().addVertexWithUV(1-11*pixel/2, 11*pixel/2, 1-11*pixel/2, 5*texpix, 5*texpix);
