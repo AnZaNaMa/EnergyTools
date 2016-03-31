@@ -1,7 +1,6 @@
 package com.AnZaNaMa.EnergyTools.Item;
 
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
-import com.AnZaNaMa.EnergyTools.Utility.LogHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -11,16 +10,16 @@ import net.minecraft.item.Item;
  */
 public class RenderItemRegister {
     public static void registerItemIcons(){
-        registerItem(ItemExpTools.energyaxe, 0);
-        registerItem(ItemExpTools.energypick, 0);
-        registerItem(ItemExpTools.energyshovel, 0);
-        registerItem(ItemExpTools.energysword, 0);
-        registerItem(ItemExpTools.energyhoe, 0);
+        registerItem(ItemEnergyTools.energyaxe, 0);
+        registerItem(ItemEnergyTools.energypick, 0);
+        registerItem(ItemEnergyTools.energyshovel, 0);
+        registerItem(ItemEnergyTools.energysword, 0);
+        registerItem(ItemEnergyTools.energyhoe, 0);
 
-        registerItem(ItemExpTools.infenergyorb, 0);
-        registerItem(ItemExpTools.energyingot, 0);
-        registerItem(ItemExpTools.redbull, 0);
-        registerItem(ItemExpTools.coalstick, 0);
+        registerItem(ItemEnergyTools.infenergyorb, 0);
+        registerItem(ItemEnergyTools.energyingot, 0);
+        registerItem(ItemEnergyTools.redbull, 0);
+        registerItem(ItemEnergyTools.coalstick, 0);
     }
 
     public static void registerItem(Item item, int meta){

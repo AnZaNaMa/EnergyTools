@@ -2,7 +2,7 @@ package com.AnZaNaMa.EnergyTools.Energy;
 
 import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
-import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.Item.ItemEnergyTools;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerConnectable;
 import com.AnZaNaMa.EnergyTools.api.Tech.PowerTransfer;
 import net.minecraft.entity.player.EntityPlayer;
@@ -344,7 +344,7 @@ public class Energy {
             Items.golden_pickaxe.getUnlocalizedName(),
             Items.golden_shovel.getUnlocalizedName(),
             Items.golden_sword.getUnlocalizedName(),
-            ItemExpTools.energyingot.getUnlocalizedName(),
+            ItemEnergyTools.energyingot.getUnlocalizedName(),
             Blocks.diamond_block.getUnlocalizedName(),
             Blocks.diamond_ore.getUnlocalizedName(),
             Blocks.emerald_block.getUnlocalizedName(),

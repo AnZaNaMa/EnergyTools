@@ -106,7 +106,7 @@ public class TileEntityEnergizer extends PowerProvider {
     }
 
     private boolean completesLargeMultiblock(){
-        boolean stillMultiblock = true;
+        boolean stillMultiblock = true; //hi daddy
         int energizersInZone = 0;
         for(int x = this.pos.getX() - 3; x < this.pos.getX() + 4; x++){
             for(int z = this.pos.getZ() - 3; z < this.pos.getZ() + 4; z++){

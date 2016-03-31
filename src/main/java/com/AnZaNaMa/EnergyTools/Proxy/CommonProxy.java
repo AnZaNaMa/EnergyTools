@@ -6,7 +6,7 @@ import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergyTools;
 import com.AnZaNaMa.EnergyTools.Handler.ConfigHandler;
 import com.AnZaNaMa.EnergyTools.Handler.CraftingHandler;
 import com.AnZaNaMa.EnergyTools.Handler.SmeltingHandler;
-import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.Item.ItemEnergyTools;
 import com.AnZaNaMa.EnergyTools.Reference.Reference;
 import com.AnZaNaMa.EnergyTools.Reference.VersioningNBT;
 import com.AnZaNaMa.EnergyTools.Waila.WailaEnergyTools;
@@ -26,7 +26,7 @@ public abstract class CommonProxy implements IProxy {
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
         BlockEnergyTools.addBlocks();
-        ItemExpTools.addItems();
+        ItemEnergyTools.addItems();
 	}
 	
 	

@@ -13,6 +13,7 @@ import org.lwjgl.opengl.GL11;
  * Created by Andrew Graber on 10/22/2015.
  */
 public class EnergyBlockTESR extends TileEntitySpecialRenderer{
+
     private boolean isCorner = false;
     ResourceLocation image;
     ResourceLocation side;
@@ -23,6 +24,7 @@ public class EnergyBlockTESR extends TileEntitySpecialRenderer{
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f, int number){
+        /*
         ResourceLocation image;
         ResourceLocation side;
 
@@ -63,6 +65,7 @@ public class EnergyBlockTESR extends TileEntitySpecialRenderer{
                 image = new ResourceLocation(Reference.MODID + ":textures/blocks/energyblock.png");
                 side = new ResourceLocation(Reference.MODID + ":textures/blocks/energyblock.png");
                 break;
+
         }
 
         Tessellator tessellator = Tessellator.getInstance();
@@ -115,8 +118,9 @@ public class EnergyBlockTESR extends TileEntitySpecialRenderer{
 
         GL11.glPopAttrib();
         GL11.glPopMatrix();
+        */
     }
-
+/*
     public void drawSides(Tessellator tessellator){
         //front
         tessellator.getWorldRenderer().addVertexWithUV(0, 0, 0, 0, 0);
@@ -199,5 +203,7 @@ public class EnergyBlockTESR extends TileEntitySpecialRenderer{
         tessellator.getWorldRenderer().addVertexWithUV(0, 0, 1, 0, 1);
         tessellator.getWorldRenderer().addVertexWithUV(1, 0, 1, 1, 1);
         tessellator.getWorldRenderer().addVertexWithUV(1, 0, 0, 1, 0);
+
     }
+    */
 }

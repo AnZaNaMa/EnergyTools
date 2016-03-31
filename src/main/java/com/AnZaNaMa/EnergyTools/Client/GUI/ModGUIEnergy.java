@@ -39,7 +39,7 @@ public class ModGUIEnergy extends Gui {
             return;
         }
 
-            EntityPlayerMP player = MinecraftServer.getServer().getConfigurationManager().getPlayerByUUID(Minecraft.getMinecraft().thePlayer.getUniqueID());
+            EntityPlayer player = Minecraft.getMinecraft().theWorld.getPlayerEntityByUUID(Minecraft.getMinecraft().thePlayer.getUniqueID());
             String energyString = Integer.toString(player.getEntityData().getInteger("Energy"));
             int xPos = 10 + (energyString.length() * 16);
             int yPos = 10;

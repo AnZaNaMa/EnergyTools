@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  * Created by Andrew Graber on 5/14/2015.
  */
 
-public class Enervator extends BlockContainer implements IEnergyBlock {
+public class Enervator extends BaseEnergyBlock implements IEnergyBlock {
 
     public Enervator(Material material, String unlocalizedName, float localhardness, float localresistance){
         super(material);
@@ -32,23 +32,5 @@ public class Enervator extends BlockContainer implements IEnergyBlock {
 
     public String getName(){
         return this.getUnlocalizedName().substring(5);
-    }
-
-    @Override
-    public void onBlockClicked(World worldIn, BlockPos pos, EntityPlayer playerIn){
-        if(!worldIn.isRemote) {
-            try {
-                if (worldIn.getTileEntity(pos) instanceof TileEntityEnervator) {
-                } else {
-
-                }
-            } catch (NullPointerException e) {
-            }
-        }
-    }
-
-    @Override
-    public boolean isOpaqueCube(){
-        return false;
     }
 }

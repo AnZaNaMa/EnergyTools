@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 5/15/2015.
  */
-public class GoldBrick extends Block implements IEnergyBlock {
+public class GoldBrick extends BaseEnergyBlock implements IEnergyBlock {
 
     public GoldBrick(Material material, String unlocalizedName){
         super(material);

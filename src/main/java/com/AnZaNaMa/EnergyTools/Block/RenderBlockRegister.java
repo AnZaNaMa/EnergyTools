@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 
 /**
  * Created by Andrew Graber on 2/25/2015.
@@ -22,7 +23,8 @@ public class RenderBlockRegister {
     }
 
     public static void registerBlock(Block block, int meta){
-        if(block instanceof IEnergyBlock)
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID + ":" + ((IEnergyBlock)block).getName(), "inventory"));
+        if(block instanceof IEnergyBlock) {
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID + ":" + ((IEnergyBlock) block).getName(),"inventory"));
+        }
     }
 }

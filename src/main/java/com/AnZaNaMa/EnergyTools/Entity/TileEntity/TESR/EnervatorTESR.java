@@ -45,7 +45,7 @@ public class EnervatorTESR extends TileEntitySpecialRenderer {
                 GL11.glDepthMask(true);
 
                 GL11.glRotatef(180.0F, 0.0f, 0.0f, 1.0f);
-
+/*
                 tessellator.getWorldRenderer().startDrawingQuads();
 
                 //front
@@ -107,6 +107,7 @@ public class EnervatorTESR extends TileEntitySpecialRenderer {
 
                 GL11.glPopAttrib();
                 GL11.glPopMatrix();
+                */
             }
         }catch(NullPointerException e){
 

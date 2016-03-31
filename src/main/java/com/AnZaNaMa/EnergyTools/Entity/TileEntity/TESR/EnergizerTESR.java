@@ -60,7 +60,7 @@ public class EnergizerTESR extends TileEntitySpecialRenderer{
         GL11.glDisable(GL11.GL_LIGHTING);
         GL11.glDisable(GL11.GL_BLEND);
         GL11.glDepthMask(true);
-
+/*
         tessellator.getWorldRenderer().begin();
 
         //front
@@ -191,5 +191,6 @@ public class EnergizerTESR extends TileEntitySpecialRenderer{
 
         GL11.glPopAttrib();
         GL11.glPopMatrix();
+        */
     }
 }

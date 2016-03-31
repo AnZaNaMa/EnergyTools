@@ -1,7 +1,7 @@
 package com.AnZaNaMa.EnergyTools.Handler;
 
 import com.AnZaNaMa.EnergyTools.Block.BlockEnergyTools;
-import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.Item.ItemEnergyTools;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -10,6 +10,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class SmeltingHandler {
     public static void init(){
-        GameRegistry.addSmelting(BlockEnergyTools.energyore, new ItemStack(ItemExpTools.energyingot), 0F);
+        GameRegistry.addSmelting(BlockEnergyTools.energyore, new ItemStack(ItemEnergyTools.energyingot), 0F);
     }
 }

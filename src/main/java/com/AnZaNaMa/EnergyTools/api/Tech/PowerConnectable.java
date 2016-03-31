@@ -61,9 +61,6 @@ public class PowerConnectable extends TileEntity implements ITickable{
     public void readFromNBT(NBTTagCompound tag){
         this.energyContained = tag.getInteger("energy");
         this.maxEnergyContained = tag.getInteger("maxenergy");
-        this.updateConnections();
-        findSystemizedConnections(this.connections);
-        this.connectedMachines = findConnectedMachines();
     }
 
     public PowerConnectable getFirstSystemizedConnection(PowerConnectable[] sysconnections){
@@ -239,5 +236,13 @@ public class PowerConnectable extends TileEntity implements ITickable{
 
     public void setConnectedMachines(PowerConnectable[] newConnections){
         this.connectedMachines = newConnections;
+    }
+
+    public void addEnergy(int amount){
+        this.energyContained +=amount;
+    }
+
+    public void subtractEnergy(int amount){
+        this.energyContained -=amount;
     }
 }

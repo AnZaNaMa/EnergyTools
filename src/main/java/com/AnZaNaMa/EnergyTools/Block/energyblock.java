@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 2/25/2015.
  */
-public class energyblock extends BlockContainer implements IEnergyBlock{
+public class energyblock extends BaseEnergyBlock implements IEnergyBlock{
 
     public energyblock(String unlocalizedName, Material material, float localHardness, float localResistance){
         super(material);

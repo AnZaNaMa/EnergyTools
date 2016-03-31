@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by andre_000 on 4/18/2015.
  */
-public class energyore extends Block implements IEnergyBlock{
+public class energyore extends BaseEnergyBlock implements IEnergyBlock{
     public energyore(String unlocalizedName, Material material, float localHardness, float localResistance){
         super(material);
         GameRegistry.registerBlock(this, unlocalizedName);

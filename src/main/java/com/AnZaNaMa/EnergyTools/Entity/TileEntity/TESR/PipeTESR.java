@@ -23,6 +23,7 @@ public class PipeTESR extends TileEntitySpecialRenderer {
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f, int number){
+        /*
         GL11.glTranslated(x, y, z);
         GL11.glDisable(GL11.GL_LIGHTING);
         this.bindTexture(image);
@@ -48,8 +49,9 @@ public class PipeTESR extends TileEntitySpecialRenderer {
 
         GL11.glEnable(GL11.GL_LIGHTING);
         GL11.glTranslated(-x, -y, -z);
+        */
     }
-
+/*
     public void drawCore(){
         Tessellator tessellator = Tessellator.getInstance();
         tessellator.getWorldRenderer().startDrawingQuads();
@@ -208,4 +210,5 @@ public class PipeTESR extends TileEntitySpecialRenderer {
         }
         GL11.glTranslatef(-0.5F, -0.5F, -0.5F);
     }
+    */
 }

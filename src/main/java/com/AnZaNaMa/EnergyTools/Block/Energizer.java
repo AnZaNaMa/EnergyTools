@@ -2,7 +2,7 @@ package com.AnZaNaMa.EnergyTools.Block;
 
 import com.AnZaNaMa.EnergyTools.EnergyTools;
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityEnergizer;
-import com.AnZaNaMa.EnergyTools.Item.ItemExpTools;
+import com.AnZaNaMa.EnergyTools.Item.ItemEnergyTools;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by Andrew Graber on 4/19/2015.
  */
-public class Energizer extends BlockContainer implements IEnergyBlock {
+public class Energizer extends BaseEnergyBlock implements IEnergyBlock {
     public Energizer(Material material, String unlocalizedName, float localhardness, float localresistance){
         super(material);
         GameRegistry.registerBlock(this, unlocalizedName);
@@ -26,6 +26,7 @@ public class Energizer extends BlockContainer implements IEnergyBlock {
         this.setUnlocalizedName(unlocalizedName);
     }
 
+    @Override
     public TileEntity createNewTileEntity(World world, int number){
         return new TileEntityEnergizer();
     }
@@ -41,7 +42,7 @@ public class Energizer extends BlockContainer implements IEnergyBlock {
                     item = player.getHeldItem().getItem();
                 }catch(NullPointerException e){
                 }
-                if(item == ItemExpTools.infenergyorb){
+                if(item == ItemEnergyTools.infenergyorb){
                     if(((TileEntityEnergizer) entity).getIsMultiblock()) {
                         player.addChatMessage(new ChatComponentText("Is Multiblock of Size: " + ((TileEntityEnergizer) entity).getMultiblockSize()));
                         player.addChatMessage(new ChatComponentText("Energy Stored: " + ((TileEntityEnergizer) entity).getEnergyContained()));
@@ -53,14 +54,5 @@ public class Energizer extends BlockContainer implements IEnergyBlock {
                 }
             }
         }
-    }
-
-    @Override
-    public boolean isOpaqueCube(){
-        return false;
-    }
-
-    public String getName(){
-        return this.getUnlocalizedName().substring(5);
     }
 }
