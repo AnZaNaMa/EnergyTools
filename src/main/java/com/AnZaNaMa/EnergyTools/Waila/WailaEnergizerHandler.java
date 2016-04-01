@@ -37,54 +37,36 @@ public class WailaEnergizerHandler implements IWailaDataProvider{
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-=======
-    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
-    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-
-        if(accessor.getTileEntity() instanceof TileEntityEnergizer) {
-            ((TipList)currenttip).add(((TileEntityEnergizer) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnergizer) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
-            if(config.getConfig("option.energytools.showMore")){
-                ((TipList)currenttip).add("Multiblock: " + ((TileEntityEnergizer) accessor.getTileEntity()).getIsMultiblock());
-                ((TipList)currenttip).add("Multiblock Size: " + ((TileEntityEnergizer) accessor.getTileEntity()).getMultiblockSize());
-            }
-=======
     public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        if(accessor.getTileEntity() instanceof TileEntityEnergizer){
-            currenttip.add(((TileEntityEnergizer) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnergizer) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
->>>>>>> 72019497d908b898063556123e684760939138b7
+
+        if (accessor.getTileEntity() instanceof TileEntityEnergizer) {
+            ((TipList) currenttip).add(((TileEntityEnergizer) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnergizer) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
+            if (config.getConfig("option.energytools.showMore")) {
+                ((TipList) currenttip).add("Multiblock: " + ((TileEntityEnergizer) accessor.getTileEntity()).getIsMultiblock());
+                ((TipList) currenttip).add("Multiblock Size: " + ((TileEntityEnergizer) accessor.getTileEntity()).getMultiblockSize());
+            }
         }
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-=======
-    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos){
         if(te != null){
             te.writeToNBT(tag);
         }
-=======
-    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         return tag;
     }
 }

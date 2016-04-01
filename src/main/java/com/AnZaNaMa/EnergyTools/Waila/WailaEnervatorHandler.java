@@ -35,22 +35,13 @@ public class WailaEnervatorHandler implements IWailaDataProvider{
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-=======
-    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-
-=======
-    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         if(accessor.getTileEntity() instanceof TileEntityEnervator) {
             currenttip.add(((TileEntityEnervator) accessor.getTileEntity()).getEnergyContained() + "/" + ((TileEntityEnervator) accessor.getTileEntity()).getMaxEnergyContained() + " E-E");
         }
@@ -59,24 +50,16 @@ public class WailaEnervatorHandler implements IWailaDataProvider{
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config){
-=======
-    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         return currenttip;
     }
 
     @Override
     @Optional.Method(modid = "Waila")
-<<<<<<< HEAD
     public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos){
         if(te != null){
             te.writeToNBT(tag);
         }
-=======
-    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
->>>>>>> 72019497d908b898063556123e684760939138b7
         return tag;
     }
 }

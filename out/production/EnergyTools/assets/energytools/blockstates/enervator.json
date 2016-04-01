@@ -1,7 +1,7 @@
 {
 	"forge-marker": 1,
 	"defaults": {
-        	"model": "orientable",
+        	"model": "minecraft:block/orientable",
         	"textures": {
             		"top": "energytools:blocks/enervatorblankoff",
 			"side": "energytools:blocks/enervatoroff"
