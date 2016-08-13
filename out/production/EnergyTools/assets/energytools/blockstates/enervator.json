@@ -1,10 +1,11 @@
 {
-	"forge-marker": 1,
+	"forge_marker": 1,
 	"defaults": {
-        	"model": "minecraft:block/orientable",
+        	"model": "minecraft:orientable",
         	"textures": {
             		"top": "energytools:blocks/enervatorblankoff",
-			"side": "energytools:blocks/enervatoroff"
+			"side": "energytools:blocks/enervatoroff",
+			"front": "energytools:blocks/enervatoroff"
         	},
         	"transform": "forge:default-block"
     	},

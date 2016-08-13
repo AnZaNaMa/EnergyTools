@@ -1,7 +1,7 @@
 {
 	"forge-marker": 1,
 	"defaults": {
-        	"model": "minecraft:block/cube_all",
+        	"model": "minecraft:cube_all",
         	"textures": {
             		"all": "energytools:blocks/energyblock"
         	},

@@ -8,4 +8,5 @@ public class TileEntityReference {
     public static final String ENERVATOR = "enervatorTileEntity";
     public static final String PIPE = "pipeTileEntity";
     public static final String ENERGYBLOCK = "energyBlockTileEntity";
+    public static final String SMASHER = "smasherTileEntity";
 }

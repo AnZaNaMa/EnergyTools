@@ -2,6 +2,9 @@ package com.AnZaNaMa.EnergyTools.api.Tech;
 
 import com.AnZaNaMa.EnergyTools.Entity.TileEntity.TileEntityPipe;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
@@ -14,12 +17,13 @@ public class PowerConnectable extends TileEntity implements ITickable{
     PowerConnectable[] systemizedConnections;
     PowerConnectable[] connectedMachines;
     EnumFacing[] connections = new EnumFacing[6];
-    int energyContained, maxEnergyContained;
+    int energyContained, maxEnergyContained, multiblockNum;
 
     public PowerConnectable(){
         this.connectedMachines = findConnectedMachines();
         this.maxEnergyContained = 500000;
         this.energyContained = 0;
+        this.multiblockNum = 1;
     }
 
     //called every tick (20 times/second)
@@ -246,5 +250,25 @@ public class PowerConnectable extends TileEntity implements ITickable{
 
     public void subtractEnergy(int amount){
         this.energyContained -=amount;
+    }
+
+    @Override
+    public Packet getDescriptionPacket() {
+        NBTTagCompound syncData = new NBTTagCompound();
+        this.writeToNBT(syncData);
+        return new S35PacketUpdateTileEntity(this.pos, 0, syncData);
+    }
+
+    @Override
+    public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
+        this.readFromNBT(pkt.getNbtCompound());
+    }
+
+    public int getMultiblockNum(){
+        return this.multiblockNum;
+    }
+
+    public void setMultiblockNum(int num){
+        this.multiblockNum = num;
     }
 }

@@ -6,7 +6,9 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.registry.GameData;
 
 /**
  * Created by Andrew Graber on 2/25/2015.
@@ -14,17 +16,16 @@ import net.minecraftforge.client.model.ModelLoader;
 public class RenderBlockRegister {
 
     public static void registerBlockIcons(){
-        registerBlock(BlockEnergyTools.energyblock, 0);
-        registerBlock(BlockEnergyTools.energizer, 0);
-        registerBlock(BlockEnergyTools.energyore, 0);
-        registerBlock(BlockEnergyTools.goldbrick, 0);
-        registerBlock(BlockEnergyTools.enervator, 0);
-        registerBlock(BlockEnergyTools.energeticpipe, 0);
+        registerBlock(Item.getItemFromBlock(BlockEnergyTools.energyblock), 0);
+        registerBlock(Item.getItemFromBlock(BlockEnergyTools.energizer), 0);
+        registerBlock(Item.getItemFromBlock(BlockEnergyTools.energyore), 0);
+        registerBlock(Item.getItemFromBlock(BlockEnergyTools.goldbrick), 0);
+        registerBlock(Item.getItemFromBlock(BlockEnergyTools.enervator), 0);
+        registerBlock(Item.getItemFromBlock(BlockEnergyTools.energeticpipe), 0);
     }
 
-    public static void registerBlock(Block block, int meta){
-        if(block instanceof IEnergyBlock) {
-            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(Reference.MODID + ":" + ((IEnergyBlock) block).getName(),"inventory"));
-        }
+    public static void registerBlock(Item item, int meta){
+            ResourceLocation loc = GameData.getItemRegistry().getNameForObject(item);
+            ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(loc,"inventory"));
     }
 }
