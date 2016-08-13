@@ -1,9 +1,0 @@
-{
-	"parent": "block/orientable",
-	"textures": {
-		"side": "energytools:blocks/energizer",
-		"front": "energytools:blocks/energizer",
-		"top": "energytools:blocks/energizer",
-		"bottom": "energytools:blocks/energizer"
-	}
-}
